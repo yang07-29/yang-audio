@@ -132,6 +132,14 @@
       else node.textContent += '（链接尚未配置）';
       return node;
     };
+    // 普通链接仍可独立使用；首页工作台可据此把课程、视频和实验加载到本页阅读区。
+    const resourceLink = (label, path, kind = 'course') => {
+      const node = link(label, path, 'study-link study-resource-link');
+      node.setAttribute('data-study-resource', 'true');
+      node.setAttribute('data-study-kind', kind);
+      if (!isPlan) node.title = '在本页学习区打开';
+      return node;
+    };
     const button = (label, action, className = 'study-button') => {
       const node = el('button', className, label);
       node.type = 'button';
@@ -156,6 +164,8 @@
     heading.id = 'study-heading';
     heading.tabIndex = -1;
     panel.append(heading);
+    const dayIntro = el('p', 'study-focus');
+    panel.append(dayIntro);
     const calendarStatus = el('p', 'study-calendar-status');
     panel.append(calendarStatus);
     const progressBar = el('progress', 'study-progress');
@@ -190,7 +200,10 @@
     const chosenDate = el('input', 'study-input');
     chosenDate.type = 'date';
     chosenDate.id = 'study-selected-date';
-    controls.append(labelFor('查看哪一天', chosenDate));
+    const dateDetails = el('details', 'study-date-tools');
+    dateDetails.append(el('summary', '', '查看其他日期'));
+    const dateContent = el('div', 'study-date-content');
+    dateContent.append(labelFor('查看哪一天', chosenDate));
     const browse = el('div', 'study-browse');
     const previous = button('← 前一天', () => selectDay(selected - 1));
     const next = button('后一天 →', () => selectDay(selected + 1));
@@ -206,19 +219,20 @@
       if (index < 0) announce('全部核心任务已完成。你仍可以查看任意一天或做加练。');
       else { selectDay(index); announce(`已跳到第 ${index + 1} 天，保留你的原有完成记录。`); }
     });
-    browse.append(previous, next, backToday, catchUp);
-    controls.append(browse);
-    panel.append(controls);
-    const dayIntro = el('p', 'study-focus');
+    browse.append(previous, next, backToday);
+    dateContent.append(browse);
+    dateDetails.append(dateContent);
+    controls.append(catchUp);
+    panel.append(controls, dateDetails);
     const taskList = el('ol', 'study-task-list');
     taskList.setAttribute('aria-label', '当天的 5 项核心学习任务');
-    panel.append(dayIntro, taskList);
+    panel.append(taskList);
     const extra = el('section', 'study-extra');
     extra.setAttribute('aria-label', '按所选预算增加的练习');
     panel.append(extra);
 
     const noteDetails = el('details', 'study-note-section');
-    noteDetails.open = true;
+    noteDetails.open = false;
     noteDetails.append(el('summary', '', '学习笔记与加练记录'));
     const notes = el('textarea', 'study-notes');
     notes.id = 'study-notes';
@@ -232,11 +246,13 @@
     noteCount.id = 'study-note-count';
     noteDetails.append(noteCount);
     panel.append(noteDetails);
-    const quickLinks = el('nav', 'study-quicklinks');
-    quickLinks.setAttribute('aria-label', '学习工具');
-    quickLinks.append(link('可视化实验室', 'tutorial/study/visuals.html'),
-      link('完整 11 周时间表', 'tutorial/study/plan.html'), link('回课程首页', 'index.html'));
-    panel.append(quickLinks);
+    // 首页的总导航由学习工作台统一负责，避免在每日卡里再重复一套入口。
+    if (isPlan) {
+      const quickLinks = el('nav', 'study-quicklinks');
+      quickLinks.setAttribute('aria-label', '学习工具');
+      quickLinks.append(link('可视化实验室', 'tutorial/study/visuals.html'), link('回学习工作台', 'index.html'));
+      panel.append(quickLinks);
+    }
 
     const settings = el('details', 'study-settings');
     settings.append(el('summary', '', '计划日期、备份与恢复'));
@@ -285,9 +301,9 @@
       } catch (_) { announce('导出未能完成。请先复制笔记，检查浏览器是否允许下载。'); }
     }), labelFor('导入本站进度 JSON', importer));
     settings.append(io, el('p', 'study-small', '导入会先校验，再让你确认覆盖。建议先导出当前记录。文件中的笔记只作为文字显示，不执行代码。'));
-    panel.append(settings);
     const privacy = el('p', 'study-storage');
-    panel.append(privacy);
+    settings.append(privacy);
+    panel.append(settings);
     let weekArea = null;
     const weekNodes = [];
     const dayNodes = [];
@@ -355,8 +371,8 @@
       const currentChecks = state.done[data.days[selected].id] || Array(5).fill(false);
       const count = currentChecks.filter(Boolean).length;
       progressBar.value = completeDays;
-      progressText.textContent = `核心进度 ${completeDays} / ${data.days.length} 天 · 当前这天 ${count} / 5 项完成。`
-        + (state.minutes > 90 ? ' 加练不计入这 5 项，请在笔记中单独记录。' : ' 只有手动完成 5 项才算完成一天。');
+      progressText.textContent = `累计完成 ${completeDays} / ${data.days.length} 天 · 当前 ${count} / 5 项`
+        + (state.minutes > 90 ? ' · 加练请记入笔记' : ' · 学完后手动勾选');
       const allDone = completeDays === data.days.length;
       completion.hidden = !allDone;
       completion.textContent = `已完成全部 ${data.days.length} 天的核心任务！你仍可复习、补充笔记或继续加练。加练是否完成请以笔记核对。`;
@@ -401,7 +417,7 @@
       duration.value = String(state.minutes);
       previous.disabled = selected === 0;
       next.disabled = selected === data.days.length - 1;
-      dayIntro.textContent = `${day.title}｜${day.focus}${day.practice ? '。今天重点是动手验证，不只阅读。' : '。今天先建立直觉，再解释关键步骤。'}`;
+      dayIntro.textContent = `${day.title} · ${day.focus}`;
       taskList.replaceChildren();
       const reviewIndex = Number.isInteger(day.review) ? day.review - 1 : -1;
       const reviewDay = reviewIndex >= 0 && reviewIndex < selected ? data.days[reviewIndex] : null;
@@ -409,10 +425,10 @@
         ? `先不看答案，复述第 ${reviewIndex + 1} 天“${reviewDay.focus}”。再用原课自测检查遗漏。`
         : `先写下对“${day.focus}”的已有理解与 2 个问题。学完后回来检查。`;
       const tasks = [
-        { title: '主动回忆', text: reviewText, url: reviewDay ? reviewDay.url : null, label: '打开回顾课程' },
-        { title: '正文与核心代码', text: `${day.practice ? '逐行追踪核心代码的输入、输出和中间变量。' : '阅读对应小节，画出概念或处理流程。'}重点：${day.focus}。`, url: day.url, label: '打开今天的课程' },
-        { title: '视频讲解', text: '看中文讲解，暂停复述一遍；把一个动画节点对应到正文或代码。视频短于 15 分钟时，用余下时间重画流程。', url: day.video, label: '观看配音与字幕讲解' },
-        { title: '练习与可视化', text: day.exercise, url: 'tutorial/study/visuals.html', label: '打开可视化实验室' },
+        { title: '主动回忆', text: reviewText, url: reviewDay ? reviewDay.url : null, label: '回顾课程', kind: 'course' },
+        { title: '正文与核心代码', text: `${day.practice ? '逐行追踪核心代码的输入、输出和中间变量。' : '阅读对应小节，画出概念或处理流程。'}重点：${day.focus}。`, url: day.url, label: '阅读课程', kind: 'course' },
+        { title: '视频讲解', text: '看中文讲解，暂停复述一遍；把一个动画节点对应到正文或代码。视频短于 15 分钟时，用余下时间重画流程。', url: day.video, label: '看讲解', kind: 'video' },
+        { title: '练习与可视化', text: day.exercise, url: 'tutorial/study/visuals.html', label: '做实验', kind: 'lab' },
         { title: '闭卷自测与复盘', text: day.question, answer: day.answer }
       ];
       const checks = state.done[day.id] || Array(5).fill(false);
@@ -428,15 +444,17 @@
         title.htmlFor = check.id;
         title.append(el('span', '', `${index + 1}. ${task.title}`), el('span', 'study-minutes', `${day.minutes[index]} 分钟`));
         content.append(title, el('p', 'study-task-description', task.text || '按今天的课程完成本项练习。'));
-        if (task.url) content.append(link(task.label, task.url));
-        if (selected === 0 && index === 1) content.append(el('span', 'study-link-separator', ' · '), link('先读准备课', 'tutorial/chapters/00_start.html'));
-        if (index === 3) content.append(el('span', 'study-link-separator', ' · '), link('回到本课练习与运行结果', day.url));
+        const actions = el('div', 'study-task-actions');
+        if (task.url) actions.append(resourceLink(task.label, task.url, task.kind));
+        if (selected === 0 && index === 1) actions.append(resourceLink('先读准备课', 'tutorial/chapters/00_start.html'));
+        if (index === 3) actions.append(resourceLink('本课代码与结果', day.url));
+        if (actions.children.length) content.append(actions);
         if (task.answer !== undefined) {
           const details = el('details', 'study-answer');
           details.append(el('summary', '', '我已作答，展开参考答案'), el('p', '', task.answer));
           content.append(details);
         }
-        if ((selected + 1) % 7 === 0 && index === 4) content.append(link('术语与闭卷自测', 'tutorial/chapters/18_glossary.html'));
+        if ((selected + 1) % 7 === 0 && index === 4) content.append(resourceLink('术语与闭卷自测', 'tutorial/chapters/18_glossary.html'));
         check.setAttribute('aria-label', `标记第 ${selected + 1} 天的“${task.title}”已完成，${day.minutes[index]} 分钟`);
         check.addEventListener('change', () => {
           const values = (state.done[day.id] || Array(5).fill(false)).slice();

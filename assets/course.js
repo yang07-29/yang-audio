@@ -5,6 +5,14 @@
   const root = new URL('../', script.src);
   const data = window.AUDIO_COURSE;
   if (!data) return;
+  // 一份本地样式表服务全部课程页，不依赖第三方 CDN 或前端框架。
+  document.body.classList.add('course-shell');
+  const embedded = new URL(location.href).searchParams.get('embedded') === '1';
+  if (embedded) document.body.classList.add('course-embedded');
+  const stylesheet = document.createElement('link');
+  stylesheet.rel = 'stylesheet';
+  stylesheet.href = new URL('course-shell.css', script.src).href;
+  document.head.append(stylesheet);
   const absolute = path => new URL(path, root).href;
   const relative = decodeURIComponent(location.pathname).slice(decodeURIComponent(root.pathname).length);
   const redirect = data.aliases[relative];
@@ -45,24 +53,81 @@
     save();
   }
 
-  // 独立的课程目录替换单页解释器的字母导航，但不改动正文或代码。
+  // 主入口、课程目录和辅助资料分区，避免将所有链接堆在同一层级。
   const sidebar = create('aside', 'course-sidebar');
+  sidebar.id = 'course-sidebar';
   sidebar.setAttribute('aria-label', '课程导航');
-  sidebar.append(create('div', 'course-eyebrow', 'AUDIO / 从零学音频'));
+  const drawerClose = create('button', 'course-drawer-close', '×');
+  drawerClose.type = 'button';
+  drawerClose.setAttribute('aria-label', '关闭学习导航');
+  sidebar.append(drawerClose);
+  sidebar.append(create('div', 'course-eyebrow', 'AUDIO LEARNING STUDIO'));
   sidebar.append(link('yang-audio', 'index.html', 'course-brand'));
-  sidebar.append(create('p', 'course-side-description', '读懂原理 · 跑通代码 · 做出项目'));
+  sidebar.append(create('p', 'course-side-description', '每天一点，把声音学明白。'));
+  const primary = create('nav', 'course-primary-nav');
+  primary.setAttribute('aria-label', '学习主入口');
+  const primaryItems = [
+    ['今日学习', 'index.html', 'today', '01'],
+    ['课程目录', 'index.html#learn-catalog', 'catalog', '02'],
+    ['项目实战', 'index.html#learn-projects', 'projects', '03'],
+    ['学习计划', 'tutorial/study/plan.html', 'plan', '04']
+  ];
+  const primaryLinks = primaryItems.map(([title, path, id, number]) => {
+    const item = link('', path, 'course-primary-link');
+    item.dataset.section = id;
+    const marker = create('span', 'course-primary-number', number);
+    marker.setAttribute('aria-hidden', 'true');
+    item.append(marker, create('span', '', title));
+    primary.append(item);
+    return item;
+  });
+  const highlightPrimary = () => {
+    let section = page.kind === 'home'
+      ? ({ '#learn-catalog': 'catalog', '#learn-projects': 'projects', '#learn-resources': 'resources' }[location.hash] || 'today')
+      : relative === 'tutorial/study/plan.html' ? 'plan'
+        : page.kind === 'project-guide' || relative === 'tutorial/study/projects.html' ? 'projects'
+          : page.kind === 'lesson' || page.kind === 'lab' ? 'catalog' : 'resources';
+    if (page.kind === 'home' && location.hash.startsWith('#read=')) {
+      try {
+        const reading = decodeURIComponent(location.hash.slice(6));
+        section = reading.startsWith('tutorial/projects/') ? 'projects'
+          : reading.startsWith('tutorial/chapters/') || reading.startsWith('tutorial/labs/') ? 'catalog' : 'resources';
+      } catch (_) { section = 'today'; }
+    }
+    for (const item of primaryLinks) {
+      const active = item.dataset.section === section;
+      item.classList.toggle('is-active', active);
+      if (active) item.setAttribute('aria-current', 'location');
+      else item.removeAttribute('aria-current');
+    }
+  };
+  highlightPrimary();
+  addEventListener('hashchange', highlightPrimary);
+  sidebar.append(primary);
+  const directory = create('div', 'course-directory');
+  directory.append(create('div', 'course-nav-label', '课程速查'));
   const search = create('input', 'course-search');
   search.type = 'search';
-  search.placeholder = '查找课程，例如 AEC、分贝';
+  search.placeholder = '搜索课程或关键词…';
   search.setAttribute('aria-label', '按课程名称或关键词查找');
-  sidebar.append(search);
+  directory.append(search);
   const nav = create('nav', 'course-lessons');
   nav.setAttribute('aria-label', '按顺序学习');
   const lessonLinks = [];
+  const groups = [];
   for (const group of data.groups) {
-    const block = create('section', 'course-nav-group');
-    block.append(create('h2', '', group.title));
-    for (const lesson of data.lessons.filter(item => item.group === group.id)) {
+    const lessons = data.lessons.filter(item => item.group === group.id);
+    const current = lessons.some(lesson => lesson.id === (page.parent || page.id));
+    const block = create('details', 'course-nav-group');
+    block.open = current;
+    const summary = create('summary', 'course-group-summary');
+    summary.append(create('span', '', group.title.replace(/第[一二三四]阶段 · /, '')));
+    const groupCount = create('span', 'course-group-count', String(lessons.length));
+    groupCount.setAttribute('aria-label', `${lessons.length} 课`);
+    summary.append(groupCount);
+    block.append(summary);
+    const content = create('div', 'course-group-content');
+    for (const lesson of lessons) {
       const item = link('', lesson.url, 'course-lesson-link');
       item.append(create('span', 'course-lesson-number', lesson.number));
       item.append(create('span', 'course-lesson-title', lesson.short));
@@ -72,34 +137,54 @@
         item.setAttribute('aria-current', 'page');
       }
       if (state.done.includes(lesson.id)) item.setAttribute('aria-label', `${lesson.number} ${lesson.short}，已完成`);
-      block.append(item);
+      content.append(item);
       lessonLinks.push({ node: item, lesson, group: block });
     }
+    block.append(content);
+    groups.push({ node: block, defaultOpen: current });
     nav.append(block);
   }
   const noResults = create('p', 'course-empty', '没有匹配课程。试试“采样”“ASR”或“阵列”。');
   noResults.hidden = true;
   nav.append(noResults);
-  sidebar.append(nav);
+  directory.append(nav);
+  sidebar.append(directory);
+  const resourceBlock = create('details', 'course-resource-group');
+  resourceBlock.append(create('summary', '', '辅助资料'));
   const utilities = create('nav', 'course-utilities');
   utilities.setAttribute('aria-label', '辅助资料');
-  utilities.append(link('课程首页', 'index.html'));
-  utilities.append(link('学习时间表', 'tutorial/study/plan.html'));
-  utilities.append(link('三个项目', 'tutorial/study/projects.html'));
+  utilities.append(link('资源总览', 'index.html#learn-resources'));
   utilities.append(link('中文视频', 'tutorial/study/videos.html'));
   utilities.append(link('可视化实验', 'tutorial/study/visuals.html'));
   utilities.append(link('随课实验', 'tutorial/experiments.html'));
   utilities.append(link('资料与内容审查', 'tutorial/resources.html'));
-  sidebar.append(utilities);
+  resourceBlock.append(utilities);
+  sidebar.append(resourceBlock);
+  const progress = create('div', 'course-progress');
   const count = create('p', 'course-progress-count');
-  sidebar.append(count);
+  const progressBar = create('progress', 'course-progress-bar');
+  progressBar.max = data.lessons.length;
+  progressBar.setAttribute('aria-label', '课程完成进度');
+  progress.append(count, progressBar);
+  sidebar.append(progress);
   document.body.prepend(sidebar);
   const updateCount = () => {
-    count.textContent = fileMode
-      ? `当前记录 ${state.done.length} / ${data.lessons.length} 课 · 文件模式跨页可能不共享`
-      : `已标记完成 ${state.done.length} / ${data.lessons.length} 课 · 仅保存在本浏览器`;
+    count.textContent = `已完成 ${state.done.length} / ${data.lessons.length} 课`;
+    count.title = fileMode ? '文件模式跨页可能不共享记录' : '仅保存在当前浏览器，不会跨设备同步';
+    progressBar.value = state.done.length;
   };
   updateCount();
+  // 同源 iframe 内完成课程后，侧栏同步显示，无需刷新整个学习台。
+  addEventListener('storage', event => {
+    if (event.key !== 'audio-course-progress-v4') return;
+    try {
+      const saved = JSON.parse(event.newValue || 'null');
+      if (!saved || !Array.isArray(saved.done)) return;
+      state.done = saved.done.filter(id => data.lessons.some(item => item.id === id));
+      for (const row of lessonLinks) row.node.querySelector('.course-complete-dot').textContent = state.done.includes(row.lesson.id) ? '✓' : '';
+      updateCount();
+    } catch (_) { /* 无效跨页记录不覆盖当前显示。 */ }
+  });
   search.addEventListener('input', () => {
     const query = search.value.trim().toLowerCase();
     let total = 0;
@@ -108,28 +193,67 @@
       row.node.hidden = !matched;
       if (matched) total++;
     }
-    for (const block of nav.querySelectorAll('.course-nav-group')) {
+    for (const group of groups) {
+      const block = group.node;
       block.hidden = ![...block.querySelectorAll('.course-lesson-link')].some(item => !item.hidden);
+      block.open = query ? !block.hidden : group.defaultOpen;
     }
     noResults.hidden = total > 0;
   });
 
   const mobile = create('header', 'course-mobile-bar');
-  mobile.append(link('音频算法入门课', 'index.html'));
-  const menu = create('button', 'course-menu-button', '课程目录');
+  mobile.append(link('yang-audio', 'index.html'));
+  const menu = create('button', 'course-menu-button', '学习导航');
   menu.type = 'button';
   menu.setAttribute('aria-expanded', 'false');
-  menu.addEventListener('click', () => {
-    const open = document.body.classList.toggle('course-menu-open');
+  menu.setAttribute('aria-controls', sidebar.id);
+  const shade = create('button', 'course-menu-shade');
+  shade.type = 'button';
+  shade.tabIndex = -1;
+  shade.setAttribute('aria-label', '关闭学习导航');
+  shade.hidden = true;
+  document.body.prepend(shade);
+  const mobileQuery = matchMedia('(max-width: 880px)');
+  const setMenu = (open, restoreFocus = false) => {
+    document.body.classList.toggle('course-menu-open', open);
     menu.setAttribute('aria-expanded', String(open));
-    if (open) search.focus();
+    shade.hidden = !open;
+    sidebar.inert = mobileQuery.matches && !open;
+    if (open) {
+      sidebar.setAttribute('role', 'dialog');
+      sidebar.setAttribute('aria-modal', 'true');
+      search.focus();
+    } else {
+      sidebar.removeAttribute('role');
+      sidebar.removeAttribute('aria-modal');
+      if (restoreFocus) menu.focus();
+    }
+  };
+  menu.addEventListener('click', () => setMenu(menu.getAttribute('aria-expanded') !== 'true', true));
+  shade.addEventListener('click', () => setMenu(false, true));
+  drawerClose.addEventListener('click', () => setMenu(false, true));
+  sidebar.addEventListener('click', event => {
+    if (event.target.closest('a') && mobileQuery.matches) setMenu(false, false);
   });
+  mobileQuery.addEventListener('change', () => setMenu(false));
+  setMenu(false);
   mobile.append(menu);
   document.body.prepend(mobile);
   document.addEventListener('keydown', event => {
+    if (menu.getAttribute('aria-expanded') !== 'true') return;
     if (event.key === 'Escape') {
-      document.body.classList.remove('course-menu-open');
-      menu.setAttribute('aria-expanded', 'false');
+      setMenu(false, true);
+      event.preventDefault();
+    } else if (event.key === 'Tab') {
+      // 抽屉打开时保持键盘焦点在导航内，Escape 可随时退出。
+      const focusable = [...sidebar.querySelectorAll('a[href], button, input, summary')]
+        .filter(node => !node.hidden && node.getClientRects().length > 0);
+      const first = focusable[0], last = focusable[focusable.length - 1];
+      if (event.shiftKey && (document.activeElement === first || document.activeElement === menu)) {
+        event.preventDefault(); last?.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault(); first?.focus();
+      }
     }
   });
 
@@ -145,10 +269,10 @@
   const mainHeader = document.querySelector('.am-head');
   if (mainHeader) {
     const crumb = create('div', 'course-breadcrumb');
-    crumb.append(link('课程首页', 'index.html'));
+    crumb.append(link('学习空间', 'index.html'));
     if (page.kind !== 'home') {
       crumb.append(create('span', '', ' / '));
-      crumb.append(create('span', '', page.kind === 'lab' ? '随课实验' : (page.stage || page.title)));
+      crumb.append(create('span', '', page.kind === 'lab' ? '随课实验' : page.kind === 'lesson' ? (page.stage || '课程') : page.kind === 'project-guide' ? '项目实战' : '辅助资料'));
     }
     mainHeader.prepend(crumb);
     const meta = create('div', 'course-page-meta');
@@ -195,5 +319,16 @@
   }
   if (page.kind === 'home' && priorLesson && mainHeader) {
     mainHeader.append(link(`继续上次：${priorLesson.number} ${priorLesson.short}`, priorLesson.url, 'course-resume-link'));
+  }
+  if (embedded) {
+    // 内嵌阅读的下一课、实验链接继续留在阅读区；独立打开仍显示完整外壳。
+    document.addEventListener('click', event => {
+      const anchor = event.target.closest('a[href]');
+      if (!anchor || anchor.target || anchor.hasAttribute('download')) return;
+      const url = new URL(anchor.href, location.href);
+      if (url.origin !== root.origin || !url.pathname.startsWith(root.pathname) || !url.pathname.endsWith('.html')) return;
+      url.searchParams.set('embedded', '1');
+      anchor.href = url.href;
+    });
   }
 })();

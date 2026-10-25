@@ -1,0 +1,84 @@
+/* 原生静态学习工作台；设计参考见仓库 UI-NOTES.md。 */
+body.audio-portal { background:#f5f7f8; }
+body.audio-portal .am-toolbar,body.audio-portal .am-colophon,body.audio-portal .am-toc,body.audio-portal .course-breadcrumb,body.audio-portal .course-resume-link { display:none!important; }
+body.audio-portal .am-doc { max-width:1500px; }
+body.audio-portal .am-doc-layout { display:block!important; }
+body.audio-portal .am-head { padding-bottom:28px!important; }
+body.audio-portal .am-head h1 { font-size:clamp(27px,3vw,40px)!important; line-height:1.35!important; letter-spacing:-.04em; }
+body.audio-portal .am-sub { color:#667781; font-size:15px; margin-top:10px; }
+.portal-header-meta { display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin:0 0 13px;color:#75858d;font-size:12px;letter-spacing:.02em; }
+.portal-status-dot { color:#177d71;font-weight:600; }
+.portal-status-dot::before { content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:#289c86;margin-right:8px; }
+.portal-view { animation:portal-enter .15s ease-out; }
+.portal-view[hidden],.portal-views[hidden],.portal-workspace[hidden],.portal-course-row[hidden],.portal-course-group[hidden],.portal-empty[hidden] { display:none!important; }
+.portal-mobile-tabs { display:none; }
+.portal-section-head { margin:0 0 25px; }
+.portal-section-head h2 { margin:0 0 8px;font-size:25px;line-height:1.35;color:#172f3a;letter-spacing:-.02em; }
+.portal-section-head p { margin:0;color:#667781;font-size:14px;line-height:1.8; }
+.portal-search { box-sizing:border-box;width:100%;padding:14px 16px;background:white;border:1px solid #dce4e7;border-radius:10px;color:#193641;font:14px/1.5 inherit;margin-bottom:18px; }
+.portal-search:focus { outline:3px solid #d7eee8;border-color:#258571; }
+.portal-course-group,.portal-collection { border:1px solid #dfe6e8;background:#fff;border-radius:12px;margin-bottom:12px;overflow:hidden; }
+.portal-course-group>summary,.portal-collection>summary { cursor:pointer;padding:19px 22px;font-size:15px;font-weight:650;color:#233b46;line-height:1.5;list-style-position:inside; }
+.portal-course-group>summary { display:flex;justify-content:space-between;gap:12px; }
+.portal-course-group>summary::after { content:'＋';color:#6c8189; }
+.portal-course-group[open]>summary::after { content:'−'; }
+.portal-course-group[open]>summary,.portal-collection[open]>summary { border-bottom:1px solid #edf1f2; }
+.portal-count { margin-left:auto;color:#829197;font-weight:400;font-size:12px; }
+.portal-course-list { padding:4px 18px 9px; }
+.portal-course-row { display:flex;gap:18px;align-items:center;padding:16px 6px;border-bottom:1px solid #eef2f3;text-decoration:none!important;color:#233b46; }
+.portal-course-row:last-child { border-bottom:0; }
+.portal-course-row:hover { background:#f6faf9; }
+.portal-lesson-number { width:38px;flex-shrink:0;color:#91a0a5;font-size:13px;font-variant-numeric:tabular-nums;text-align:center; }
+.portal-course-text { min-width:0;display:flex;flex-direction:column;gap:5px; }
+.portal-course-text strong { font-size:15px;font-weight:600; }
+.portal-course-text>span { font-size:12px;color:#7b8b93;line-height:1.7; }
+.portal-open-icon { margin-left:auto;color:#439783; }
+.portal-empty { padding:30px;text-align:center;color:#788990; }
+.portal-project-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px; }
+.portal-project-card { min-width:0;padding:26px 24px;display:flex;flex-direction:column;gap:12px;background:#fff;border:1px solid #dfe6e8;border-radius:14px;text-decoration:none!important;color:#203943;transition:border-color .15s,box-shadow .15s; }
+.portal-project-card:hover { border-color:#69aa9e;box-shadow:0 5px 20px #163a3710; }
+.portal-card-top { display:flex;justify-content:space-between;align-items:center;gap:8px; }
+.portal-project-number { font:500 25px/1.4 ui-monospace,monospace;color:#aec5c1; }
+.portal-badge { font-size:11px;color:#327e70;background:#edf7f3;padding:4px 9px;border-radius:5px; }
+.portal-project-card h3 { font-size:19px;line-height:1.5;margin:8px 0 0;letter-spacing:-.02em; }
+.portal-project-card p { color:#71828a;font-size:13px;line-height:1.9;margin:0; }
+.portal-tags { color:#90a0a5;font-size:11px;line-height:1.8;margin-bottom:12px; }
+.portal-card-action { margin-top:auto;padding-top:17px;border-top:1px solid #edf1f2;color:#217f70;font-size:13px;font-weight:600; }
+.portal-text-link { display:inline-block;margin-top:20px;font-size:12px;color:#71838a;text-underline-offset:3px; }
+.portal-collection-description { color:#7a8a92;font-size:13px;padding:0 22px;line-height:1.8; }
+.portal-resource-list { padding:2px 22px 18px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px; }
+.portal-resource { display:block;font-size:14px;padding:13px 15px;border-radius:8px;background:#f7f9f9;color:#315751;text-decoration:none!important;line-height:1.6; }
+.portal-resource:hover { background:#eaf4f0; }
+.portal-study-guide>.am-panel { margin:16px!important; }
+.portal-study-guide .am-panel-head h2 { font-size:17px!important; }
+.portal-study-guide .am-panel-body { font-size:14px; }
+.portal-workspace { border:1px solid #dce5e7;border-radius:13px;background:white;overflow:hidden;scroll-margin-top:18px; }
+.portal-reader-toolbar { display:flex;gap:14px;align-items:center;padding:13px 18px;border-bottom:1px solid #e6ecee; }
+.portal-button { border:1px solid #d9e4e4;border-radius:7px;color:#42625d;background:white;padding:9px 12px;font:inherit;font-size:12px;cursor:pointer;white-space:nowrap; }
+.portal-button:hover { background:#f0f7f5; }
+.portal-reader-title { margin:0;font-size:15px;line-height:1.5;color:#27434d;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; }
+.portal-standalone { margin-left:auto;white-space:nowrap;color:#6e8389;font-size:12px;text-decoration:none; }
+.portal-reader-switcher { display:flex;align-items:center;flex-wrap:wrap;gap:6px;padding:9px 18px;background:#f9fbfb;border-bottom:1px solid #e9eef0; }
+.portal-reader-tab { padding:7px 17px;border-radius:6px;color:#6d8188;font-size:12px;text-decoration:none; }
+.portal-reader-tab[aria-current=page] { background:#e6f2ed;color:#187765;font-weight:600; }
+.portal-reader-hint { margin-left:auto;color:#92a0a5;font-size:11px; }
+.portal-reader-status { color:#819198;font-size:11px;margin:0;padding:8px 18px;border-bottom:1px solid #f0f3f4; }
+.portal-reader-frame { display:block;border:0;width:100%;height:calc(100dvh - 230px);min-height:500px;background:white; }
+body.audio-portal.portal-reading .am-head { padding-bottom:16px!important; }
+body.audio-portal.portal-reading .am-head h1 { font-size:24px!important; }
+body.audio-portal.portal-reading .am-head .am-sub,body.audio-portal.portal-reading .portal-header-meta { display:none; }
+.audio-portal :is(a,button,summary):focus-visible { outline:3px solid #96cabe;outline-offset:3px; }
+@keyframes portal-enter { from{opacity:.6;transform:translateY(3px)}to{opacity:1;transform:none} }
+@media(max-width:1150px) { .portal-project-grid{grid-template-columns:1fr}.portal-project-card{padding:22px}.portal-reader-hint{display:none} }
+@media(max-width:880px) {
+ .portal-mobile-tabs{display:flex;gap:4px;background:#eaf0f0;padding:4px;border-radius:9px;margin-bottom:20px}
+ .portal-mobile-tab{flex:1;text-align:center;font-size:13px;text-decoration:none;padding:9px 5px;color:#6f838a;border-radius:6px}
+ .portal-mobile-tab[aria-current=page]{background:#fff;color:#1d7768;box-shadow:0 1px 3px #0c302312}
+ body.audio-portal .am-head{padding-bottom:20px!important}.portal-header-meta{font-size:10px;gap:10px}
+ .portal-reader-frame{height:calc(100dvh - 230px);min-height:430px}.portal-reader-toolbar{padding:10px;gap:8px;flex-wrap:wrap}
+ .portal-reader-title{font-size:13px;order:3;flex-basis:100%;white-space:normal}.portal-reader-switcher{padding:8px 10px}
+ .portal-course-text>span{font-size:11px}.portal-course-row{gap:10px}.portal-course-group>summary,.portal-collection>summary{padding:16px}
+ .portal-resource-list{grid-template-columns:1fr;padding:0 16px 16px}.portal-collection-description{padding:0 16px}
+ .portal-study-guide>.am-panel{margin:8px!important}.portal-reader-status{font-size:10px;padding:7px 10px}
+}
+@media(prefers-reduced-motion:reduce){.portal-view{animation:none}.portal-project-card{transition:none}}
