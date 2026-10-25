@@ -1,0 +1,137 @@
+{
+  "pages_built": 26,
+  "chapter_pages": 19,
+  "experiment_pages": 4,
+  "image_occurrences": 46,
+  "broken_local_links": [],
+  "pages": [
+    {
+      "page": "tutorial/chapters/00_start.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_chapters_00_start.html\n  doc · paper · 6 panels\n  STE check is off",
+      "title": "第00课：先别背缩写，先完成一个小实验"
+    },
+    {
+      "page": "tutorial/chapters/01_sound.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_chapters_01_sound.html\n  doc · paper · 7 panels\n  STE check is off",
+      "title": "第 1 课：先认识声音，再认识音频数组"
+    },
+    {
+      "page": "tutorial/chapters/02_digital.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_chapters_02_digital.html\n  doc · paper · 8 panels\n  code 1 warning (trim the block and run again, or keep it if every line matters):\n  L67 [code-length] the block has 45 lines; readers skim past long code. Pick the 10 to 40 lines that make the point\n  STE check is off",
+      "title": "第 2 课：采样、量化、PCM 和 WAV，终于不再混淆"
+    },
+    {
+      "page": "tutorial/chapters/03_decibels.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_chapters_03_decibels.html\n  doc · paper · 7 panels\n  code 1 warning (trim the block and run again, or keep it if every line matters):\n  L77 [code-length] the block has 42 lines; readers skim past long code. Pick the 10 to 40 lines that make the point\n  STE check is off",
+      "title": "第 3 课：峰值、RMS、分贝、SNR 和响度分别是什么"
+    },
+    {
+      "page": "tutorial/chapters/04_numpy.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_chapters_04_numpy.html\n  doc · paper · 7 panels\n  STE check is off",
+      "title": "第 4 课：用 NumPy 真正读懂一段音频"
+    },
+    {
+      "page": "tutorial/chapters/05_spectrum.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_chapters_05_spectrum.html\n  doc · paper · 7 panels\n  code 1 warning (trim the block and run again, or keep it if every line matters):\n  L87 [code-length] the block has 49 lines; readers skim past long code. Pick the 10 to 40 lines that make the point\n  STE check is off",
+      "title": "第 5 课：卷积、频谱、窗函数与 STFT——听见声音的内部结构"
+    },
+    {
+      "page": "tutorial/chapters/06_features.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_chapters_06_features.html\n  doc · paper · 7 panels\n  code 1 warning (trim the block and run again, or keep it if every line matters):\n  L51 [code-length] the block has 46 lines; readers skim past long code. Pick the 10 to 40 lines that make the point\n  STE check is off",
+      "title": "第 6 课：Mel、MFCC、F0 和共振峰，给机器看什么特征"
+    },
+    {
+      "page": "tutorial/chapters/07_filters.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_chapters_07_filters.html\n  doc · paper · 7 panels\n  STE check is off",
+      "title": "07｜滤波器：让某些声音通过，让另一些声音变小"
+    },
+    {
+      "page": "tutorial/chapters/08_aec.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_chapters_08_aec.html\n  doc · paper · 7 panels\n  code 1 warning (trim the block and run again, or keep it if every line matters):\n  L112 [code-length] the block has 44 lines; readers skim past long code. Pick the 10 to 40 lines that make the point\n  STE check is off",
+      "title": "08｜AEC 回声消除：先学会预测，再学会相减"
+    },
+    {
+      "page": "tutorial/chapters/09_enhancement.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_chapters_09_enhancement.html\n  doc · paper · 7 panels\n  code 1 warning (trim the block and run again, or keep it if every line matters):\n  L98 [code-length] the block has 42 lines; readers skim past long code. Pick the 10 to 40 lines that make the point\n  STE check is off",
+      "title": "09｜让声音更干净、更稳定：ANS、AGC、VAD 与 KWS"
+    },
+    {
+      "page": "tutorial/chapters/10_arrays.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_chapters_10_arrays.html\n  doc · paper · 7 panels\n  STE check is off",
+      "title": "10｜麦克风阵列：先对齐，再增强，最后理解子空间"
+    },
+    {
+      "page": "tutorial/chapters/11_acoustics.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_chapters_11_acoustics.html\n  doc · paper · 7 panels\n  STE check is off",
+      "title": "11｜音频背后的物理：房间、测量、水声迁移与 ANC"
+    },
+    {
+      "page": "tutorial/chapters/12_pytorch.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_chapters_12_pytorch.html\n  doc · paper · 6 panels\n  STE check is off",
+      "title": "第 12 章｜第一次训练音频神经网络：从一个旋钮到频谱掩码"
+    },
+    {
+      "page": "tutorial/chapters/13_asr.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_chapters_13_asr.html\n  doc · paper · 7 panels\n  STE check is off",
+      "title": "第 13 章｜语音识别 ASR：机器怎样把长声音对齐成短文字"
+    },
+    {
+      "page": "tutorial/chapters/14_tts.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_chapters_14_tts.html\n  doc · paper · 7 panels\n  STE check is off",
+      "title": "第 14 章｜语音合成 TTS：从一句中文到有内容、有音色的声音"
+    },
+    {
+      "page": "tutorial/chapters/15_speaker.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_chapters_15_speaker.html\n  doc · paper · 7 panels\n  STE check is off",
+      "title": "第 15 章｜声纹、说话人日志与声音事件：谁在说，什么时候说，发生了什么"
+    },
+    {
+      "page": "tutorial/chapters/16_engineering.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_chapters_16_engineering.html\n  doc · paper · 7 panels\n  STE check is off",
+      "title": "第 16 章｜把算法变成能运行的音频系统：数据、缓存、时延和打断"
+    },
+    {
+      "page": "tutorial/chapters/17_project.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_chapters_17_project.html\n  doc · paper · 6 panels\n  STE check is off",
+      "title": "第17课：把学习过程做成一个能讲清楚的实习项目"
+    },
+    {
+      "page": "tutorial/chapters/18_glossary.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_chapters_18_glossary.html\n  doc · paper · 8 panels\n  STE check is off",
+      "title": "第18课：容易混淆的概念与闭卷自测"
+    },
+    {
+      "page": "tutorial/01_声音成为数组.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_01_声音成为数组.html\n  doc · paper · 3 panels\n  STE check is off",
+      "title": "练习本一：亲手制造一个声音数组"
+    },
+    {
+      "page": "tutorial/02_分贝不是音量旋钮.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_02_分贝不是音量旋钮.html\n  doc · paper · 3 panels\n  STE check is off",
+      "title": "练习本二：RMS、分贝与配噪"
+    },
+    {
+      "page": "tutorial/03_滤波和流式状态.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_03_滤波和流式状态.html\n  doc · paper · 3 panels\n  STE check is off",
+      "title": "练习本三：为什么分块后声音变了"
+    },
+    {
+      "page": "tutorial/04_手写AEC与CTC.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_04_手写AEC与CTC.html\n  doc · paper · 3 panels\n  STE check is off",
+      "title": "练习本四：两个算法如何从几行代码起步"
+    },
+    {
+      "page": "tutorial/results/章节代码实测输出.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_results_章节代码实测输出.html\n  doc · paper · 8 panels\n  STE check is off",
+      "title": "章节代码的实际运行输出"
+    },
+    {
+      "page": "index.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\index.html\n  doc · paper · 7 panels\n  STE check is off"
+    },
+    {
+      "page": "tutorial/index.html",
+      "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\website-v3\\pages\\tutorial_index.html\n  doc · paper · 1 panel\n  STE check is off"
+    }
+  ]
+}

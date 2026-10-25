@@ -1,0 +1,556 @@
+{
+  "date": "2026-10-26",
+  "scope": "全站发布HTML；保留原89页并新增三个项目、学习台和五段有声动画",
+  "published_html_pages": 101,
+  "archive_document_pages": 35,
+  "main_lesson_and_lab_pages": 24,
+  "video_pages_reviewed": 18,
+  "other_navigation_and_record_pages": [
+    "index.html",
+    "tutorial/01_声音成为数组.html",
+    "tutorial/02_分贝不是音量旋钮.html",
+    "tutorial/03_滤波和流式状态.html",
+    "tutorial/04_手写AEC与CTC.html",
+    "tutorial/experiments.html",
+    "tutorial/index.html",
+    "tutorial/projects/convtasnet/lesson.html",
+    "tutorial/projects/gtcrn/lesson.html",
+    "tutorial/projects/zipformer/lesson.html",
+    "tutorial/resources.html",
+    "tutorial/results/review_foundation_v4.html",
+    "tutorial/results/review_frontend_v4.html",
+    "tutorial/results/review_speech_v4.html",
+    "tutorial/results/章节代码实测输出.html",
+    "tutorial/study/plan.html",
+    "tutorial/study/projects.html",
+    "tutorial/study/videos.html",
+    "tutorial/study/visuals.html"
+  ],
+  "formulas_matched_one_to_one": 667,
+  "archive_formulas_matched": 237,
+  "display_formula_blocks": 96,
+  "checked_local_links": 1177,
+  "runtime_code_figures_audio_unchanged": true,
+  "archive_pre_blocks_unchanged": false,
+  "archive_code_logic_unchanged": true,
+  "comment_only_source_sync_pages": [
+    "deep/01.html",
+    "deep/02.html",
+    "deep/03.html",
+    "deep/04.html",
+    "deep/05.html",
+    "deep/06.html",
+    "deep/07.html",
+    "deep/08.html",
+    "deep/10.html",
+    "deep/14.html",
+    "deep/15.html"
+  ],
+  "videos_unchanged": true,
+  "new_voiced_videos": [
+    "tutorial/projects/convtasnet/video.html",
+    "tutorial/projects/gtcrn/video.html",
+    "tutorial/projects/zipformer/video.html",
+    "tutorial/study/videos/foundations.html",
+    "tutorial/study/videos/workflow.html"
+  ],
+  "original_pages_preserved": true,
+  "video_review": "18段字幕源稿逐篇检查；仅中文口述概念与算例，没有需要转换的符号公式。播放器文件原样保留。",
+  "errors": [],
+  "details": [
+    {
+      "page": "lessons/00.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "lessons/01.html",
+      "formulas": 18,
+      "display_blocks": 3
+    },
+    {
+      "page": "lessons/02.html",
+      "formulas": 8,
+      "display_blocks": 1
+    },
+    {
+      "page": "lessons/03.html",
+      "formulas": 5,
+      "display_blocks": 1
+    },
+    {
+      "page": "lessons/04.html",
+      "formulas": 24,
+      "display_blocks": 5
+    },
+    {
+      "page": "lessons/05.html",
+      "formulas": 6,
+      "display_blocks": 1
+    },
+    {
+      "page": "lessons/06.html",
+      "formulas": 4,
+      "display_blocks": 1
+    },
+    {
+      "page": "lessons/07.html",
+      "formulas": 17,
+      "display_blocks": 3
+    },
+    {
+      "page": "lessons/08.html",
+      "formulas": 2,
+      "display_blocks": 0
+    },
+    {
+      "page": "lessons/09.html",
+      "formulas": 6,
+      "display_blocks": 1
+    },
+    {
+      "page": "lessons/10.html",
+      "formulas": 1,
+      "display_blocks": 0
+    },
+    {
+      "page": "lessons/11.html",
+      "formulas": 2,
+      "display_blocks": 0
+    },
+    {
+      "page": "lessons/12.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "lessons/13.html",
+      "formulas": 1,
+      "display_blocks": 0
+    },
+    {
+      "page": "lessons/14.html",
+      "formulas": 6,
+      "display_blocks": 1
+    },
+    {
+      "page": "lessons/15.html",
+      "formulas": 5,
+      "display_blocks": 1
+    },
+    {
+      "page": "lessons/16.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "lessons/17.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "overview.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "deep/01.html",
+      "formulas": 12,
+      "display_blocks": 2
+    },
+    {
+      "page": "deep/02.html",
+      "formulas": 8,
+      "display_blocks": 1
+    },
+    {
+      "page": "deep/03.html",
+      "formulas": 22,
+      "display_blocks": 4
+    },
+    {
+      "page": "deep/04.html",
+      "formulas": 12,
+      "display_blocks": 1
+    },
+    {
+      "page": "deep/05.html",
+      "formulas": 2,
+      "display_blocks": 0
+    },
+    {
+      "page": "deep/06.html",
+      "formulas": 22,
+      "display_blocks": 3
+    },
+    {
+      "page": "deep/07.html",
+      "formulas": 8,
+      "display_blocks": 2
+    },
+    {
+      "page": "deep/08.html",
+      "formulas": 8,
+      "display_blocks": 1
+    },
+    {
+      "page": "deep/09.html",
+      "formulas": 2,
+      "display_blocks": 1
+    },
+    {
+      "page": "deep/10.html",
+      "formulas": 10,
+      "display_blocks": 1
+    },
+    {
+      "page": "deep/11.html",
+      "formulas": 3,
+      "display_blocks": 1
+    },
+    {
+      "page": "deep/12.html",
+      "formulas": 3,
+      "display_blocks": 0
+    },
+    {
+      "page": "deep/13.html",
+      "formulas": 3,
+      "display_blocks": 0
+    },
+    {
+      "page": "deep/14.html",
+      "formulas": 10,
+      "display_blocks": 1
+    },
+    {
+      "page": "deep/15.html",
+      "formulas": 7,
+      "display_blocks": 1
+    },
+    {
+      "page": "practical.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/chapters/00_start.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/chapters/01_sound.html",
+      "formulas": 18,
+      "display_blocks": 1
+    },
+    {
+      "page": "tutorial/chapters/02_digital.html",
+      "formulas": 18,
+      "display_blocks": 2
+    },
+    {
+      "page": "tutorial/chapters/03_decibels.html",
+      "formulas": 29,
+      "display_blocks": 3
+    },
+    {
+      "page": "tutorial/chapters/04_numpy.html",
+      "formulas": 8,
+      "display_blocks": 1
+    },
+    {
+      "page": "tutorial/chapters/05_spectrum.html",
+      "formulas": 22,
+      "display_blocks": 2
+    },
+    {
+      "page": "tutorial/chapters/06_features.html",
+      "formulas": 19,
+      "display_blocks": 2
+    },
+    {
+      "page": "tutorial/chapters/07_filters.html",
+      "formulas": 25,
+      "display_blocks": 4
+    },
+    {
+      "page": "tutorial/chapters/08_aec.html",
+      "formulas": 42,
+      "display_blocks": 3
+    },
+    {
+      "page": "tutorial/chapters/09_enhancement.html",
+      "formulas": 15,
+      "display_blocks": 2
+    },
+    {
+      "page": "tutorial/chapters/10_arrays.html",
+      "formulas": 41,
+      "display_blocks": 4
+    },
+    {
+      "page": "tutorial/chapters/11_acoustics.html",
+      "formulas": 13,
+      "display_blocks": 2
+    },
+    {
+      "page": "tutorial/chapters/12_pytorch.html",
+      "formulas": 32,
+      "display_blocks": 4
+    },
+    {
+      "page": "tutorial/chapters/13_asr.html",
+      "formulas": 17,
+      "display_blocks": 1
+    },
+    {
+      "page": "tutorial/chapters/14_tts.html",
+      "formulas": 16,
+      "display_blocks": 2
+    },
+    {
+      "page": "tutorial/chapters/15_speaker.html",
+      "formulas": 10,
+      "display_blocks": 1
+    },
+    {
+      "page": "tutorial/chapters/16_engineering.html",
+      "formulas": 10,
+      "display_blocks": 1
+    },
+    {
+      "page": "tutorial/chapters/17_project.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/chapters/18_glossary.html",
+      "formulas": 2,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/labs/01_sound.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/labs/02_levels.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/labs/03_streaming.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/labs/04_aec.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/labs/05_ctc.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "index.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/01_声音成为数组.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/02_分贝不是音量旋钮.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/03_滤波和流式状态.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/04_手写AEC与CTC.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/experiments.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/index.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/projects/convtasnet/lesson.html",
+      "formulas": 33,
+      "display_blocks": 9
+    },
+    {
+      "page": "tutorial/projects/gtcrn/lesson.html",
+      "formulas": 34,
+      "display_blocks": 9
+    },
+    {
+      "page": "tutorial/projects/zipformer/lesson.html",
+      "formulas": 19,
+      "display_blocks": 6
+    },
+    {
+      "page": "tutorial/resources.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/results/review_foundation_v4.html",
+      "formulas": 6,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/results/review_frontend_v4.html",
+      "formulas": 1,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/results/review_speech_v4.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/results/章节代码实测输出.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/study/plan.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/study/projects.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/study/videos.html",
+      "formulas": 0,
+      "display_blocks": 0
+    },
+    {
+      "page": "tutorial/study/visuals.html",
+      "formulas": 0,
+      "display_blocks": 0
+    }
+  ],
+  "inventory": [
+    "deep/01.html",
+    "deep/02.html",
+    "deep/03.html",
+    "deep/04.html",
+    "deep/05.html",
+    "deep/06.html",
+    "deep/07.html",
+    "deep/08.html",
+    "deep/09.html",
+    "deep/10.html",
+    "deep/11.html",
+    "deep/12.html",
+    "deep/13.html",
+    "deep/14.html",
+    "deep/15.html",
+    "index.html",
+    "lessons/00.html",
+    "lessons/01.html",
+    "lessons/02.html",
+    "lessons/03.html",
+    "lessons/04.html",
+    "lessons/05.html",
+    "lessons/06.html",
+    "lessons/07.html",
+    "lessons/08.html",
+    "lessons/09.html",
+    "lessons/10.html",
+    "lessons/11.html",
+    "lessons/12.html",
+    "lessons/13.html",
+    "lessons/14.html",
+    "lessons/15.html",
+    "lessons/16.html",
+    "lessons/17.html",
+    "overview.html",
+    "practical.html",
+    "tutorial/01_声音成为数组.html",
+    "tutorial/02_分贝不是音量旋钮.html",
+    "tutorial/03_滤波和流式状态.html",
+    "tutorial/04_手写AEC与CTC.html",
+    "tutorial/chapters/00_start.html",
+    "tutorial/chapters/01_sound.html",
+    "tutorial/chapters/02_digital.html",
+    "tutorial/chapters/03_decibels.html",
+    "tutorial/chapters/04_numpy.html",
+    "tutorial/chapters/05_spectrum.html",
+    "tutorial/chapters/06_features.html",
+    "tutorial/chapters/07_filters.html",
+    "tutorial/chapters/08_aec.html",
+    "tutorial/chapters/09_enhancement.html",
+    "tutorial/chapters/10_arrays.html",
+    "tutorial/chapters/11_acoustics.html",
+    "tutorial/chapters/12_pytorch.html",
+    "tutorial/chapters/13_asr.html",
+    "tutorial/chapters/14_tts.html",
+    "tutorial/chapters/15_speaker.html",
+    "tutorial/chapters/16_engineering.html",
+    "tutorial/chapters/17_project.html",
+    "tutorial/chapters/18_glossary.html",
+    "tutorial/experiments.html",
+    "tutorial/index.html",
+    "tutorial/labs/01_sound.html",
+    "tutorial/labs/02_levels.html",
+    "tutorial/labs/03_streaming.html",
+    "tutorial/labs/04_aec.html",
+    "tutorial/labs/05_ctc.html",
+    "tutorial/projects/convtasnet/lesson.html",
+    "tutorial/projects/convtasnet/video.html",
+    "tutorial/projects/gtcrn/lesson.html",
+    "tutorial/projects/gtcrn/video.html",
+    "tutorial/projects/zipformer/lesson.html",
+    "tutorial/projects/zipformer/video.html",
+    "tutorial/resources.html",
+    "tutorial/results/review_foundation_v4.html",
+    "tutorial/results/review_frontend_v4.html",
+    "tutorial/results/review_speech_v4.html",
+    "tutorial/results/章节代码实测输出.html",
+    "tutorial/study/plan.html",
+    "tutorial/study/projects.html",
+    "tutorial/study/videos.html",
+    "tutorial/study/videos/foundations.html",
+    "tutorial/study/videos/workflow.html",
+    "tutorial/study/visuals.html",
+    "videos/00.html",
+    "videos/01.html",
+    "videos/02.html",
+    "videos/03.html",
+    "videos/04.html",
+    "videos/05.html",
+    "videos/06.html",
+    "videos/07.html",
+    "videos/08.html",
+    "videos/09.html",
+    "videos/10.html",
+    "videos/11.html",
+    "videos/12.html",
+    "videos/13.html",
+    "videos/14.html",
+    "videos/15.html",
+    "videos/16.html",
+    "videos/17.html"
+  ],
+  "limits": "检查源文、数学结构、MathML和链接；不冒充浏览器逐屏视觉验收。旧实验输出及历史日志保留原貌。"
+}

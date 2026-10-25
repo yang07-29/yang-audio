@@ -1,0 +1,420 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-10-26",
+  "repository": "yang07-29/gtcrn-headset-enhancement",
+  "repository_url": "https://github.com/yang07-29/gtcrn-headset-enhancement",
+  "visibility": "private",
+  "ref": "main",
+  "commit": "688d5ca4407e7ea941736ede1bf0b5d767dbc94c",
+  "upstream_model_commit": "502ebfab64da7c4a9af78dcb9c6ceef1ebb01c73",
+  "acquisition": "GitHub read-only connector; branch metadata, recursive file tree and fixed-commit fetch_file. No remote writes, model execution or retraining.",
+  "inspected_files": [
+    {
+      "path": "README.md",
+      "blob_sha": "bf736eb7dcc7c005363b09de7efbff27aa776403",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/README.md",
+      "review": "Read source or report"
+    },
+    {
+      "path": "docs/DELIVERY.md",
+      "blob_sha": "dcabdbb422ce5f1082e0e1b3f5ff754b34d0f417",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/docs/DELIVERY.md",
+      "review": "Read source or report"
+    },
+    {
+      "path": "replications/README.md",
+      "blob_sha": "04ea3ce65bbf957ae9fb49b46aa7c5e34cf2b3d3",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/replications/README.md",
+      "review": "Read source or report"
+    },
+    {
+      "path": "robustness/README.md",
+      "blob_sha": "a917fb8905e78937060f0a057d755c6e75b22450",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/robustness/README.md",
+      "review": "Read source or report"
+    },
+    {
+      "path": "src/gtcrn_project/inference.py",
+      "blob_sha": "15ba522f47e421d4a81c0a232eda9d5d04ebc2c4",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/src/gtcrn_project/inference.py",
+      "review": "Read source or report"
+    },
+    {
+      "path": "src/gtcrn_project/streaming.py",
+      "blob_sha": "fe2addd8861ae1015ecfeee1131344c2cde173b9",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/src/gtcrn_project/streaming.py",
+      "review": "Read source or report"
+    },
+    {
+      "path": "src/gtcrn_project/audio.py",
+      "blob_sha": "924b1268647cdf72d7714e8fb28f5eb2f9ed0b80",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/src/gtcrn_project/audio.py",
+      "review": "Read source or report"
+    },
+    {
+      "path": "src/gtcrn_project/objective.py",
+      "blob_sha": "01505002f51c5c0e53808afd3bd4879e55bf86d4",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/src/gtcrn_project/objective.py",
+      "review": "Read source or report"
+    },
+    {
+      "path": "src/gtcrn_project/metrics.py",
+      "blob_sha": "ff39e8c4471811b3f203a915304c6c031450de3b",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/src/gtcrn_project/metrics.py",
+      "review": "Read source or report"
+    },
+    {
+      "path": "configs/branch_protocol_seed17.json",
+      "blob_sha": "71640f31873c4df593410573ea1410dd69b7be06",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/configs/branch_protocol_seed17.json",
+      "review": "Read source or report"
+    },
+    {
+      "path": "robustness/results/external_noise_v1/结果解读.md",
+      "blob_sha": "f2badc0c10225f18307652e4f4736550e3239691",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/robustness/results/external_noise_v1/结果解读.md",
+      "review": "Read source or report"
+    },
+    {
+      "path": "vendor/gtcrn/gtcrn.py",
+      "blob_sha": "2cdea531e9c726c2e5c8a69400be17b0a5adcb9d",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/vendor/gtcrn/gtcrn.py",
+      "review": "Read source or report"
+    },
+    {
+      "path": "src/gtcrn_project/trainer.py",
+      "blob_sha": "c78077f69564d7c14ab90fd26c09ce3de6ec592d",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/src/gtcrn_project/trainer.py",
+      "review": "Read source or report"
+    },
+    {
+      "path": "src/gtcrn_project/stream_model.py",
+      "blob_sha": "49a5e12f909d52971b90e8154ea8921abfea3d17",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/src/gtcrn_project/stream_model.py",
+      "review": "Read source or report"
+    },
+    {
+      "path": "portable/gtcrn_portable/engine.py",
+      "blob_sha": "69d90cc798fb34c5c643550f0f61ffcfa694bd5e",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/portable/gtcrn_portable/engine.py",
+      "review": "Read source or report"
+    },
+    {
+      "path": "portable/README.md",
+      "blob_sha": "79f0b74502d289a5b03f368a119036d07b20dd45",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/portable/README.md",
+      "review": "Read source or report"
+    },
+    {
+      "path": "reports/s4_final_acceptance.json",
+      "blob_sha": "6fb8642eb623e383144c8c3691e6a81bac4deccb",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/reports/s4_final_acceptance.json",
+      "review": "Read source or report"
+    },
+    {
+      "path": "replications/reports/final_acceptance_v1.json",
+      "blob_sha": "57c0cf20252dff9b2ccd0562f41a18100f17c302",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/replications/reports/final_acceptance_v1.json",
+      "review": "Read source or report"
+    },
+    {
+      "path": "robustness/results/external_noise_v1/acceptance.json",
+      "blob_sha": "97f8a7928d276c0e634ffe47b18139aa6567a9b1",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/robustness/results/external_noise_v1/acceptance.json",
+      "review": "Read source or report"
+    },
+    {
+      "path": "robustness/results/external_noise_v1/summary.json",
+      "blob_sha": "6f7212e0bc028f53e56cbfe8aac16a86a522e448",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/robustness/results/external_noise_v1/summary.json",
+      "review": "Fetched and programmatically selected cited comparison rows; did not independently re-score audio."
+    },
+    {
+      "path": "replications/reports/three_seed_results.csv",
+      "blob_sha": "631ac72833c7f6cc779ddb20a0d6e2be64e93477",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/replications/reports/three_seed_results.csv",
+      "review": "Fetched and programmatically selected cited comparison rows; did not independently re-score audio."
+    },
+    {
+      "path": "portable/reports/portable_acceptance_v1.json",
+      "blob_sha": "d139b631ae85d3d43c9c648d09b894c9c70d06dd",
+      "url": "https://github.com/yang07-29/gtcrn-headset-enhancement/blob/688d5ca4407e7ea941736ede1bf0b5d767dbc94c/portable/reports/portable_acceptance_v1.json",
+      "review": "Read source or report"
+    }
+  ],
+  "confirmed": [
+    "Front end: 16000 Hz mono, FFT512/hop256, periodic sqrt-Hann, centered STFT; reflect padding when length>256, constant padding otherwise.",
+    "Offline input shape [B,L], spectral shape [B,257,T,2], last dimension is real/imag; explicit inverse length.",
+    "GTCRN uses magnitude/real/imag features, ERB(65,64), SFE(3,1), encoder, two DPGRNN, decoder, complex mask.",
+    "DPGRNN intra-frequency GRNN is bidirectional; inter-time GRNN is unidirectional. Temporal conv pad is on left.",
+    "ERB high-band expansion uses fixed transpose weights, not an exact inverse.",
+    "Official default Enhancer checkpoint is E2; repository also includes completed from-scratch E3 and controlled E3c/E4/E5 continuation.",
+    "E4/E5 share input/target/order; only continuation waveform loss coefficient differs. All branches have same 5000-step budget.",
+    "Evaluation SI-SDR definition and training waveform loss differ (demeaning and factor10); silence/invalid cases explicitly handled.",
+    "Portable runtime uses NumPy/ONNX Runtime/SoundFile, no Torch import in inference engine. Validation separately imports Torch for equivalence.",
+    "New-source experiment reports 12 original recordings, 384 mixture cells and 8 clean controls; no retraining and only seed17.",
+    "Engineering artifacts and completed runs are not proof of the learner's independent skill."
+  ],
+  "results": {
+    "three_seed_paired_rows": [
+      {
+        "suite": "official_full",
+        "kind": "paired",
+        "method_or_comparison": "E4-E3c",
+        "group": "all",
+        "metric": "si_sdr_db",
+        "seed17": "-0.29308465488623764",
+        "seed29": "-0.1829712545570659",
+        "seed43": "-0.23971162341135516",
+        "mean": "-0.23858917761821957",
+        "sample_sd_ddof1": "0.05506528077138993",
+        "common_valid_examples": "824",
+        "group_examples": "824",
+        "coverage_status": "sufficient_for_descriptive_summary"
+      },
+      {
+        "suite": "official_full",
+        "kind": "paired",
+        "method_or_comparison": "E4-E3c",
+        "group": "all",
+        "metric": "stoi",
+        "seed17": "-0.00400716180699218",
+        "seed29": "-0.0021316826851268122",
+        "seed43": "-0.0020167897066524594",
+        "mean": "-0.0027185447329238174",
+        "sample_sd_ddof1": "0.0011174527156936254",
+        "common_valid_examples": "824",
+        "group_examples": "824",
+        "coverage_status": "sufficient_for_descriptive_summary"
+      },
+      {
+        "suite": "clean_only",
+        "kind": "paired",
+        "method_or_comparison": "E4-E3c",
+        "group": "all",
+        "metric": "si_sdr_db",
+        "seed17": "2.7025093576914236",
+        "seed29": "3.189179773357623",
+        "seed43": "3.1335423202531714",
+        "mean": "3.008410483767406",
+        "sample_sd_ddof1": "0.26637474682841666",
+        "common_valid_examples": "824",
+        "group_examples": "824",
+        "coverage_status": "sufficient_for_descriptive_summary"
+      },
+      {
+        "suite": "clean_only",
+        "kind": "paired",
+        "method_or_comparison": "E4-E3c",
+        "group": "all",
+        "metric": "stoi",
+        "seed17": "-0.004861460464709012",
+        "seed29": "-0.0039354293314310534",
+        "seed43": "-0.0013561596272888014",
+        "mean": "-0.003384349807809622",
+        "sample_sd_ddof1": "0.0018164663418904368",
+        "common_valid_examples": "824",
+        "group_examples": "824",
+        "coverage_status": "sufficient_for_descriptive_summary"
+      },
+      {
+        "suite": "controlled_target",
+        "kind": "paired",
+        "method_or_comparison": "E4-E3c",
+        "group": "all",
+        "metric": "si_sdr_db",
+        "seed17": "6.641419928187817",
+        "seed29": "5.888953468367189",
+        "seed43": "5.898486599204599",
+        "mean": "6.142953331919869",
+        "sample_sd_ddof1": "0.43171105017373185",
+        "common_valid_examples": "6592",
+        "group_examples": "6592",
+        "coverage_status": "sufficient_for_descriptive_summary"
+      },
+      {
+        "suite": "controlled_target",
+        "kind": "paired",
+        "method_or_comparison": "E4-E3c",
+        "group": "all",
+        "metric": "stoi",
+        "seed17": "0.05816170366416731",
+        "seed29": "0.05557942911235873",
+        "seed43": "0.053379561824532976",
+        "mean": "0.055706898200353",
+        "sample_sd_ddof1": "0.0023936178516820255",
+        "common_valid_examples": "6592",
+        "group_examples": "6592",
+        "coverage_status": "sufficient_for_descriptive_summary"
+      }
+    ],
+    "external_noise_paired_rows": [
+      {
+        "group": "all",
+        "comparison": "E4_a1-E3c",
+        "metric": "si_sdr_db",
+        "source_balanced_mean_difference": 2.409010762895568,
+        "source_means_sample_sd": 2.8919173242856937,
+        "source_count": 12,
+        "sources_improved": 8,
+        "sources_worse": 4,
+        "mixed_cells": 384
+      },
+      {
+        "group": "all",
+        "comparison": "E4_a1-E3c",
+        "metric": "stoi",
+        "source_balanced_mean_difference": 0.03187447597095685,
+        "source_means_sample_sd": 0.05130955317387702,
+        "source_count": 12,
+        "sources_improved": 5,
+        "sources_worse": 7,
+        "mixed_cells": 384
+      },
+      {
+        "group": "category:door_wood_knock",
+        "comparison": "E4_a1-E3c",
+        "metric": "si_sdr_db",
+        "source_balanced_mean_difference": 2.983764419775041,
+        "source_means_sample_sd": 1.8110576236790439,
+        "source_count": 3,
+        "sources_improved": 3,
+        "sources_worse": 0,
+        "mixed_cells": 96
+      },
+      {
+        "group": "category:door_wood_knock",
+        "comparison": "E4_a1-E3c",
+        "metric": "stoi",
+        "source_balanced_mean_difference": 0.02879114230621756,
+        "source_means_sample_sd": 0.027933513911800538,
+        "source_count": 3,
+        "sources_improved": 2,
+        "sources_worse": 1,
+        "mixed_cells": 96
+      },
+      {
+        "group": "category:engine",
+        "comparison": "E4_a1-E3c",
+        "metric": "si_sdr_db",
+        "source_balanced_mean_difference": 0.3177263751393115,
+        "source_means_sample_sd": 0.8068879930378706,
+        "source_count": 3,
+        "sources_improved": 1,
+        "sources_worse": 2,
+        "mixed_cells": 96
+      },
+      {
+        "group": "category:engine",
+        "comparison": "E4_a1-E3c",
+        "metric": "stoi",
+        "source_balanced_mean_difference": -0.003142876750540836,
+        "source_means_sample_sd": 0.0009956784851485399,
+        "source_count": 3,
+        "sources_improved": 0,
+        "sources_worse": 3,
+        "mixed_cells": 96
+      },
+      {
+        "group": "category:keyboard_typing",
+        "comparison": "E4_a1-E3c",
+        "metric": "si_sdr_db",
+        "source_balanced_mean_difference": 6.337730949680264,
+        "source_means_sample_sd": 1.753083937990584,
+        "source_count": 3,
+        "sources_improved": 3,
+        "sources_worse": 0,
+        "mixed_cells": 96
+      },
+      {
+        "group": "category:keyboard_typing",
+        "comparison": "E4_a1-E3c",
+        "metric": "stoi",
+        "source_balanced_mean_difference": 0.10981096599050517,
+        "source_means_sample_sd": 0.018783099956884087,
+        "source_count": 3,
+        "sources_improved": 3,
+        "sources_worse": 0,
+        "mixed_cells": 96
+      },
+      {
+        "group": "category:wind",
+        "comparison": "E4_a1-E3c",
+        "metric": "si_sdr_db",
+        "source_balanced_mean_difference": -0.003178693012343562,
+        "source_means_sample_sd": 0.239274034982574,
+        "source_count": 3,
+        "sources_improved": 1,
+        "sources_worse": 2,
+        "mixed_cells": 96
+      },
+      {
+        "group": "category:wind",
+        "comparison": "E4_a1-E3c",
+        "metric": "stoi",
+        "source_balanced_mean_difference": -0.007961327662354505,
+        "source_means_sample_sd": 0.0007378619017074817,
+        "source_count": 3,
+        "sources_improved": 0,
+        "sources_worse": 3,
+        "mixed_cells": 96
+      }
+    ],
+    "portable": {
+      "numerical_case_count": 192,
+      "numerical_maxabs": 0.000005133450031280518,
+      "benchmark": {
+        "audio_seconds": 10,
+        "calls": 625,
+        "warmup_calls": 200,
+        "threads": 1,
+        "provider": "CPUExecutionProvider",
+        "precision": "float32",
+        "mean_ms": 0.8637622397392988,
+        "p95_ms": 1.203579874709248,
+        "p99_ms": 1.5370240621268747,
+        "max_ms": 2.1087999921292067,
+        "calls_over_16ms": 0,
+        "mean_rtf": 0.053985139983706174,
+        "flush_ms": 0.7829000242054462,
+        "wall_seconds_including_generation": 0.5462481998838484,
+        "first_output_received_samples": 512,
+        "output_samples": 160000,
+        "scope": "Short NumPy+ORT push-chain microbenchmark in existing reference environment, no file I/O/model initialization, no RSS claim; not a replacement for original 30-minute test"
+      },
+      "model_sha256": "356bb3c94765b354138a40c9c09e0de7d39684c76e2b43a706c509e8ecb5ab03",
+      "checkpoint_sha256": "c4475ed04a3678546bb88cb70434ca6c72179844521116386196c3e875b3a46b"
+    }
+  },
+  "unknown_or_not_claimed": [
+    "This learning-site update did not run repository model inference, training, benchmarks or project tests; project scores are repository evidence. A separate synthetic NumPy teaching experiment was executed and is labelled separately.",
+    "No personal mastery, authorship contribution percentage or independent implementation ability established.",
+    "No real soundcard closed-loop, headphone-chip deployment or physical end-to-end latency established.",
+    "No statistical significance claim: three training seeds and limited noise-source counts.",
+    "Official E2 training overlap with evaluation speakers is unknown.",
+    "New noise source evaluation reuses four previously tested utterances, not a new speech blind test.",
+    "Environmental wind recordings are not proof of microphone-port wind turbulence robustness.",
+    "Enhancement improvement does not establish lower downstream ASR CER/WER.",
+    "Code blocks in lesson.md are explicitly labelled teaching rewrites, not unmodified repository source or newly executed results."
+  ],
+  "teaching_experiment": {
+    "script": "mini_lab.py",
+    "result": "mini_lab_result.json",
+    "figures": ["complex_mask_demo.png", "reconstruction_gain_demo.png"],
+    "scope": "Actual local NumPy calculations on synthetic harmonics and noise, not GTCRN inference or speech-quality evidence.",
+    "checks": ["complex multiplication", "identity STFT length and reconstruction", "SI-SDR gain invariance"],
+    "visual_review": "Both generated PNG files inspected with view_image; Chinese text, legends and axes visible without clipping.",
+    "run_command": "C:/Users/yang/anaconda3/python.exe tutorial/projects/gtcrn/mini_lab.py"
+  },
+  "deliverables": [
+    "lesson.md",
+    "video.md",
+    "evidence.json"
+  ],
+  "video": {
+    "scenes": 6,
+    "language": "zh",
+    "status": "narration_source_only; parent renderer produces player/audio",
+    "math_in_diagrams": false
+  }
+}

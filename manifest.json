@@ -1,0 +1,146 @@
+[
+  {
+    "id": "00",
+    "title": "00 招聘要求怎样变成学习任务",
+    "page": "lessons/00.html",
+    "video": "videos/00.html",
+    "source": "src\\00_jobs.md",
+    "render_log": "✓ C:\\Users\\yang\\.answer-me-with-html\\videos\\00-招聘究竟在考什么-20261022-175945.html\n  video · 3b1b · 3 scenes · 10 beats · 60.9s · voice: none (captions only)\n  STE check is off\n"
+  },
+  {
+    "id": "01",
+    "title": "01 数字音频、分贝与信噪比",
+    "page": "lessons/01.html",
+    "video": "videos/01.html",
+    "source": "src\\01_basics.md",
+    "render_log": "✓ C:\\Users\\yang\\.answer-me-with-html\\videos\\01-声音数组里的数字代表什么-20261022-175945.html\n  video · 3b1b · 3 scenes · 9 beats · 55.7s · voice: none (captions only)\n  STE check is off\n"
+  },
+  {
+    "id": "02",
+    "title": "02 傅里叶变换、声谱图、滤波与卷积",
+    "page": "lessons/02.html",
+    "video": "videos/02.html",
+    "source": "src\\02_dsp.md",
+    "render_log": "✓ C:\\Users\\yang\\.answer-me-with-html\\videos\\02-怎样读懂一张声谱图-20261022-175946.html\n  video · 3b1b · 3 scenes · 9 beats · 55.2s · voice: none (captions only)\n  STE check is off\n"
+  },
+  {
+    "id": "03",
+    "title": "03 音频特征与深度学习基本功",
+    "page": "lessons/03.html",
+    "video": "videos/03.html",
+    "source": "src\\03_dl.md",
+    "render_log": "✓ C:\\Users\\yang\\.answer-me-with-html\\videos\\03-神经网络怎样学习音频-20261022-175946.html\n  video · 3b1b · 3 scenes · 9 beats · 50.7s · voice: none (captions only)\n  STE check is off\n"
+  },
+  {
+    "id": "04",
+    "title": "04 3A 第一部分：回声消除 AEC",
+    "page": "lessons/04.html",
+    "video": "videos/04.html",
+    "source": "src\\04_aec.md",
+    "render_log": "✓ C:\\Users\\yang\\.answer-me-with-html\\videos\\04-回声消除为什么需要另一条音轨-20261022-175946.html\n  video · 3b1b · 3 scenes · 9 beats · 54.0s · voice: none (captions only)\n  STE check is off\n"
+  },
+  {
+    "id": "05",
+    "title": "05 3A 第二部分：噪声抑制与语音增强",
+    "page": "lessons/05.html",
+    "video": "videos/05.html",
+    "source": "src\\05_ans.md",
+    "render_log": "✓ C:\\Users\\yang\\.answer-me-with-html\\videos\\05-降噪不是把声音全部变小-20261022-175947.html\n  video · 3b1b · 3 scenes · 9 beats · 53.8s · voice: none (captions only)\n  STE check is off\n"
+  },
+  {
+    "id": "06",
+    "title": "06 3A 第三部分：自动增益、语音活动与唤醒",
+    "page": "lessons/06.html",
+    "video": "videos/06.html",
+    "source": "src\\06_agc_vad.md",
+    "render_log": "✓ C:\\Users\\yang\\.answer-me-with-html\\videos\\06-音量-语音活动与唤醒不是同一任务-20261022-175947.html\n  video · 3b1b · 3 scenes · 9 beats · 54.0s · voice: none (captions only)\n  STE check is off\n"
+  },
+  {
+    "id": "07",
+    "title": "07 麦克风阵列、声源定位与波束形成",
+    "page": "lessons/07.html",
+    "video": "videos/07.html",
+    "source": "src\\07_array.md",
+    "render_log": "✓ C:\\Users\\yang\\.answer-me-with-html\\videos\\07-多个麦克风为什么能听出方向-20261022-175948.html\n  video · 3b1b · 3 scenes · 10 beats · 55.3s · voice: none (captions only)\n  STE check is off\n"
+  },
+  {
+    "id": "08",
+    "title": "08 去混响、语音分离与目标说话人提取",
+    "page": "lessons/08.html",
+    "video": "videos/08.html",
+    "source": "src\\08_separation.md",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\videos\\08.html\n  video · 3b1b · 3 scenes · 9 beats · 51.4s · voice: none (captions only)\n  STE check is off\n"
+  },
+  {
+    "id": "09",
+    "title": "09 ASR 原理：从声学特征到文字序列",
+    "page": "lessons/09.html",
+    "video": "videos/09.html",
+    "source": "src\\09_asr_theory.md",
+    "render_log": "✓ C:\\Users\\yang\\.answer-me-with-html\\videos\\09-声音帧怎样变成文字-20261022-175948.html\n  video · 3b1b · 3 scenes · 9 beats · 51.4s · voice: none (captions only)\n  STE check is off\n"
+  },
+  {
+    "id": "10",
+    "title": "10 ASR 实战：数据、微调、热词与流式识别",
+    "page": "lessons/10.html",
+    "video": "videos/10.html",
+    "source": "src\\10_asr_practice.md",
+    "render_log": "✓ C:\\Users\\yang\\.answer-me-with-html\\videos\\10-怎样把识别演示变成简历项目-20261022-175949.html\n  video · 3b1b · 3 scenes · 9 beats · 52.8s · voice: none (captions only)\n  STE check is off\n"
+  },
+  {
+    "id": "11",
+    "title": "11 TTS 基础：让文字读对、读自然",
+    "page": "lessons/11.html",
+    "video": "videos/11.html",
+    "source": "src\\11_tts_basics.md",
+    "render_log": "✓ C:\\Users\\yang\\.answer-me-with-html\\videos\\11-文字怎样变成自然的声音-20261022-175949.html\n  video · 3b1b · 3 scenes · 9 beats · 55.2s · voice: none (captions only)\n  STE check is off\n"
+  },
+  {
+    "id": "12",
+    "title": "12 神经 TTS、音色克隆与可控生成",
+    "page": "lessons/12.html",
+    "video": "videos/12.html",
+    "source": "src\\12_tts_neural.md",
+    "render_log": "✓ C:\\Users\\yang\\.answer-me-with-html\\videos\\12-语音克隆和生成模型怎样配合-20261022-175949.html\n  video · 3b1b · 3 scenes · 9 beats · 52.4s · voice: none (captions only)\n  STE check is off\n"
+  },
+  {
+    "id": "13",
+    "title": "13 声纹、说话人日志、情感与声音事件",
+    "page": "lessons/13.html",
+    "video": "videos/13.html",
+    "source": "src\\13_speaker_event.md",
+    "render_log": "✓ C:\\Users\\yang\\.answer-me-with-html\\videos\\13-识别谁在说话-不等于识别说了什么-20261022-175950.html\n  video · 3b1b · 3 scenes · 9 beats · 49.3s · voice: none (captions only)\n  STE check is off\n"
+  },
+  {
+    "id": "14",
+    "title": "14 音频编码、语音大模型与全双工交互",
+    "page": "lessons/14.html",
+    "video": "videos/14.html",
+    "source": "src\\14_speechllm.md",
+    "render_log": "✓ C:\\Users\\yang\\.answer-me-with-html\\videos\\14-语音大模型把哪些模块连在一起-20261022-175950.html\n  video · 3b1b · 3 scenes · 9 beats · 51.2s · voice: none (captions only)\n  STE check is off\n"
+  },
+  {
+    "id": "15",
+    "title": "15 工程部署：流式、C++、量化与性能评测",
+    "page": "lessons/15.html",
+    "video": "videos/15.html",
+    "source": "src\\15_engineering.md",
+    "render_log": "✓ C:\\Users\\yang\\.answer-me-with-html\\videos\\15-算得快和响应快有什么不同-20261022-175950.html\n  video · 3b1b · 3 scenes · 9 beats · 53.6s · voice: none (captions only)\n  STE check is off\n"
+  },
+  {
+    "id": "16",
+    "title": "16 把课程变成实习项目与面试能力",
+    "page": "lessons/16.html",
+    "video": "videos/16.html",
+    "source": "src\\16_projects.md",
+    "render_log": "✓ C:\\Users\\yang\\.answer-me-with-html\\videos\\16-怎样把学过的知识写成可信项目-20261022-175951.html\n  video · 3b1b · 3 scenes · 9 beats · 54.0s · voice: none (captions only)\n  STE check is off\n"
+  },
+  {
+    "id": "17",
+    "title": "17 常见音频补充：ANC、音效、空间音频与传输",
+    "page": "lessons/17.html",
+    "video": "videos/17.html",
+    "source": "src\\17_common.md",
+    "render_log": "✓ C:\\Users\\yang\\.answer-me-with-html\\videos\\17-耳机-音效与通话还有哪些常见技能-20261022-175951.html\n  video · 3b1b · 3 scenes · 9 beats · 50.7s · voice: none (captions only)\n  STE check is off\n"
+  }
+]

@@ -1,0 +1,269 @@
+{
+  "date": "2026-10-23",
+  "change": "正文纯文本数学公式转换为离线可读的原生MathML",
+  "chapters": 19,
+  "math_formulas": 337,
+  "display_math_blocks": 35,
+  "code_unchanged": true,
+  "figures_unchanged": true,
+  "nlms_fraction_and_subscripts": true,
+  "non_program_text_formula_changes": {
+    "12_pytorch": {
+      "before": "637431fd43703fc20c9aeb80a48e5ca2477d235b4045f6973779d4f5081dd561",
+      "after": null,
+      "reason": "三行链式求导text说明改成两个独立数学公式"
+    },
+    "15_speaker": {
+      "before": "096ca0f9791c6366fce0a9667576bc7753487db941f353dede02fc6446709106",
+      "after": "656f8777aa3c311b471c79834012e24d498eefd53b312191815ff7a0806e44b2",
+      "reason": "保留文本时间线，仅将末尾DER算式迁出成独立分式"
+    }
+  },
+  "errors": [],
+  "details": {
+    "00_start": {
+      "code_sha256": [
+        "16876b9dce92152dc708c1c407d83a392858157aedd4f373e203c11cb67876db",
+        "2468cb148ba267e3b65322b303e2b09171e8570ce9518f2be4ab5ef04580c9f1"
+      ],
+      "image_sha256": [
+        "09aa068cc8cca59c71d5f78d6c65db073803c8fe83c6324f46d5cb544b55492d"
+      ],
+      "math_formulas": 0,
+      "display_math_blocks": 0,
+      "math_errors": 0
+    },
+    "01_sound": {
+      "code_sha256": [
+        "cb5e77280f2611efa8a6aef47c4f66899b27142f807d63c63212ae0bfd13e57e"
+      ],
+      "image_sha256": [
+        "3e5d82fe7274804abfeba5062c5ac7f2e1c3910ea85332262a7d33a871d0c4cc",
+        "09aa068cc8cca59c71d5f78d6c65db073803c8fe83c6324f46d5cb544b55492d"
+      ],
+      "math_formulas": 18,
+      "display_math_blocks": 1,
+      "math_errors": 0
+    },
+    "02_digital": {
+      "code_sha256": [
+        "0a1bc1d92de32fe5b0beb887658127f5224943491ca04bd70fe846632c4e18ee",
+        "6d25717c465ebe51fdbb0fc9561c858c40518911980818a7a708918e295248b4"
+      ],
+      "image_sha256": [
+        "74c9027edc75579b6bad13eb802d56aa0288ace77fa94f0798068a38d834cef2",
+        "26c4fe53fb656053c054ae545c4bdf3ad9fd7fed23aa2c1ecb0ef69ad2d5fc67",
+        "46d79fdb9f2266941ac8c954a2caecacb9f7435d050c19cfac8eaa06cd09ed65"
+      ],
+      "math_formulas": 18,
+      "display_math_blocks": 2,
+      "math_errors": 0
+    },
+    "03_decibels": {
+      "code_sha256": [
+        "8bca8f10b6c012eb2e7e7bd65c269c5accb4af88d1ba58d968dc85d549947108"
+      ],
+      "image_sha256": [
+        "008f29764215e3473f3ae4ad9bd32bfcf31d80f5e2b55eecdf9ab984652bd988",
+        "bd93cdccaee46778f3953c23b236ff0ec92c235af1810eb0888c62832d4c4c7f"
+      ],
+      "math_formulas": 29,
+      "display_math_blocks": 3,
+      "math_errors": 0
+    },
+    "04_numpy": {
+      "code_sha256": [
+        "634f22333af133103f04091b9eb16b84956aca3bdc96666782986fdcad2f33c5",
+        "bed44bd996531c1e7c188983171e00e9fe72b76737fd5b07b7456e403327284c",
+        "579f3c84048902bbce5de7ab99acb8e6352a0e419ebf08040f613882bb768706"
+      ],
+      "image_sha256": [
+        "da7987bc03b00d8efb8b2ea4e42b1c032295f84729c467204871bc0c1ab3aca7"
+      ],
+      "math_formulas": 8,
+      "display_math_blocks": 1,
+      "math_errors": 0
+    },
+    "05_spectrum": {
+      "code_sha256": [
+        "0b2ed08d5bf5789a06fde3a4d07c2cffeb019a4b329300a0d8c52155c0c3b626",
+        "c387d7e77d5cc84a68b60590da2f0d4faa6484547ff82d135fc750f7a8eae181"
+      ],
+      "image_sha256": [
+        "8ed988f00d1e948ab8f05463a9fdef60aee712db7ffcae3f263306bcc0adbe73",
+        "d738548c8f91e910986f3f5aada9ef739cd7a494d3fd7936b9bb572100fd12bd",
+        "d3d41aa6bf0539c5f9e2a0ecc8bd739f2f7d61c479f9937ded3a63211226e760"
+      ],
+      "math_formulas": 22,
+      "display_math_blocks": 2,
+      "math_errors": 0
+    },
+    "06_features": {
+      "code_sha256": [
+        "83fc71c0c3794d53406f165d788f2ed06d5f27e9b08eb9be9ec58d6e1f230e2c"
+      ],
+      "image_sha256": [
+        "ee2616913846ed7b3cd01f210735848796833bbed10a8bb65a6460c85deece77",
+        "09971b515edd1f7e7f418b7b26053aeaebb3f9359a34dc09db51bb065b8940e7"
+      ],
+      "math_formulas": 19,
+      "display_math_blocks": 2,
+      "math_errors": 0
+    },
+    "07_filters": {
+      "code_sha256": [
+        "43ccf8a9ce60bc1f76f26469af480b95a46f15740cfb1ca2c1354caff1f2b108",
+        "b1fcfb213890fd4b679de24d82d7593ec740a2b015fac04584d21fb5f93a2c51"
+      ],
+      "image_sha256": [
+        "79dd4e210238f9820c7dacdc74fcd8a782f0682abb528493174d89479a6d70a0",
+        "8ed988f00d1e948ab8f05463a9fdef60aee712db7ffcae3f263306bcc0adbe73",
+        "3a3b39a1a6f697511d274e1240b0a84ccacbfd22ecc44464597fd4d346bbb042"
+      ],
+      "math_formulas": 25,
+      "display_math_blocks": 4,
+      "math_errors": 0
+    },
+    "08_aec": {
+      "code_sha256": [
+        "839d57f44fc5fbdeb60a8c1172e4e1faab0ddab66ec1e14f54ed5ad4b39f5693",
+        "4732f1a188155988857713a6c1304902ee31fdfd9eec70aae80121c6a4454f4f",
+        "696c8246dca29c433fb566402624ed93b281b9066782983e3defc22c243c3f6b"
+      ],
+      "image_sha256": [
+        "d15cb69a30da9453c3b59a07d4f66ee8313d0bc7f363efe60e7b2f7e03fc43fc",
+        "049614078fe3be85403792c750969c13ec289b562b962d9031920568e9e8ed58"
+      ],
+      "math_formulas": 42,
+      "display_math_blocks": 3,
+      "math_errors": 0
+    },
+    "09_enhancement": {
+      "code_sha256": [
+        "35f484c1752f83a9dfeca62ab5bd23d2c2e545e58b918b30061542f530ef7c24",
+        "14e4d08befaff748041fb1a7773840894e5488a7bd43605ce62c464c19a0eec2"
+      ],
+      "image_sha256": [
+        "8c6b56465ff11d836436f1fb5c85a16319ba0614f5c90d62cf89fcc4f69f4d5f",
+        "c3e50af514791e5f90d32ac1d81a3531110fa536098bcb2e89f2b8c626a0f80d",
+        "739fe4a3d525c10d41b38ccbbfd5fc3e98b7c0f12658173ae3cfc6184130e101"
+      ],
+      "math_formulas": 15,
+      "display_math_blocks": 2,
+      "math_errors": 0
+    },
+    "10_arrays": {
+      "code_sha256": [
+        "d248c9b09644d330c59a272b10d97401c12057dc78350143987271b91330ad92",
+        "9e1a818d6bd776aed68cf77d06ce3543bd9b297089a01ba1805991a6d3a11d95",
+        "56d48069d560a7dd8a2f8d740f1000380a1c9041f17c6712a1d442bef0af4816"
+      ],
+      "image_sha256": [
+        "15f80ee4b09fb18f7c0e24d74de18cfeaf0b6a17f0ae3400efa043c204148c6a",
+        "f1c5dac735bb7df832fdf953f76d6751a959f0d713cb8d1db9510949fb971146"
+      ],
+      "math_formulas": 41,
+      "display_math_blocks": 4,
+      "math_errors": 0
+    },
+    "11_acoustics": {
+      "code_sha256": [
+        "d03b900e1986829d60fe694a86df1cde7162c3d94175f520efb4023e4405b8a4",
+        "eef4937495595c944245f05f64024ac5ec58a692880feecbf542d9d9e2015790"
+      ],
+      "image_sha256": [
+        "c65db99464591f708529a5eb448f5b4d1077e3aed61d6015739ca1c8fa4d88b0",
+        "8ed988f00d1e948ab8f05463a9fdef60aee712db7ffcae3f263306bcc0adbe73",
+        "360135a832c8d1c2a00649320583188be76c644858cb041342dcf3f26e1febcd"
+      ],
+      "math_formulas": 13,
+      "display_math_blocks": 2,
+      "math_errors": 0
+    },
+    "12_pytorch": {
+      "code_sha256": [
+        "a019bb24391f9eb318ebf2e67425db9fb9931df44fc04fae715ddb3d32682511",
+        "95ce55d787c9066af2865b4eb8bffd66097870b3e82d3d4b3ec359a51aa81736",
+        "cc4ec22b2e4e44f91d131eaff9ccb9d4bccccfeb67684856fd3f9a019f67f68c"
+      ],
+      "image_sha256": [
+        "57ff1f8536b98a57b2c8b4f921cd8500993579d5e8241f69234cee57f376fd14",
+        "aec2a63463e37a227503c9c287d3db0c2b1dec34748c161fe72694f96a8a36a9"
+      ],
+      "math_formulas": 32,
+      "display_math_blocks": 4,
+      "math_errors": 0
+    },
+    "13_asr": {
+      "code_sha256": [
+        "923622fc9cae37637514d7803cbf288cb12f51f9e75439749fd017e5ddc030a9",
+        "9e2b26cfaffc9f111b823af442e7ad77b291ba8c344572e36a11d89f11c9720a",
+        "d483ecd73525cb4a215719c1523c0460b7fb6fce77420efcb9ef438fcf7611fc"
+      ],
+      "image_sha256": [
+        "3282775ac04da43aa8a2c5a3800c6210912e51fd12fa82a6333d8ff52572d9b0",
+        "5f289e5bf6eb5ea868d3174529c7d1aadce8a6a3c04b8a314d0b39f36f2546bb"
+      ],
+      "math_formulas": 17,
+      "display_math_blocks": 1,
+      "math_errors": 0
+    },
+    "14_tts": {
+      "code_sha256": [
+        "e6592888cecf08247edf252d510c3d1d7b5c7ec700b3af6202be93f1b51fe0e4",
+        "d781c204cb5184ca72b96bee089997ed109da00925cb8776dbd4a8e218784446",
+        "c4d183ddfe77a875a6ddac30ed1ac8254520b8a8f8251e7a0e7d254354202733"
+      ],
+      "image_sha256": [
+        "a36b4600510344138272267bca15285b59dde090e161bb864944de7bb2e3743c",
+        "301f3cfe5554c18c67e9544310bf504cf02cbc03e97e8f29237ef560a5d4eea8"
+      ],
+      "math_formulas": 16,
+      "display_math_blocks": 2,
+      "math_errors": 0
+    },
+    "15_speaker": {
+      "code_sha256": [
+        "3e535e89e96c4ce8b819ec7e76bfdecdb7728f7c86e76b3073789aee42381ea3",
+        "a482a73e8304b7ca65d8e9f3fc498b8190fb33282afcc6a79a3ed9e85d1762f3",
+        "656f8777aa3c311b471c79834012e24d498eefd53b312191815ff7a0806e44b2"
+      ],
+      "image_sha256": [
+        "8b9307cf2d04f9843e21b4b18be23fe2f7847512963657a84a4841c1c01373fe",
+        "c7eae5de47f2bb60b3d577fdd2b19ec5df98eeb7a52999f805df9573ef8d500c"
+      ],
+      "math_formulas": 10,
+      "display_math_blocks": 1,
+      "math_errors": 0
+    },
+    "16_engineering": {
+      "code_sha256": [
+        "888cf586e8e70ca5d1338fcaeb0cb75b6afb69152e46ceb5731ad044983b5068",
+        "0e6de407cee64a8d6bc2ee155c0f44d0ff43be39f603980afb04143ac35d2d47",
+        "ab935e4193fa7258462d5db5253bbb79532df615ad7bcdc3a9f17eb78a9c55b4"
+      ],
+      "image_sha256": [
+        "0dd1c989986b9ca9aa53a722e088160254a60c443abf1a408d69d9298b037209",
+        "f73665ad2d533ceae7103918275a47d76c0460753f042b37e4862fcda04cfe56"
+      ],
+      "math_formulas": 10,
+      "display_math_blocks": 1,
+      "math_errors": 0
+    },
+    "17_project": {
+      "code_sha256": [],
+      "image_sha256": [],
+      "math_formulas": 0,
+      "display_math_blocks": 0,
+      "math_errors": 0
+    },
+    "18_glossary": {
+      "code_sha256": [],
+      "image_sha256": [],
+      "math_formulas": 2,
+      "display_math_blocks": 0,
+      "math_errors": 0
+    }
+  },
+  "scope": "验证排版、已有代码与图片保持一致；没有重新声称模型训练或新增实验结果。"
+}

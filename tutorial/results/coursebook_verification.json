@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-26",
+  "version": "yang-audio-v5",
+  "generated_pages": 43,
+  "lesson_pages": 19,
+  "lab_pages": 5,
+  "checked_links": 819,
+  "image_occurrences": 51,
+  "chapter_python_blocks": 34,
+  "math_formulas": 430,
+  "display_math_blocks": 59,
+  "chapter_code_display_exact": true,
+  "errors": [],
+  "chapters": [
+    {
+      "chapter": "00_start.md",
+      "blocks": 0,
+      "source_sha256": "529400730d697c65667676e4ca25f96163d8b0109198ecbbce448b0a6618e246"
+    },
+    {
+      "chapter": "01_sound.md",
+      "blocks": 1,
+      "source_sha256": "8b169df09bd848ecb2f46c332d0d5a6f88998e7f91a8a675fec85db685491071"
+    },
+    {
+      "chapter": "02_digital.md",
+      "blocks": 2,
+      "source_sha256": "ffe9f9f7b6798bdf05352ebf932476dd38f1e85f04b1bbb206dfc9e40cca9526"
+    },
+    {
+      "chapter": "03_decibels.md",
+      "blocks": 1,
+      "source_sha256": "633dbfaa8a56a3f28ad6deee24d36f70f990f8f654ac5c2d8d642466cdd47b75"
+    },
+    {
+      "chapter": "04_numpy.md",
+      "blocks": 3,
+      "source_sha256": "3271d4faa845e15c7b15eb86a2ed35c9c2610f1a243cae55443fc097b101d1c4"
+    },
+    {
+      "chapter": "05_spectrum.md",
+      "blocks": 2,
+      "source_sha256": "0b90463906d1b9e2f43bcde442dde17a389137e02fb47ed276f7f3ce68602f91"
+    },
+    {
+      "chapter": "06_features.md",
+      "blocks": 1,
+      "source_sha256": "737cf68150e16cf9e1c78951ffb979e204c0a1bccd249967e2c92f9007dab210"
+    },
+    {
+      "chapter": "07_filters.md",
+      "blocks": 2,
+      "source_sha256": "ad4ae3b6f7622380a0339bee4839af59dfe18930190dc0473432a4bbd950ca68"
+    },
+    {
+      "chapter": "08_aec.md",
+      "blocks": 3,
+      "source_sha256": "b4112506e28b180f680d31d546b409b110c975482e93cd24902d3aa2c6e8c16c"
+    },
+    {
+      "chapter": "09_enhancement.md",
+      "blocks": 2,
+      "source_sha256": "973edb2045a1a948656cf860eb44f12c6287e1c99379e075137b00bc03e1ab36"
+    },
+    {
+      "chapter": "10_arrays.md",
+      "blocks": 3,
+      "source_sha256": "816f384e7a9d2097da4e26a323aafd1a5a8a35a22131826836c7d51f3a73c6ac"
+    },
+    {
+      "chapter": "11_acoustics.md",
+      "blocks": 2,
+      "source_sha256": "31b5a6aa0b1fc38981cf8c5e9742e3831e7a369d316b0f085476a0944418d1d8"
+    },
+    {
+      "chapter": "12_pytorch.md",
+      "blocks": 3,
+      "source_sha256": "8934cf8241db482864a7eb965335241428a05d00c3201844c316edfa7549f6da"
+    },
+    {
+      "chapter": "13_asr.md",
+      "blocks": 2,
+      "source_sha256": "f85b80a387612c1b887ac2f0cf743d1796cabe8c2c7629fa70e7989d8c8da07d"
+    },
+    {
+      "chapter": "14_tts.md",
+      "blocks": 2,
+      "source_sha256": "d4055312d97f448a7b35cb73f39f4ffb08f58bf584668777a344acac004362fb"
+    },
+    {
+      "chapter": "15_speaker.md",
+      "blocks": 2,
+      "source_sha256": "85ee868670215ffa591adb07dd8b76a4b09e1e0bcbaf0312337ab9895b87a05b"
+    },
+    {
+      "chapter": "16_engineering.md",
+      "blocks": 3,
+      "source_sha256": "6ff6fa6c3bd691f0f8b931cfb51d7782eab27adc1a599b3e8d77e01977b21db4"
+    },
+    {
+      "chapter": "17_project.md",
+      "blocks": 0,
+      "source_sha256": "5e583d756cfd6db5c57460386d55cba18c59fcd312a20824394bf11e1c49a5b7"
+    },
+    {
+      "chapter": "18_glossary.md",
+      "blocks": 0,
+      "source_sha256": "38851dc5130efa16c0341086b1b1847268ad5f671a83c50cc4bfbf90a8929288"
+    }
+  ],
+  "scope": "页面、链接、嵌图和代码一致性；原数值实验记录另存。浏览器交互验收另记。"
+}

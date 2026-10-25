@@ -1,0 +1,177 @@
+[
+  {
+    "source": "src/00_jobs.md",
+    "page": "lessons/00.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\lessons_00.html\n  doc · paper · 6 panels\n  STE check is off\n"
+  },
+  {
+    "source": "src/01_basics.md",
+    "page": "lessons/01.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\lessons_01.html\n  doc · paper · 6 panels\n  STE check is off\n"
+  },
+  {
+    "source": "src/02_dsp.md",
+    "page": "lessons/02.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\lessons_02.html\n  doc · paper · 6 panels · flow×1\n  STE check is off\n"
+  },
+  {
+    "source": "src/03_dl.md",
+    "page": "lessons/03.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\lessons_03.html\n  doc · paper · 6 panels · flow×1\n  STE check is off\n"
+  },
+  {
+    "source": "src/04_aec.md",
+    "page": "lessons/04.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\lessons_04.html\n  doc · paper · 6 panels · flow×1\n  STE check is off\n"
+  },
+  {
+    "source": "src/05_ans.md",
+    "page": "lessons/05.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\lessons_05.html\n  doc · paper · 6 panels · flow×1\n  STE check is off\n"
+  },
+  {
+    "source": "src/06_agc_vad.md",
+    "page": "lessons/06.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\lessons_06.html\n  doc · paper · 6 panels · flow×1\n  STE check is off\n"
+  },
+  {
+    "source": "src/07_array.md",
+    "page": "lessons/07.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\lessons_07.html\n  doc · paper · 6 panels · flow×1\n  STE check is off\n"
+  },
+  {
+    "source": "src/08_separation.md",
+    "page": "lessons/08.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\lessons_08.html\n  doc · paper · 6 panels · flow×1\n  STE check is off\n"
+  },
+  {
+    "source": "src/09_asr_theory.md",
+    "page": "lessons/09.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\lessons_09.html\n  doc · paper · 6 panels\n  STE check is off\n"
+  },
+  {
+    "source": "src/10_asr_practice.md",
+    "page": "lessons/10.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\lessons_10.html\n  doc · paper · 6 panels · flow×1\n  STE check is off\n"
+  },
+  {
+    "source": "src/11_tts_basics.md",
+    "page": "lessons/11.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\lessons_11.html\n  doc · paper · 6 panels · flow×1\n  STE check is off\n"
+  },
+  {
+    "source": "src/12_tts_neural.md",
+    "page": "lessons/12.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\lessons_12.html\n  doc · paper · 6 panels · flow×1\n  STE check is off\n"
+  },
+  {
+    "source": "src/13_speaker_event.md",
+    "page": "lessons/13.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\lessons_13.html\n  doc · paper · 6 panels · flow×1\n  STE check is off\n"
+  },
+  {
+    "source": "src/14_speechllm.md",
+    "page": "lessons/14.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\lessons_14.html\n  doc · paper · 6 panels · flow×1\n  STE check is off\n"
+  },
+  {
+    "source": "src/15_engineering.md",
+    "page": "lessons/15.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\lessons_15.html\n  doc · paper · 6 panels\n  STE check is off\n"
+  },
+  {
+    "source": "src/16_projects.md",
+    "page": "lessons/16.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\lessons_16.html\n  doc · paper · 6 panels\n  STE check is off\n"
+  },
+  {
+    "source": "src/17_common.md",
+    "page": "lessons/17.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\lessons_17.html\n  doc · paper · 6 panels\n  STE check is off\n"
+  },
+  {
+    "source": "src/index.md",
+    "page": "overview.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\overview.html\n  doc · paper · 7 panels\n  STE check is off\n"
+  },
+  {
+    "source": "src/deep/01_dsp.md",
+    "page": "deep/01.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\deep_01.html\n  doc · paper · 6 panels\n  code embedded from: code/audio_core.py:8-21, code/audio_core.py:25-48\n  STE check is off\n"
+  },
+  {
+    "source": "src/deep/02_training.md",
+    "page": "deep/02.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\deep_02.html\n  doc · paper · 6 panels\n  code embedded from: code/neural_lab.py:24-45, code/neural_lab.py:49-63, code/neural_lab.py:67-83\n  STE check is off\n"
+  },
+  {
+    "source": "src/deep/03_aec.md",
+    "page": "deep/03.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\deep_03.html\n  doc · paper · 6 panels · flow×1\n  code embedded from: code/audio_core.py:52-68\n  STE check is off\n"
+  },
+  {
+    "source": "src/deep/04_denoise.md",
+    "page": "deep/04.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\deep_04.html\n  doc · paper · 6 panels\n  code embedded from: code/audio_core.py:72-82\n  STE check is off\n"
+  },
+  {
+    "source": "src/deep/05_agc_vad.md",
+    "page": "deep/05.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\deep_05.html\n  doc · paper · 6 panels\n  code embedded from: code/audio_core.py:86-100, code/audio_core.py:104-119\n  STE check is off\n"
+  },
+  {
+    "source": "src/deep/06_array.md",
+    "page": "deep/06.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\deep_06.html\n  doc · paper · 6 panels\n  code embedded from: code/audio_core.py:123-139, code/audio_core.py:143-154\n  STE check is off\n"
+  },
+  {
+    "source": "src/deep/07_separation.md",
+    "page": "deep/07.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\deep_07.html\n  doc · paper · 6 panels\n  code embedded from: code/audio_core.py:158-172\n  STE check is off\n"
+  },
+  {
+    "source": "src/deep/08_ctc.md",
+    "page": "deep/08.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\deep_08.html\n  doc · paper · 6 panels\n  code embedded from: code/audio_core.py:176-197, code/neural_lab.py:87-99\n  STE check is off\n"
+  },
+  {
+    "source": "src/deep/09_asr_project.md",
+    "page": "deep/09.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\deep_09.html\n  doc · paper · 6 panels\n  code embedded from: code/asr_evaluate.py:13-27, code/asr_evaluate.py:31-47, code/asr_evaluate.py:51-58\n  STE check is off\n"
+  },
+  {
+    "source": "src/deep/10_tts.md",
+    "page": "deep/10.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\deep_10.html\n  doc · paper · 7 panels\n  code embedded from: code/audio_core.py:220-240, code/neural_lab.py:103-125\n  STE check is off\n"
+  },
+  {
+    "source": "src/deep/11_speaker.md",
+    "page": "deep/11.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\deep_11.html\n  doc · paper · 6 panels\n  code embedded from: code/audio_core.py:244-254\n  STE check is off\n"
+  },
+  {
+    "source": "src/deep/12_engineering.md",
+    "page": "deep/12.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\deep_12.html\n  doc · paper · 6 panels · sequence×1\n  code embedded from: code/streaming_demo.py:6-26, code/audio_core.py:258-265\n  STE check is off\n"
+  },
+  {
+    "source": "src/deep/13_projects.md",
+    "page": "deep/13.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\deep_13.html\n  doc · paper · 6 panels\n  STE check is off\n"
+  },
+  {
+    "source": "src/deep/14_anc.md",
+    "page": "deep/14.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\deep_14.html\n  doc · paper · 6 panels · flow×1\n  code embedded from: code/audio_core.py:269-288\n  STE check is off\n"
+  },
+  {
+    "source": "src/deep/15_features.md",
+    "page": "deep/15.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\deep_15.html\n  doc · paper · 6 panels\n  code embedded from: code/audio_core.py:292-308\n  STE check is off\n"
+  },
+  {
+    "source": "src/deep/index.md",
+    "page": "practical.html",
+    "log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\archive-math\\pages\\practical.html\n  doc · paper · 7 panels\n  STE check is off\n"
+  }
+]

@@ -1,0 +1,136 @@
+{
+  "verified_at": "2026-10-22T23:45:50.912111+08:00",
+  "root": "F:\\codex\\调研\\outputs\\audio-course-zh",
+  "numpy": "2.4.4",
+  "chapters": [
+    {
+      "file": "tutorial\\chapters\\01_sound.md",
+      "chinese_characters": 3229,
+      "sha256": "23c5162d3721180976290e3a0ea2fd9fe86c99ab2512d596602b39065aaa1878",
+      "snippets": [
+        {
+          "index": 1,
+          "status": "passed",
+          "stdout": "数组形状: (80,)\n每周期采样点: 8.0\n前 8 个数: [ 0.     0.283  0.4    0.283  0.    -0.283 -0.4   -0.283]\n反相相加的最大绝对值: 1.470071343486095e-15\n复合声与纯音是否相同: False\n",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "file": "tutorial\\chapters\\02_digital.md",
+      "chinese_characters": 2792,
+      "sha256": "d5e5e8d292aa043e519499c3f936ce81e3b8f1b9eef41f5959689a7a7aa5c211",
+      "snippets": [
+        {
+          "index": 1,
+          "status": "passed",
+          "stdout": "声道/字节宽/采样率/帧数: 1 2 16000 5\n恢复浮点: [ 0.          0.25       -0.25        0.99899292 -1.        ]\n最大误差: 7.080078124999112e-06\n时长（秒）: 0.0003125\n",
+          "stderr": ""
+        },
+        {
+          "index": 2,
+          "status": "passed",
+          "stdout": "两个输出的形状: (16000,) (16000,)\n正确输出的时长: 1.0\n",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "file": "tutorial\\chapters\\03_decibels.md",
+      "chinese_characters": 2780,
+      "sha256": "98f1e3204cd3cfbd011f4fbabafe094203494ba91471f6b7bb89f2222c047962",
+      "snippets": [
+        {
+          "index": 1,
+          "status": "passed",
+          "stdout": "峰值/RMS: 0.5 0.35355339059327384\n峰值 dBFS / RMS dBFS: -6.020599913279624 -9.030899869919434\n构造的 SNR: 9.999999999999998\n混合音频峰值: 0.8922000243349858\n",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "file": "tutorial\\chapters\\04_numpy.md",
+      "chinese_characters": 2527,
+      "sha256": "88658c9e1fec110f95c86fd55781c2b3f5833f6fd68097741c6f87f5f779acd6",
+      "snippets": [
+        {
+          "index": 1,
+          "status": "passed",
+          "stdout": "输入/输出形状: (4, 2) (4, 2) (4,)\n每声道 RMS: [0.15811388 0.15811388]\n混音结果: [ 0.1  0.2 -0.1 -0.2]\n第一列: (4,)\n保留第二维: (4, 1)\n",
+          "stderr": ""
+        },
+        {
+          "index": 2,
+          "status": "passed",
+          "stdout": "帧矩阵形状: (4, 4)\n[[0 1 2 3]\n [2 3 4 5]\n [4 5 6 7]\n [6 7 8 9]]\n逐帧均值: [1.5 3.5 5.5 7.5]\n",
+          "stderr": ""
+        },
+        {
+          "index": 3,
+          "status": "passed",
+          "stdout": "归一化采样: [-1.          0.          0.5         0.99996948]\n峰值/RMS: 1.0 0.7499898275601931\n",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "file": "tutorial\\chapters\\05_spectrum.md",
+      "chinese_characters": 2566,
+      "sha256": "358f0bb99700698559e78eee05d143831db6a30e0260f5359851dcc67573add1",
+      "snippets": [
+        {
+          "index": 1,
+          "status": "passed",
+          "stdout": "完整卷积: [0.5 1.5 2.5 1.5]\n输出长度: 4\n",
+          "stderr": ""
+        },
+        {
+          "index": 2,
+          "status": "passed",
+          "stdout": "分帧/STFT 形状: (68, 256) (68, 129)\n最大重建误差: 1.6653345369377348e-16\n",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "file": "tutorial\\chapters\\06_features.md",
+      "chinese_characters": 2658,
+      "sha256": "b4426ec17a5042459465d41d2567b3a293fd419cbdd953e472ef6dd291fdeb02",
+      "snippets": [
+        {
+          "index": 1,
+          "status": "passed",
+          "stdout": "功率/Mel/MFCC 形状: (257,) (20,) (13,)\n全部数值有限: True\n",
+          "stderr": ""
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "file": "tutorial\\figures\\ch01_wave.png",
+      "bytes": 203088
+    },
+    {
+      "file": "tutorial\\figures\\ch02_pcm_roundtrip.png",
+      "bytes": 49920
+    },
+    {
+      "file": "tutorial\\figures\\ch03_snr_levels.png",
+      "bytes": 113852
+    },
+    {
+      "file": "tutorial\\figures\\ch04_frames.png",
+      "bytes": 26383
+    },
+    {
+      "file": "tutorial\\figures\\ch05_stft_rebuild.png",
+      "bytes": 139601
+    },
+    {
+      "file": "tutorial\\figures\\ch06_single_frame_features.png",
+      "bytes": 162718
+    }
+  ],
+  "passed": true
+}

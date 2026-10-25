@@ -1,0 +1,33 @@
+{
+  "run_date": "2026-10-26",
+  "scope": "illustrative arithmetic, not Conv-TasNet inference",
+  "command": "python tutorial/projects/convtasnet/mini_lab.py",
+  "exit_code": 0,
+  "assignment": [
+    1,
+    0
+  ],
+  "identity_mean_db": -3.5,
+  "swapped_mean_db": 11.5,
+  "residual": [
+    0.2,
+    0.2,
+    -0.2,
+    -0.1
+  ],
+  "outputs": [
+    [
+      0.5,
+      1.1,
+      -0.5,
+      0.15
+    ],
+    [
+      0.5,
+      0.9,
+      -0.5,
+      -0.15
+    ]
+  ],
+  "sum_error_below_1e_12": true
+}

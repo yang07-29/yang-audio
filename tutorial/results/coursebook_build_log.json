@@ -1,0 +1,174 @@
+[
+  {
+    "url": "tutorial/chapters/00_start.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_chapters_00_start.html\n  doc · coursebook · 8 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/chapters/01_sound.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_chapters_01_sound.html\n  doc · coursebook · 10 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/chapters/02_digital.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_chapters_02_digital.html\n  doc · coursebook · 11 panels\n  code 1 warning (trim the block and run again, or keep it if every line matters):\n  L72 [code-length] the block has 45 lines; readers skim past long code. Pick the 10 to 40 lines that make the point\n  STE check is off"
+  },
+  {
+    "url": "tutorial/chapters/03_decibels.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_chapters_03_decibels.html\n  doc · coursebook · 10 panels\n  code 1 warning (trim the block and run again, or keep it if every line matters):\n  L91 [code-length] the block has 42 lines; readers skim past long code. Pick the 10 to 40 lines that make the point\n  STE check is off"
+  },
+  {
+    "url": "tutorial/chapters/04_numpy.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_chapters_04_numpy.html\n  doc · coursebook · 10 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/chapters/05_spectrum.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_chapters_05_spectrum.html\n  doc · coursebook · 10 panels\n  code 1 warning (trim the block and run again, or keep it if every line matters):\n  L86 [code-length] the block has 49 lines; readers skim past long code. Pick the 10 to 40 lines that make the point\n  STE check is off"
+  },
+  {
+    "url": "tutorial/chapters/06_features.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_chapters_06_features.html\n  doc · coursebook · 10 panels\n  code 1 warning (trim the block and run again, or keep it if every line matters):\n  L65 [code-length] the block has 46 lines; readers skim past long code. Pick the 10 to 40 lines that make the point\n  STE check is off"
+  },
+  {
+    "url": "tutorial/chapters/07_filters.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_chapters_07_filters.html\n  doc · coursebook · 10 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/chapters/08_aec.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_chapters_08_aec.html\n  doc · coursebook · 10 panels\n  code 1 warning (trim the block and run again, or keep it if every line matters):\n  L125 [code-length] the block has 44 lines; readers skim past long code. Pick the 10 to 40 lines that make the point\n  STE check is off"
+  },
+  {
+    "url": "tutorial/chapters/09_enhancement.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_chapters_09_enhancement.html\n  doc · coursebook · 10 panels\n  code 1 warning (trim the block and run again, or keep it if every line matters):\n  L111 [code-length] the block has 42 lines; readers skim past long code. Pick the 10 to 40 lines that make the point\n  STE check is off"
+  },
+  {
+    "url": "tutorial/chapters/10_arrays.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_chapters_10_arrays.html\n  doc · coursebook · 10 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/chapters/11_acoustics.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_chapters_11_acoustics.html\n  doc · coursebook · 10 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/chapters/12_pytorch.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_chapters_12_pytorch.html\n  doc · coursebook · 8 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/chapters/13_asr.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_chapters_13_asr.html\n  doc · coursebook · 9 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/chapters/14_tts.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_chapters_14_tts.html\n  doc · coursebook · 9 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/chapters/15_speaker.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_chapters_15_speaker.html\n  doc · coursebook · 9 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/chapters/16_engineering.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_chapters_16_engineering.html\n  doc · coursebook · 9 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/chapters/17_project.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_chapters_17_project.html\n  doc · coursebook · 8 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/chapters/18_glossary.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_chapters_18_glossary.html\n  doc · coursebook · 6 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/labs/01_sound.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_labs_01_sound.html\n  doc · coursebook · 5 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/labs/02_levels.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_labs_02_levels.html\n  doc · coursebook · 5 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/labs/03_streaming.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_labs_03_streaming.html\n  doc · coursebook · 5 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/labs/04_aec.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_labs_04_aec.html\n  doc · coursebook · 3 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/labs/05_ctc.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_labs_05_ctc.html\n  doc · coursebook · 3 panels\n  STE check is off"
+  },
+  {
+    "url": "index.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\index.html\n  doc · coursebook · 5 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/experiments.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_experiments.html\n  doc · coursebook · 3 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/resources.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_resources.html\n  doc · coursebook · 5 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/study/plan.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_study_plan.html\n  doc · coursebook · 6 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/study/projects.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_study_projects.html\n  doc · coursebook · 3 panels · flow×1\n  STE check is off"
+  },
+  {
+    "url": "tutorial/study/videos.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_study_videos.html\n  doc · coursebook · 7 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/study/visuals.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_study_visuals.html\n  doc · coursebook · 5 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/projects/gtcrn/lesson.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_projects_gtcrn_lesson.html\n  doc · coursebook · 8 panels · flow×3 tree×1 sequence×1\n  code embedded from: tutorial/projects/gtcrn/mini_lab.py:20-24, tutorial/projects/gtcrn/mini_lab.py:49-62\n  STE check is off"
+  },
+  {
+    "url": "tutorial/projects/convtasnet/lesson.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_projects_convtasnet_lesson.html\n  doc · coursebook · 8 panels · flow×2 tree×1\n  code embedded from: tutorial/projects/convtasnet/source_snapshots/conv_tasnet.py:295-305, tutorial/projects/convtasnet/mini_lab.py:5-10, tutorial/projects/convtasnet/mini_lab.py:13-19\n  STE check is off"
+  },
+  {
+    "url": "tutorial/projects/zipformer/lesson.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_projects_zipformer_lesson.html\n  doc · coursebook · 8 panels · flow×2 callout×1\n  STE check is off"
+  },
+  {
+    "url": "tutorial/results/review_foundation_v4.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_results_review_foundation_v4.html\n  doc · coursebook · 5 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/results/review_frontend_v4.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_results_review_frontend_v4.html\n  doc · coursebook · 3 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/results/review_speech_v4.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_results_review_speech_v4.html\n  doc · coursebook · 4 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/results/章节代码实测输出.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_results_章节代码实测输出.html\n  doc · coursebook · 34 panels\n  STE check is off"
+  },
+  {
+    "url": "tutorial/index.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_index.html\n  doc · coursebook · 1 panel\n  STE check is off"
+  },
+  {
+    "url": "tutorial/01_声音成为数组.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_01_声音成为数组.html\n  doc · coursebook · 1 panel\n  STE check is off"
+  },
+  {
+    "url": "tutorial/02_分贝不是音量旋钮.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_02_分贝不是音量旋钮.html\n  doc · coursebook · 1 panel\n  STE check is off"
+  },
+  {
+    "url": "tutorial/03_滤波和流式状态.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_03_滤波和流式状态.html\n  doc · coursebook · 1 panel\n  STE check is off"
+  },
+  {
+    "url": "tutorial/04_手写AEC与CTC.html",
+    "render_log": "✓ F:\\codex\\调研\\outputs\\audio-course-zh\\.am-cache\\coursebook-v4\\pages\\tutorial_04_手写AEC与CTC.html\n  doc · coursebook · 1 panel\n  STE check is off"
+  }
+]

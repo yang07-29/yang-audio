@@ -1,0 +1,201 @@
+{
+  "deep/01.html": {
+    "before": [
+      "f8afc2f443d34a453a0aead12b5e6f5e6a9d456806c0810146cffc3dce3f924a",
+      "b4b21c2043246a2bd90621202b883cfe5cdae592699d004364b7e7c13b952658"
+    ],
+    "after": [
+      "d80a729ade305f20d2171d4461571302a75a5be460d7f9176e1b56cbfc785384",
+      "ed94cd21ee7b1f08800a446f1d3a80c3b01329fc0ba757421ebe2fd40adf0226"
+    ],
+    "changed_blocks": [
+      {
+        "block": 1,
+        "shared_ast_sha256": "6b0485dc22c5ea653827010775e1ed3ea25718ef0b0d598e976268a8abc2bfb8"
+      },
+      {
+        "block": 2,
+        "shared_ast_sha256": "8eab8e95565b8c0f9d69a9343b792f76db8a64e2da23e1b00b299e3eeb789c34"
+      }
+    ],
+    "reason": "同步此前已经存在于源码中的中文注释；前后AST完全相同"
+  },
+  "deep/02.html": {
+    "before": [
+      "8946cb975a687ed45ad2e15bf2a1babffce1ab691f5e76c44e9dd449bbaa80c2",
+      "755fa73ea4f804e4eabbc1d602d1ba611205399ba28ef1acd076439677a5089b",
+      "1fefff29c06f6b38d5c85b561b814bf3476b606265e3271bf13259e3e5d24a54"
+    ],
+    "after": [
+      "0bf9ebae96604a36d0bb44a542f8a6e6f2e5451c98da6f0340e598f8a1b96fc1",
+      "58f8398a7b8d4fe59328f82d797110c3e0fcd501c588daa69530173e69ed1362",
+      "98277ac0be552f7ce426730893929205291930e91b23feda709568a8950fab49"
+    ],
+    "changed_blocks": [
+      {
+        "block": 1,
+        "shared_ast_sha256": "c4bf6c61d4b78627923297dad1a7baad022fa1f1c1ed20fb5636245324818268"
+      },
+      {
+        "block": 2,
+        "shared_ast_sha256": "6ec79fbd0833ed8bc07f9b3996ba55c5a740d210fa46bbc3333829638469ad97"
+      },
+      {
+        "block": 3,
+        "shared_ast_sha256": "c8159b29586443f2c3727b49f99a5f63cc308a074875dc2f6c6b94b20bd66c87"
+      }
+    ],
+    "reason": "同步此前已经存在于源码中的中文注释；前后AST完全相同"
+  },
+  "deep/03.html": {
+    "before": [
+      "0cc82d4db1b3f217451f6f8d4593c1c943915ddfd9ea37765700aa0283bc4f5b"
+    ],
+    "after": [
+      "a3afa1ed19c17b565c629acb1c190cf64af9663dd580946dc0c475928d751eab"
+    ],
+    "changed_blocks": [
+      {
+        "block": 1,
+        "shared_ast_sha256": "b2ce779b44321b4b22b24e650a87cca7aa1987b93d24432c36e76ffda5a67f92"
+      }
+    ],
+    "reason": "同步此前已经存在于源码中的中文注释；前后AST完全相同"
+  },
+  "deep/04.html": {
+    "before": [
+      "87082033e6d21c6f5d2ded6e80b6e43a6f2a641b710d9000978641e091702b7d"
+    ],
+    "after": [
+      "92d045c4f25df47a15c93a3eac287726d75b7aba90b6e4ea093c0a66c112a711"
+    ],
+    "changed_blocks": [
+      {
+        "block": 1,
+        "shared_ast_sha256": "799d8145bcd361b55a580e0f4134d6a79a99775a44780854015f2d054ea0e192"
+      }
+    ],
+    "reason": "同步此前已经存在于源码中的中文注释；前后AST完全相同"
+  },
+  "deep/05.html": {
+    "before": [
+      "e74160f1da2384af4c5e919db58403f89cc35b38e57ae12ddbd7c27eeb24717c",
+      "c6c843cee1f80578fc1738f6a5ed8b3988bdf5c420a48d212ec612b4a53cbadb"
+    ],
+    "after": [
+      "1536a78d1a23e6f6cc92cda116eb934ee4aee41b2537bf7adbc30536a532ab17",
+      "3a4a8a11d7db5bd5843a6a7cc57b52da445a2da85e040d5cf48184b43b69651b"
+    ],
+    "changed_blocks": [
+      {
+        "block": 1,
+        "shared_ast_sha256": "3ce712a877265bdff0e8da5877cb887fb1a39b4659fccfa0074bd68685880975"
+      },
+      {
+        "block": 2,
+        "shared_ast_sha256": "89bf8868a229fb7d7e06b95aaae620aa825086df2e3d3004a5581cc070732306"
+      }
+    ],
+    "reason": "同步此前已经存在于源码中的中文注释；前后AST完全相同"
+  },
+  "deep/06.html": {
+    "before": [
+      "973716c57688124d61264e48048d5655e7207a6e4fdb8deb42513effc17e7e9f",
+      "b82e88c64edd2f8ab5f0db7ed10c674f2d344102ecba727b29dc19d80b495edb"
+    ],
+    "after": [
+      "09f1e8cb4ca444f6db06a8ff30503679476d6182902e2eb931808d919903d31f",
+      "b82e88c64edd2f8ab5f0db7ed10c674f2d344102ecba727b29dc19d80b495edb"
+    ],
+    "changed_blocks": [
+      {
+        "block": 1,
+        "shared_ast_sha256": "078e188a4ce8412c17fb92870439adaa55d8f196b92a60f54aaf490617788424"
+      }
+    ],
+    "reason": "同步此前已经存在于源码中的中文注释；前后AST完全相同"
+  },
+  "deep/07.html": {
+    "before": [
+      "16291490f2681da222d1781fb4f2ca4df05749f4718b9e9f5a9430f2c8820f65"
+    ],
+    "after": [
+      "68a725916f9891a5be40a8d74ba8a7f153ee9485b4f543cb01ffae4a8706dbaf"
+    ],
+    "changed_blocks": [
+      {
+        "block": 1,
+        "shared_ast_sha256": "5302d5405e67d9289615ac781a286342923e50c85506c9435b71cbc256efa79b"
+      }
+    ],
+    "reason": "同步此前已经存在于源码中的中文注释；前后AST完全相同"
+  },
+  "deep/08.html": {
+    "before": [
+      "d4b86ae4091ca7d186be06456894614820dbd2ab97be2d967370a14195ad8d18",
+      "5c12a702d79bc4d4ec7ce96a6139fd4694e42f84865554366a5a4639a0180d20"
+    ],
+    "after": [
+      "e0654fe452edcd6dbd03c091056883c0af27d24c9d4b3052cb47d17afbcfa589",
+      "5c12a702d79bc4d4ec7ce96a6139fd4694e42f84865554366a5a4639a0180d20"
+    ],
+    "changed_blocks": [
+      {
+        "block": 1,
+        "shared_ast_sha256": "54e28da76a65c7282190a480819f265ecd3bcd40e5f78599d1026e32b2c3af16"
+      }
+    ],
+    "reason": "同步此前已经存在于源码中的中文注释；前后AST完全相同"
+  },
+  "deep/10.html": {
+    "before": [
+      "ee7d145b257415d277cf57398be316fccd4ee1c8a381bfe8d964b4577ab25e67",
+      "a3ebdedc7c1af4a3de2bf8fa8cbffac4ef7242885ab31ce4b6ee9184758b9ea8"
+    ],
+    "after": [
+      "63993748e07070368cdde0df9942fe96e53b7c6a0bd9ff4b80070e8271d453bf",
+      "74c38f4090fb79d959e95de82ebe5dc3ce89c3084f394d0d7db07dc74d2eb56e"
+    ],
+    "changed_blocks": [
+      {
+        "block": 1,
+        "shared_ast_sha256": "dbd5c9907dc79405fd763a099206dd6771110539d4a074626ef60674a369d5ad"
+      },
+      {
+        "block": 2,
+        "shared_ast_sha256": "208ee3bc614e67e1764d4d1b8a8314b1be32c6a3001b39e7dc421bf3dd73a3ea"
+      }
+    ],
+    "reason": "同步此前已经存在于源码中的中文注释；前后AST完全相同"
+  },
+  "deep/14.html": {
+    "before": [
+      "e3c2c02b23f0987ed029122062a72005df0a845b7e276c44b84b27eb6e8e3afd"
+    ],
+    "after": [
+      "7a1843362e529206b107efacf400e122b92761a3ee1315d225449523478f2658"
+    ],
+    "changed_blocks": [
+      {
+        "block": 1,
+        "shared_ast_sha256": "3beeeb6f0c11c72b86897523a8848d972054e016c34052d089b57035dff9a84b"
+      }
+    ],
+    "reason": "同步此前已经存在于源码中的中文注释；前后AST完全相同"
+  },
+  "deep/15.html": {
+    "before": [
+      "740888b15c327c1d185a704c5e4a735b24f1a883719b8337b383301d8d5e785a"
+    ],
+    "after": [
+      "a68fa29d329414c3ded746d0734c4915890a10e954fc6fc8950dc1df84f89da1"
+    ],
+    "changed_blocks": [
+      {
+        "block": 1,
+        "shared_ast_sha256": "7725d19fa1b2f4feba97a9aed61d678c4fc5d8c572e4366c5b8ef065405954ed"
+      }
+    ],
+    "reason": "同步此前已经存在于源码中的中文注释；前后AST完全相同"
+  }
+}

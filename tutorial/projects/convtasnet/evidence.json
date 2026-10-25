@@ -1,0 +1,359 @@
+{
+  "reviewed_on": "2026-10-26",
+  "repository": "yang07-29/convtasnet-speech-separation",
+  "visibility": "private",
+  "branch": "codex/reproduction",
+  "commit": "8e8bd3921ac39587d2407e86aa7204cba52ad77d",
+  "tree_sha": "533ac73d3cc2781685718751c57896edf92669ed",
+  "method": "Read-only GitHub connector; inspected source and archived experiment artifacts, no model inference or training rerun.",
+  "files_reviewed": [
+    {
+      "path": "README.md",
+      "blob_sha": "4a04e05114a7e020d92d5cd049789187d8b860e6",
+      "url": "https://github.com/yang07-29/convtasnet-speech-separation/blob/codex/reproduction/README.md"
+    },
+    {
+      "path": "speechsep/models.py",
+      "blob_sha": "6d1da44893126922c23a3f5869605c5f5cf616d3",
+      "url": "https://github.com/yang07-29/convtasnet-speech-separation/blob/codex/reproduction/speechsep/models.py"
+    },
+    {
+      "path": "speechsep/losses.py",
+      "blob_sha": "d3fcf5e6800f029deee90ee1cdcbf227047f59c3",
+      "url": "https://github.com/yang07-29/convtasnet-speech-separation/blob/codex/reproduction/speechsep/losses.py"
+    },
+    {
+      "path": "speechsep/postprocess.py",
+      "blob_sha": "8ea6a04b42c0206aac419c9f3f6c3c68af443a56",
+      "url": "https://github.com/yang07-29/convtasnet-speech-separation/blob/codex/reproduction/speechsep/postprocess.py"
+    },
+    {
+      "path": "speechsep/audio.py",
+      "blob_sha": "7bfc6f761312773920ecd5a3220d93d665aa64ac",
+      "url": "https://github.com/yang07-29/convtasnet-speech-separation/blob/8e8bd3921ac39587d2407e86aa7204cba52ad77d/speechsep/audio.py"
+    },
+    {
+      "path": "speechsep/evaluation.py",
+      "blob_sha": "3a8b330b27fe42712f5388970cd00efff86b9f4b",
+      "url": "https://github.com/yang07-29/convtasnet-speech-separation/blob/8e8bd3921ac39587d2407e86aa7204cba52ad77d/speechsep/evaluation.py"
+    },
+    {
+      "path": "speechsep/training.py",
+      "blob_sha": "2b84b1ff007f8425405726ab84dab0e1275b0cc8",
+      "url": "https://github.com/yang07-29/convtasnet-speech-separation/blob/8e8bd3921ac39587d2407e86aa7204cba52ad77d/speechsep/training.py"
+    },
+    {
+      "path": "upstream/conv_tasnet.py",
+      "blob_sha": "770746dd46b34c47736e4607d4344672d0335ef2",
+      "url": "https://github.com/yang07-29/convtasnet-speech-separation/blob/8e8bd3921ac39587d2407e86aa7204cba52ad77d/upstream/conv_tasnet.py"
+    },
+    {
+      "path": "metrics.py",
+      "blob_sha": "8b493f45f61386fe24edf51173e10cab94b65a28",
+      "url": "https://github.com/yang07-29/convtasnet-speech-separation/blob/8e8bd3921ac39587d2407e86aa7204cba52ad77d/metrics.py"
+    },
+    {
+      "path": "configs/cpu_vctk.json",
+      "blob_sha": "ec38c359bd4fba2097bf2a80a5aa403ee0a85527",
+      "url": "https://github.com/yang07-29/convtasnet-speech-separation/blob/codex/reproduction/configs/cpu_vctk.json"
+    },
+    {
+      "path": "reports/final/RESULTS_ANALYSIS.md",
+      "blob_sha": "0f3c62e5cdf20e07daeba54bf3bf6113eb77e498",
+      "url": "https://github.com/yang07-29/convtasnet-speech-separation/blob/codex/reproduction/reports/final/RESULTS_ANALYSIS.md"
+    },
+    {
+      "path": "reports/final/report.json",
+      "blob_sha": "93cbfffc1ded239d5c0ec8bfdf876cc09cc45b3e",
+      "url": "https://github.com/yang07-29/convtasnet-speech-separation/blob/8e8bd3921ac39587d2407e86aa7204cba52ad77d/reports/final/report.json"
+    },
+    {
+      "path": "reports/final/entrypoint_acceptance/selection/development_selection.json",
+      "blob_sha": "e0fc49d6ea469bb18436d7d79c2cfda97c2b2bbe",
+      "url": "https://github.com/yang07-29/convtasnet-speech-separation/blob/8e8bd3921ac39587d2407e86aa7204cba52ad77d/reports/final/entrypoint_acceptance/selection/development_selection.json"
+    }
+  ],
+  "confirmed": [
+    "Official torchaudio v2.6.0 architecture snapshot; conv_tasnet_base uses ReLU masks and noncausal convolution/GroupNorm.",
+    "Inference requires 8 kHz mono WAV of 0.25–30 seconds.",
+    "Formal config uses 4 s audio, 3 seeds, 20 epochs, 1200 training mixtures, gradient accumulation 4.",
+    "configure_trainable selects mask output PReLU, output Conv1d and decoder, 140289/4984881 parameters.",
+    "read-only report.json records a complete 4-checkpoint ×3-postprocessing matrix.",
+    "Main paired gain-controlled clean adaptation effect CI crosses zero."
+  ],
+  "unknown_or_not_verified_here": [
+    "Did not execute training, model inference, test suite or full evidence audit.",
+    "Did not listen to audio or visually inspect original result figures.",
+    "Local availability of full weights and audio not checked; fine-tuned weights are not stored in Git.",
+    "No evidence that user personally mastered every delivered module.",
+    "No validated Mandarin, natural dialogue, streaming or long-recording generalization."
+  ],
+  "figures_and_audio_policy": "No remote private media downloaded or republished; numerical tutorial tables derived from inspected report.",
+  "main_effects": [
+    {
+      "split": "test",
+      "condition": "clean",
+      "model": "all_observed_finetuning_seeds",
+      "method": "gain",
+      "control": "pretrained",
+      "control_method": "gain",
+      "kind": "seed_average_same_postprocessing",
+      "observed_seeds": 3,
+      "expected_seeds": 3,
+      "paired_delta": {
+        "block_mean": 0.09293407262274903,
+        "ci95": [
+          -0.009001201131364893,
+          0.18846000352409342
+        ],
+        "blocks": 20,
+        "replicates": 2000,
+        "seed": 20261024,
+        "unit": "disjoint speaker-pair block",
+        "warning": null,
+        "metric": "mean_output_si_sdr",
+        "case_count_per_seed": 600,
+        "training_seeds": 3,
+        "interpretation": "Paired change; CI samples speaker-pair blocks, conditional on these trained seeds"
+      },
+      "seed_si_sdr_means": [
+        13.80621080036858,
+        13.808117980194735,
+        13.803050597309872
+      ],
+      "seed_si_sdr_range": [
+        13.803050597309872,
+        13.808117980194735
+      ],
+      "seed_si_sdr_std": 0.002559381030749911
+    },
+    {
+      "split": "test",
+      "condition": "clean",
+      "model": "all_observed_finetuning_seeds",
+      "method": "uniform",
+      "control": "pretrained",
+      "control_method": "uniform",
+      "kind": "seed_average_same_postprocessing",
+      "observed_seeds": 3,
+      "expected_seeds": 3,
+      "paired_delta": {
+        "block_mean": 0.10281083533498266,
+        "ci95": [
+          0.0006165555204223624,
+          0.1985412157107953
+        ],
+        "blocks": 20,
+        "replicates": 2000,
+        "seed": 20261024,
+        "unit": "disjoint speaker-pair block",
+        "warning": null,
+        "metric": "mean_output_si_sdr",
+        "case_count_per_seed": 600,
+        "training_seeds": 3,
+        "interpretation": "Paired change; CI samples speaker-pair blocks, conditional on these trained seeds"
+      },
+      "seed_si_sdr_means": [
+        13.833775999965058,
+        13.836021278790122,
+        13.831365535377566
+      ],
+      "seed_si_sdr_range": [
+        13.831365535377566,
+        13.836021278790122
+      ],
+      "seed_si_sdr_std": 0.0023283600542510826
+    },
+    {
+      "split": "test",
+      "condition": "clean",
+      "model": "all_observed_finetuning_seeds",
+      "method": "energy",
+      "control": "pretrained",
+      "control_method": "energy",
+      "kind": "seed_average_same_postprocessing",
+      "observed_seeds": 3,
+      "expected_seeds": 3,
+      "paired_delta": {
+        "block_mean": 0.11338612622519831,
+        "ci95": [
+          0.015209153541243373,
+          0.20725594820953713
+        ],
+        "blocks": 20,
+        "replicates": 2000,
+        "seed": 20261024,
+        "unit": "disjoint speaker-pair block",
+        "warning": null,
+        "metric": "mean_output_si_sdr",
+        "case_count_per_seed": 600,
+        "training_seeds": 3,
+        "interpretation": "Paired change; CI samples speaker-pair blocks, conditional on these trained seeds"
+      },
+      "seed_si_sdr_means": [
+        13.837239134967506,
+        13.839221795376616,
+        13.834553583689388
+      ],
+      "seed_si_sdr_range": [
+        13.834553583689388,
+        13.839221795376616
+      ],
+      "seed_si_sdr_std": 0.0023429087449162223
+    },
+    {
+      "split": "test",
+      "condition": "noise_10dB",
+      "model": "all_observed_finetuning_seeds",
+      "method": "gain",
+      "control": "pretrained",
+      "control_method": "gain",
+      "kind": "seed_average_same_postprocessing",
+      "observed_seeds": 3,
+      "expected_seeds": 3,
+      "paired_delta": {
+        "block_mean": 0.023578747585303473,
+        "ci95": [
+          -0.0024124902325631014,
+          0.048071209898684415
+        ],
+        "blocks": 20,
+        "replicates": 2000,
+        "seed": 20261024,
+        "unit": "disjoint speaker-pair block",
+        "warning": null,
+        "metric": "mean_output_si_sdr",
+        "case_count_per_seed": 200,
+        "training_seeds": 3,
+        "interpretation": "Paired change; CI samples speaker-pair blocks, conditional on these trained seeds"
+      },
+      "seed_si_sdr_means": [
+        7.435791576645608,
+        7.442588662004154,
+        7.437008717119238
+      ],
+      "seed_si_sdr_range": [
+        7.435791576645608,
+        7.442588662004154
+      ],
+      "seed_si_sdr_std": 0.0036243984609545797
+    },
+    {
+      "split": "test",
+      "condition": "noise_10dB",
+      "model": "all_observed_finetuning_seeds",
+      "method": "uniform",
+      "control": "pretrained",
+      "control_method": "uniform",
+      "kind": "seed_average_same_postprocessing",
+      "observed_seeds": 3,
+      "expected_seeds": 3,
+      "paired_delta": {
+        "block_mean": 0.043679786254601824,
+        "ci95": [
+          0.019014070807401088,
+          0.06626162553073138
+        ],
+        "blocks": 20,
+        "replicates": 2000,
+        "seed": 20261024,
+        "unit": "disjoint speaker-pair block",
+        "warning": null,
+        "metric": "mean_output_si_sdr",
+        "case_count_per_seed": 200,
+        "training_seeds": 3,
+        "interpretation": "Paired change; CI samples speaker-pair blocks, conditional on these trained seeds"
+      },
+      "seed_si_sdr_means": [
+        7.473335566645979,
+        7.476125114060207,
+        7.474685669724065
+      ],
+      "seed_si_sdr_range": [
+        7.473335566645979,
+        7.476125114060207
+      ],
+      "seed_si_sdr_std": 0.0013950121322375234
+    },
+    {
+      "split": "test",
+      "condition": "noise_10dB",
+      "model": "all_observed_finetuning_seeds",
+      "method": "energy",
+      "control": "pretrained",
+      "control_method": "energy",
+      "kind": "seed_average_same_postprocessing",
+      "observed_seeds": 3,
+      "expected_seeds": 3,
+      "paired_delta": {
+        "block_mean": 0.043368380581937635,
+        "ci95": [
+          0.018993678017766608,
+          0.06599117294061048
+        ],
+        "blocks": 20,
+        "replicates": 2000,
+        "seed": 20261024,
+        "unit": "disjoint speaker-pair block",
+        "warning": null,
+        "metric": "mean_output_si_sdr",
+        "case_count_per_seed": 200,
+        "training_seeds": 3,
+        "interpretation": "Paired change; CI samples speaker-pair blocks, conditional on these trained seeds"
+      },
+      "seed_si_sdr_means": [
+        7.4740900999063715,
+        7.476886358427077,
+        7.475242808090465
+      ],
+      "seed_si_sdr_range": [
+        7.4740900999063715,
+        7.476886358427077
+      ],
+      "seed_si_sdr_std": 0.0014052909296221438
+    }
+  ],
+  "selected_test_summaries": [
+    {
+      "model_label": "train_seed_20261024/best",
+      "method": "uniform",
+      "condition": "clean",
+      "mean_si_sdr": 13.833775999965058,
+      "mean_si_sdri": 13.824551552082948,
+      "condition_rows": 600,
+      "source_pairs": 200,
+      "speakers": 40
+    },
+    {
+      "model_label": "pretrained",
+      "method": "uniform",
+      "condition": "clean",
+      "mean_si_sdr": 13.730910102709265,
+      "mean_si_sdri": 13.721685654827155,
+      "condition_rows": 600,
+      "source_pairs": 200,
+      "speakers": 40
+    },
+    {
+      "model_label": "train_seed_20261024/best",
+      "method": "uniform",
+      "condition": "noise_10dB",
+      "mean_si_sdr": 7.473335566645979,
+      "mean_si_sdri": 8.257711375563538,
+      "condition_rows": 200,
+      "source_pairs": 200,
+      "speakers": 40
+    },
+    {
+      "model_label": "pretrained",
+      "method": "uniform",
+      "condition": "noise_10dB",
+      "mean_si_sdr": 7.4310356638888155,
+      "mean_si_sdri": 8.215411472806377,
+      "condition_rows": 200,
+      "source_pairs": 200,
+      "speakers": 40
+    }
+  ],
+  "teaching_code_policy": "source_snapshots preserve inspected upstream/project code for source excerpts. mini_lab.py is a separately labeled pedagogical arithmetic example, not model inference."
+}

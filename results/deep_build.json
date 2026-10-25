@@ -1,0 +1,98 @@
+{
+  "深度课程数": 15,
+  "源稿总字符数": 30317,
+  "实验图数量": 14,
+  "本地链接错误": [],
+  "课程": [
+    {
+      "title": "实战 01｜从波形到频谱：能独立处理音频数据",
+      "path": "deep\\01.html",
+      "source": "src\\deep\\01_dsp.md",
+      "characters": 2411
+    },
+    {
+      "title": "实战 02｜真正训练一个音频网络：数据、掩码、梯度和验证",
+      "path": "deep\\02.html",
+      "source": "src\\deep\\02_training.md",
+      "characters": 2114
+    },
+    {
+      "title": "实战 03｜AEC：从误差梯度推导 NLMS，再处理双讲与路径变化",
+      "path": "deep\\03.html",
+      "source": "src\\deep\\03_aec.md",
+      "characters": 2410
+    },
+    {
+      "title": "实战 04｜语音增强：维纳基线、神经掩码、相位与评测",
+      "path": "deep\\04.html",
+      "source": "src\\deep\\04_denoise.md",
+      "characters": 2074
+    },
+    {
+      "title": "实战 05｜AGC、VAD 与唤醒：用状态和阈值处理连续音频",
+      "path": "deep\\05.html",
+      "source": "src\\deep\\05_agc_vad.md",
+      "characters": 1665
+    },
+    {
+      "title": "实战 06｜阵列：GCC-PHAT、MUSIC 与 MVDR 的代码和几何",
+      "path": "deep\\06.html",
+      "source": "src\\deep\\06_array.md",
+      "characters": 1886
+    },
+    {
+      "title": "实战 07｜分离与去混响：PIT、SI-SDR 和任务边界",
+      "path": "deep\\07.html",
+      "source": "src\\deep\\07_separation.md",
+      "characters": 1809
+    },
+    {
+      "title": "实战 08｜ASR 核心：手写 CTC 前向递推并验证梯度",
+      "path": "deep\\08.html",
+      "source": "src\\deep\\08_ctc.md",
+      "characters": 1923
+    },
+    {
+      "title": "实战 09｜ASR 就业项目：数据清洗、热词、微调和分组评测",
+      "path": "deep\\09.html",
+      "source": "src\\deep\\09_asr_project.md",
+      "characters": 2021
+    },
+    {
+      "title": "实战 10｜TTS 核心：中文前端、时长展开、声码器与频谱损失",
+      "path": "deep\\10.html",
+      "source": "src\\deep\\10_tts.md",
+      "characters": 2416
+    },
+    {
+      "title": "实战 11｜声纹、日志与事件检测：把分数变成可验证的决策",
+      "path": "deep\\11.html",
+      "source": "src\\deep\\11_speaker.md",
+      "characters": 1736
+    },
+    {
+      "title": "实战 12｜语音大模型工程：打断、缓存、量化与时延",
+      "path": "deep\\12.html",
+      "source": "src\\deep\\12_engineering.md",
+      "characters": 1921
+    },
+    {
+      "title": "实战 13｜就业项目规格、面试题与学习验收表",
+      "path": "deep\\13.html",
+      "source": "src\\deep\\13_projects.md",
+      "characters": 2301
+    },
+    {
+      "title": "实战 14｜ANC、音效与空间音频：常见技能的补充实作",
+      "path": "deep\\14.html",
+      "source": "src\\deep\\14_anc.md",
+      "characters": 1833
+    },
+    {
+      "title": "实战 15｜梅尔谱与 MFCC：自己实现特征提取，避免模型输入失配",
+      "path": "deep\\15.html",
+      "source": "src\\deep\\15_features.md",
+      "characters": 1797
+    }
+  ]
+}

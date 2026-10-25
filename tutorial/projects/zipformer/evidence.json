@@ -1,0 +1,113 @@
+{
+  "reviewed_on": "2026-10-26",
+  "repository": "yang07-29/streaming-asr-zipformer",
+  "visibility": "private",
+  "ref": "codex/reproduction",
+  "commit_sha": "a9e8d394c4f671956d1afa3be30037d510234cf4",
+  "commit_url": "https://github.com/yang07-29/streaming-asr-zipformer/commit/a9e8d394c4f671956d1afa3be30037d510234cf4",
+  "review_method": "GitHub connector read-only; branch-file blob identities rechecked at pinned commit; no remote writes; no model inference or training run in this review.",
+  "root_directory_reviewed": true,
+  "files": [
+    {
+      "path": "README.md",
+      "git_blob_sha": "65353ffd6d434242356d50e92741ba2fb37176d3",
+      "url": "https://github.com/yang07-29/streaming-asr-zipformer/blob/a9e8d394c4f671956d1afa3be30037d510234cf4/README.md"
+    },
+    {
+      "path": "run_experiment.py",
+      "git_blob_sha": "a45ad3ec9402508ddc86a41ca166a402f94faa99",
+      "url": "https://github.com/yang07-29/streaming-asr-zipformer/blob/a9e8d394c4f671956d1afa3be30037d510234cf4/run_experiment.py"
+    },
+    {
+      "path": "metrics.py",
+      "git_blob_sha": "09bd79e63b0ad4152eac013cabd124bd397aa8c2",
+      "url": "https://github.com/yang07-29/streaming-asr-zipformer/blob/a9e8d394c4f671956d1afa3be30037d510234cf4/metrics.py"
+    },
+    {
+      "path": "mature/ALGORITHM.md",
+      "git_blob_sha": "3052184934208486d2311b1a5c470c315348d175",
+      "url": "https://github.com/yang07-29/streaming-asr-zipformer/blob/a9e8d394c4f671956d1afa3be30037d510234cf4/mature/ALGORITHM.md"
+    },
+    {
+      "path": "mature/decoder.py",
+      "git_blob_sha": "dd8298c115f241017b7ef53f924c2097b22d316d",
+      "url": "https://github.com/yang07-29/streaming-asr-zipformer/blob/a9e8d394c4f671956d1afa3be30037d510234cf4/mature/decoder.py"
+    },
+    {
+      "path": "mature/release/report.md",
+      "git_blob_sha": "4f3d222657e9bcc7cb40bc0ec22d6cd5594dd0ac",
+      "url": "https://github.com/yang07-29/streaming-asr-zipformer/blob/a9e8d394c4f671956d1afa3be30037d510234cf4/mature/release/report.md"
+    },
+    {
+      "path": "mature_v2/README.md",
+      "git_blob_sha": "16a966b75f513296a25f818f9538181429e55e59",
+      "url": "https://github.com/yang07-29/streaming-asr-zipformer/blob/a9e8d394c4f671956d1afa3be30037d510234cf4/mature_v2/README.md"
+    },
+    {
+      "path": "mature_v2/acceptor.py",
+      "git_blob_sha": "09088d089418fa9839c54c535466fa9d549b8766",
+      "url": "https://github.com/yang07-29/streaming-asr-zipformer/blob/a9e8d394c4f671956d1afa3be30037d510234cf4/mature_v2/acceptor.py"
+    },
+    {
+      "path": "mature_v2/release/report.md",
+      "git_blob_sha": "e59dffffa84f3441b77e7f27a08aa57e49bbefae",
+      "url": "https://github.com/yang07-29/streaming-asr-zipformer/blob/a9e8d394c4f671956d1afa3be30037d510234cf4/mature_v2/release/report.md"
+    },
+    {
+      "path": "mature_v3/README.md",
+      "git_blob_sha": "00d784681c463cb73fa5bdc3fd5db41fcc83c2d4",
+      "url": "https://github.com/yang07-29/streaming-asr-zipformer/blob/a9e8d394c4f671956d1afa3be30037d510234cf4/mature_v3/README.md"
+    },
+    {
+      "path": "mature_v3/gate.py",
+      "git_blob_sha": "b0f183f0ab6696100263a98d9f37f5874e75a684",
+      "url": "https://github.com/yang07-29/streaming-asr-zipformer/blob/a9e8d394c4f671956d1afa3be30037d510234cf4/mature_v3/gate.py"
+    },
+    {
+      "path": "mature_v3/policy.py",
+      "git_blob_sha": "9c123427c6c0be2c9bc7d88de07af4106b0e071b",
+      "url": "https://github.com/yang07-29/streaming-asr-zipformer/blob/a9e8d394c4f671956d1afa3be30037d510234cf4/mature_v3/policy.py"
+    },
+    {
+      "path": "mature_v3/release/report.md",
+      "git_blob_sha": "7c6af2bedc08cc75f9617f47c184ecdc5cb8f9e7",
+      "url": "https://github.com/yang07-29/streaming-asr-zipformer/blob/a9e8d394c4f671956d1afa3be30037d510234cf4/mature_v3/release/report.md"
+    },
+    {
+      "path": "examples/summary.csv",
+      "git_blob_sha": "09b7138cd357f92fc7e5c3ff77c99a3f171b1836",
+      "url": "https://github.com/yang07-29/streaming-asr-zipformer/blob/a9e8d394c4f671956d1afa3be30037d510234cf4/examples/summary.csv"
+    }
+  ],
+  "verified": [
+    "Runtime is sherpa-onnx 1.12.40 CPU streaming transducer wrapper, configured feature_dim=80.",
+    "Mature decoder uses mixed INT8 encoder/joiner and FP32 decoder, 160 ms input delivery, 0.66 s tail padding, endpoint detection disabled.",
+    "Each decode creates one stream reused for all chunks; native token/log-probability/timestamp lists are checked for equal lengths.",
+    "V1 trains candidate improvement classifiers, not the pretrained acoustic model.",
+    "V2 proposal_features returns 17 features without reference text; fit_acceptor weights changed proposals equally per sentence.",
+    "V3 gate trains a 12-feature logistic predictor of normalized hypothesis change, not improvement; policy lazily calls second decoder zero or one times.",
+    "V3 report has 39 sentences, 1683 reference characters: V2 326 errors and 39 second-pass calls; primary 327 errors and 13 calls; legacy and rule cascades also 327 errors with 4 and 8 calls.",
+    "V3 report's 31.45% compute saving is an offline estimate using cached single decode timings, not microphone latency.",
+    "Full read: metrics.py, run_experiment.py, mature/decoder.py, mature/ALGORITHM.md, mature_v3/gate.py, mature_v3/policy.py, three published reports; relevant feature/training/prediction portions of mature_v2/acceptor.py."
+  ],
+  "unknown_or_not_rerun": [
+    "Actual ONNX tensor dimensions, internal chunk configuration and per-layer state cache shapes were not inspected.",
+    "No model download, training, microphone inference, or hardware benchmarking was executed for this website update.",
+    "Published result values were read and visualized, not independently reproduced in this turn.",
+    "Speaker independence and pretraining data overlap cannot be established from these files.",
+    "Full original upstream acoustic-model training recipe is not established.",
+    "Comparative superiority or non-inferiority is not established by 39 sentences."
+  ],
+  "instruction_snippets": "Two Python snippets in lesson.md are explicitly labeled educational simplifications, not literal source quotations or standalone programs.",
+  "figure_provenance": {
+    "v3_tradeoff.png": "Generated by make_teaching_figures.py using integer statistics transcribed from the pinned mature_v3/release/report.md; not a new ASR run.",
+    "chunk_delivery.png": "Generated by make_teaching_figures.py with synthetic 1.0 s / 16 kHz input plus 0.66 s tail, 160 ms chunks; no model or latency measurement."
+  },
+  "verification_commands": [
+    "In the cloned project root with dependencies already present: .\\run_project.cmd -VerifyOnly",
+    "In the cloned project root: .\\.venv\\Scripts\\python.exe -m unittest -v test_metrics",
+    "In the complete V3 environment: .\\run_research_v3.cmd -VerifyOnly",
+    "In this lesson folder with matplotlib installed: python make_teaching_figures.py"
+  ],
+  "privacy_note": "No temporary GitHub raw download URLs or access tokens are stored. Canonical private GitHub links require repository access."
+}

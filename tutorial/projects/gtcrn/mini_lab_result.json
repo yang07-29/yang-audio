@@ -1,0 +1,66 @@
+{
+  "scope": "Actual NumPy teaching run; synthetic signals only; no GTCRN inference, training or real-speech score.",
+  "numpy_version": "2.4.4",
+  "matplotlib_version": "3.10.6",
+  "seed": 17,
+  "sample_rate": 16000,
+  "n_fft": 512,
+  "hop": 256,
+  "samples": 16000,
+  "spectrum_shape_time_frequency": [
+    63,
+    257
+  ],
+  "complex_input": [
+    1.0,
+    2.0
+  ],
+  "complex_mask": [
+    0.5,
+    -0.25
+  ],
+  "complex_output": [
+    1.0,
+    0.75
+  ],
+  "identity_reconstruction_max_abs_error": 4.440892098500626e-16,
+  "gain_results": [
+    {
+      "gain": 0.25,
+      "si_sdr_db": 9.434125759705534,
+      "gain_sensitive_sdr_db": 2.445664384888656,
+      "mse": 0.0804022603461672
+    },
+    {
+      "gain": 0.5,
+      "si_sdr_db": 9.434125759705534,
+      "gain_sensitive_sdr_db": 5.555877669073427,
+      "mse": 0.039286824771727034
+    },
+    {
+      "gain": 1.0,
+      "si_sdr_db": 9.434125759705534,
+      "gain_sensitive_sdr_db": 9.429315214995949,
+      "mse": 0.016102865861024766
+    },
+    {
+      "gain": 2.0,
+      "si_sdr_db": 9.434125759705534,
+      "gain_sensitive_sdr_db": -1.6386930998286888,
+      "mse": 0.20592259699233242
+    }
+  ],
+  "si_sdr_spread_db": 0.0,
+  "checks": {
+    "complex_multiplication": true,
+    "length_preserved": true,
+    "spectrum_shape": true,
+    "reconstruction_below_1e_12": true,
+    "gain_invariant_si_sdr": true
+  },
+  "script_sha256": "a56431dfc5124392f98c748635faf91fa5edea1a3c9a0b8ca37d7cfeabcbbc83",
+  "figures": [
+    "complex_mask_demo.png",
+    "reconstruction_gain_demo.png"
+  ]
+}

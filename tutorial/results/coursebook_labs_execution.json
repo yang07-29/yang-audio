@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-23",
+  "labs": [
+    {
+      "lab": "随课实验01 · 声音成为数组",
+      "status": "passed",
+      "code_blocks": 3,
+      "figures_rendered_in_memory": 2,
+      "outputs": [
+        {
+          "block": 1,
+          "sha256": "44637c4ebaf8d4a36be5db17f81f535b3d9c607e334d7da34172c43c8ef178e5",
+          "stdout": "数组形状： (16000,) 时长： 1.0 秒\n前5个样本： [0.     0.086  0.1694 0.2477 0.3187]\n"
+        },
+        {
+          "block": 2,
+          "sha256": "b2cf8cfd8855a838b786ab19716248fd3e8eeaaaba1ae8c72d3351997a570690",
+          "stdout": ""
+        },
+        {
+          "block": 3,
+          "sha256": "ef381ba82b1336355184e6e373db59a9face65b67f197a072d7dfcb433b55f63",
+          "stdout": "两个信号的RMS： 0.3535533905932735 0.35355339059327373\n"
+        }
+      ]
+    },
+    {
+      "lab": "随课实验02 · 分贝与配噪",
+      "status": "passed",
+      "code_blocks": 3,
+      "figures_rendered_in_memory": 2,
+      "outputs": [
+        {
+          "block": 1,
+          "sha256": "42838ec23167f00238a612b923fc6f91a1fa8af1e1e0ade0628d9a3ad967ffb0",
+          "stdout": "RMS = 0.3535533905932735 本课RMS dBFS = -9.030899869919441\n幅度乘2增加： 6.020599913279624 dB\n"
+        },
+        {
+          "block": 2,
+          "sha256": "4f2bbdbe35ca1695696b8df1b2b8142d0fbd8bc02645405c95f7a33e325dda61",
+          "stdout": "目标/重测SNR： 5.0 5.000000000000001\n"
+        },
+        {
+          "block": 3,
+          "sha256": "eada8dddc9c32b41da60ffb493b55802fca40d11d9d23ace82aa84ffd8ed1ea0",
+          "stdout": "削波影响样本比例： 0.645\n"
+        }
+      ]
+    },
+    {
+      "lab": "随课实验03 · 滤波与流式状态",
+      "status": "passed",
+      "code_blocks": 3,
+      "figures_rendered_in_memory": 2,
+      "outputs": [
+        {
+          "block": 1,
+          "sha256": "e49f64f1d1f041dca332e2765a7f3bf847702feb84f24d49717827f5f25bcc40",
+          "stdout": "脉冲响应： [0.1111 0.1111 0.1111 0.1111 0.1111 0.1111 0.1111 0.1111 0.1111 0.    ]\n"
+        },
+        {
+          "block": 2,
+          "sha256": "fca3e5e7c280249f953bb0ee78bef2e3ffb2d4627c18664d68f5028bdd368d6b",
+          "stdout": "正确保留状态最大误差： 1.1102230246251565e-16\n错误清零状态最大误差： 0.2930536804716581\n"
+        },
+        {
+          "block": 3,
+          "sha256": "68e178ce0e3c6a38b2f41e39daac9fff2d8203a5f6fd8063eed8585d98528c0d",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "lab": "随课实验04 · 手写 AEC 更新",
+      "status": "passed",
+      "code_blocks": 1,
+      "figures_rendered_in_memory": 1,
+      "outputs": [
+        {
+          "block": 1,
+          "sha256": "7511c0416ed5ef6e2a6bd0db703f0353c3aab5a5dcd135821734efd73c305396",
+          "stdout": "真实系数/学习系数： 0.6 0.5999999999999995\n"
+        }
+      ]
+    },
+    {
+      "lab": "随课实验05 · 手算 CTC 路径",
+      "status": "passed",
+      "code_blocks": 1,
+      "figures_rendered_in_memory": 1,
+      "outputs": [
+        {
+          "block": 1,
+          "sha256": "aa514ea3b27b298f2420ab71d15dbf13c6b8084c05a5866adf5f30c1129a1092",
+          "stdout": "三条合法路径概率： [np.float64(0.27999999999999997), np.float64(0.18), np.float64(0.42)] 总概率： 0.8799999999999999 负对数似然： 0.12783337150988502\n"
+        }
+      ]
+    }
+  ],
+  "all_passed": true,
+  "scope": "五个网页实验代码实际执行，绘图在内存渲染；未覆盖或重存历史PNG，不是新训练真实语音模型。"
+}

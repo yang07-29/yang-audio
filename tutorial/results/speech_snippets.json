@@ -1,0 +1,137 @@
+{
+  "scope": "第 12—16 章所有 Python 短代码块及其对应新增结果图",
+  "date": "2026-10-22",
+  "status": "passed",
+  "python": "C:/Users/yang/anaconda3/python.exe",
+  "working_directory": "F:/codex/调研/outputs/audio-course-zh",
+  "execution_method": "用 PowerShell 读取 Markdown，按 python 围栏提取每个块；每块分别经标准输入传给 Python 执行，不共享进程变量。图由章内完整代码实际生成。",
+  "actual_command": "$chapterFiles = Get-ChildItem -LiteralPath 'F:\\codex\\调研\\outputs\\audio-course-zh\\tutorial\\chapters' -Filter '*.md' | Where-Object { $_.Name -match '^(12|13|14|15|16)_' }; foreach ($chapterFile in $chapterFiles) { $chapterText = Get-Content -LiteralPath $chapterFile.FullName -Raw -Encoding UTF8; $codeBlocks = [regex]::Matches($chapterText, '(?ms)^```python\\r?\\n(.*?)^```\\r?$'); $blockNumber=0; foreach ($codeBlock in $codeBlocks) { $blockNumber++; Write-Output ($chapterFile.Name + ' block ' + $blockNumber); $codeBlock.Groups[1].Value | & 'C:\\Users\\yang\\anaconda3\\python.exe' -X utf8 -; if ($LASTEXITCODE -ne 0) { throw ('Failed: ' + $chapterFile.Name + ' block ' + $blockNumber) } } }",
+  "process_exit_code": 0,
+  "common_environment_stderr": "Failed to find real location of C:\\Users\\yang\\anaconda3\\python.exe",
+  "stderr_note": "每个解释器进程均打印上述本机路径提示，但所有代码块完成、断言通过、退出码为 0。下面 stdout 不包含该重复环境提示。",
+  "chapters": [
+    {"file": "chapters/12_pytorch.md", "han_characters": 2780, "total_characters": 6634, "python_blocks": 3},
+    {"file": "chapters/13_asr.md", "han_characters": 2750, "total_characters": 6616, "python_blocks": 2},
+    {"file": "chapters/14_tts.md", "han_characters": 2772, "total_characters": 6025, "python_blocks": 2},
+    {"file": "chapters/15_speaker.md", "han_characters": 2770, "total_characters": 5702, "python_blocks": 2},
+    {"file": "chapters/16_engineering.md", "han_characters": 3139, "total_characters": 7200, "python_blocks": 3}
+  ],
+  "tests": [
+    {
+      "file": "chapters/12_pytorch.md",
+      "block": 1,
+      "name": "标量梯度更新与实际损失柱状图",
+      "status": "passed",
+      "exit_code": 0,
+      "stdout": "4.0 -8.0\n1.2999999523162842\n",
+      "figure": "figures/ch12_gradient.png"
+    },
+    {
+      "file": "chapters/12_pytorch.md",
+      "block": 2,
+      "name": "带中文注释的因果卷积掩码网络形状",
+      "status": "passed",
+      "exit_code": 0,
+      "stdout": "torch.Size([2, 1, 65, 63])\n"
+    },
+    {
+      "file": "chapters/12_pytorch.md",
+      "block": 3,
+      "name": "有效元素掩码均方误差",
+      "status": "passed",
+      "exit_code": 0,
+      "stdout": "12 0.25\n"
+    },
+    {
+      "file": "chapters/13_asr.md",
+      "block": 1,
+      "name": "两步 CTC 枚举与合法路径概率图",
+      "status": "passed",
+      "exit_code": 0,
+      "stdout": "0.8 0.2231435513142097\n",
+      "figure": "figures/ch13_ctc_paths.png"
+    },
+    {
+      "file": "chapters/13_asr.md",
+      "block": 2,
+      "name": "编辑距离与 CER 手算验证",
+      "status": "passed",
+      "exit_code": 0,
+      "stdout": "2 0.5\n"
+    },
+    {
+      "file": "chapters/14_tts.md",
+      "block": 1,
+      "name": "六帧时长展开与矩阵数值图",
+      "status": "passed",
+      "exit_code": 0,
+      "stdout": "[[1.0, 0.0], [1.0, 0.0], [0.0, 1.0], [1.0, 1.0], [1.0, 1.0], [1.0, 1.0]]\n(6, 2)\n",
+      "figure": "figures/ch14_duration.png"
+    },
+    {
+      "file": "chapters/14_tts.md",
+      "block": 2,
+      "name": "教学声码器两次四倍上采样形状",
+      "status": "passed",
+      "exit_code": 0,
+      "stdout": "torch.Size([2, 1, 160])\n"
+    },
+    {
+      "file": "chapters/15_speaker.md",
+      "block": 1,
+      "name": "余弦评分与尺度不变性",
+      "status": "passed",
+      "exit_code": 0,
+      "stdout": "0.8\n0.8\n"
+    },
+    {
+      "file": "chapters/15_speaker.md",
+      "block": 2,
+      "name": "八配对分数阈值扫描与 FAR/FRR 图",
+      "status": "passed",
+      "exit_code": 0,
+      "stdout": "0.6 0.25 0.25\n0.8 0.0 0.5\n",
+      "figure": "figures/ch15_threshold.png"
+    },
+    {
+      "file": "chapters/16_engineering.md",
+      "block": 1,
+      "name": "分块音频重叠缓存与实际帧矩阵图",
+      "status": "passed",
+      "exit_code": 0,
+      "stdout": "[[0.0, 1.0, 2.0, 3.0], [2.0, 3.0, 4.0, 5.0], [4.0, 5.0, 6.0, 7.0]]\n[6.0, 7.0, 8.0]\n",
+      "figure": "figures/ch16_buffer.png"
+    },
+    {
+      "file": "chapters/16_engineering.md",
+      "block": 2,
+      "name": "四位刻度数值模拟",
+      "status": "passed",
+      "exit_code": 0,
+      "stdout": "[-7, -2, 0, 2, 7]\n[-1.4, -0.4, 0.0, 0.4, 1.4]\n"
+    },
+    {
+      "file": "chapters/16_engineering.md",
+      "block": 3,
+      "name": "轮次隔离、插话清队列和迟到结果拒收",
+      "status": "passed",
+      "exit_code": 0,
+      "stdout": "2 ['新回答']\n"
+    }
+  ],
+  "new_figures": [
+    {"file": "figures/ch12_gradient.png", "bytes": 21591, "visual_review": "passed"},
+    {"file": "figures/ch13_ctc_paths.png", "bytes": 33430, "visual_review": "passed"},
+    {"file": "figures/ch14_duration.png", "bytes": 20888, "visual_review": "passed"},
+    {"file": "figures/ch15_threshold.png", "bytes": 38719, "visual_review": "passed"},
+    {"file": "figures/ch16_buffer.png", "bytes": 28329, "visual_review": "passed"}
+  ],
+  "visual_review_note": "已逐张打开五幅新增 PNG 检查：中文标签正常、数值与代码对应、没有明显裁切或遮挡。五张历史实验图也逐张查看，并在章内明确标注其完整生成脚本及与教学短块的不同输入。",
+  "boundaries": [
+    "这些短代码验证数学、形状、缓存及控制逻辑，不代表训练好了真实 ASR、TTS 或声纹模型。",
+    "四位示例用 int32 存储量化整数，仅模拟刻度；未测试真实 INT4 推理内核。",
+    "五张新增图使用章内同一块完整代码和相同参数生成，紧跟代码展示；绘图使用 Agg 和微软雅黑，不打开窗口。",
+    "绘图代码要求从课程根目录 audio-course-zh 运行；每章已明确写出此前提。",
+    "未安装或下载新的预训练模型、数据集或运行库。"
+  ]
+}
