@@ -89,7 +89,8 @@
           : page.kind === 'lesson' || page.kind === 'lab' ? 'catalog' : 'resources';
     if (page.kind === 'home' && location.hash.startsWith('#read=')) {
       try {
-        const reading = decodeURIComponent(location.hash.slice(6));
+        const rawReading = decodeURIComponent(location.hash.slice(6));
+        const reading = (window.AUDIO_VIDEO_LESSONS || []).find(item => item.url === rawReading)?.source || rawReading;
         section = reading.startsWith('tutorial/projects/') ? 'projects'
           : reading.startsWith('tutorial/chapters/') || reading.startsWith('tutorial/labs/') ? 'catalog' : 'resources';
       } catch (_) { section = 'today'; }
@@ -287,6 +288,16 @@
     if (meta.childNodes.length) mainHeader.append(meta);
   }
   const article = document.querySelector('.am-doc-body');
+  const pairedVideo = (window.AUDIO_VIDEO_LESSONS || []).find(item => item.source === relative);
+  if (pairedVideo && article) {
+    const videoGuide = create('section', 'course-video-guide');
+    videoGuide.append(create('div', 'course-eyebrow', '这课可以先看视频'));
+    videoGuide.append(create('h2', '', '跟着图、算例和代码，把这一课讲明白'));
+    videoGuide.append(create('p', '', '不必先读完整篇文字。视频按小节讲解，带中文旁白、逐步高亮、注释代码和实际结果图；正文保留作深入查阅。'));
+    const minutes = Math.floor(pairedVideo.duration / 60);
+    videoGuide.append(link(`播放本课视频 · 约 ${minutes} 分钟 →`, pairedVideo.url, 'course-primary-button'));
+    article.prepend(videoGuide);
+  }
   if (page.kind === 'lesson' && article) {
     const completion = create('section', 'course-completion');
     completion.append(create('h2', '', '本课学完了吗？'));

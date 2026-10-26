@@ -109,9 +109,11 @@
       entries.forEach(([label, path]) => list.append(link(label, path)));
       section.append(list); resources.append(section);
     };
-    addCollection('中文有声讲解', '与正文配套的动画讲解，点击后在本页播放。', [
-      ['声音与数字音频基础', 'tutorial/study/videos/foundations.html'], ['怎样读代码与验证结果', 'tutorial/study/videos/workflow.html'],
-      ...projectItems.map(p => [p.name, `tutorial/projects/${p.id}/video.html`])
+    addCollection('逐课可视化视频', '每一课都有独立算例、中文讲解、代码高亮和真实运行图；不再共用基础概览。', [
+      ['全部 23 节视频 · 按课选择', 'tutorial/study/videos.html'],
+      ['从第 01 课开始：声音的三个旋钮', 'tutorial/video-lessons/01.html'],
+      ['AEC：跟着算一次 NLMS', 'tutorial/video-lessons/08.html'],
+      ...projectItems.map(p => [p.name, `tutorial/video-lessons/${p.id}.html`])
     ], true);
     addCollection('实验与参考资料', '代码、运行图、自测和证据说明集中查阅。', [
       ['交互可视化实验室', 'tutorial/study/visuals.html'], ['五个随课实验', 'tutorial/experiments.html'],
@@ -151,12 +153,14 @@
         doc?.querySelectorAll('audio,video').forEach(media => media.pause());
       } catch (_) {}
     };
-    const titleFor = path => data.pages.find(item => item.url === path)?.title || '学习内容';
+    const titleFor = path => data.pages.find(item => item.url === path)?.title || (window.AUDIO_VIDEO_LESSONS || []).find(item => item.url === path)?.title || '学习内容';
     function updateQuick(resource) {
+      const paired = (window.AUDIO_VIDEO_LESSONS || []).find(item => item.source === resource.path || item.url === resource.path);
       const project = projectItems.find(item => resource.path.startsWith(`tutorial/projects/${item.id}/`));
       let reading = resource.path;
       let video = null;
-      if (project) { reading = `tutorial/projects/${project.id}/lesson.html`; video = `tutorial/projects/${project.id}/video.html`; }
+      if (paired) { reading = paired.source; video = paired.url; }
+      else if (project) { reading = `tutorial/projects/${project.id}/lesson.html`; video = `tutorial/video-lessons/${project.id}.html`; }
       else {
         const day = window.AUDIO_STUDY_DATA?.days.find(item => item.url === resource.path || item.video === resource.path);
         if (day) { reading = day.url; video = day.video; }

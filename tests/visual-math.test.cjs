@@ -1,0 +1,10 @@
+const assert=require('node:assert/strict');
+const M=require('../assets/visual-labs.js');
+assert.deepEqual(M.collapse(['你','你','_','好','好']).result,['你','好']);
+assert.deepEqual(M.collapse(['你','_','你']).result,['你','你']);
+assert.deepEqual(M.collapse(['_','_']).result,[]);
+assert.equal(M.siSdr([1,-1,1,-1],[0.5,-0.5,0.5,-0.5]),Infinity);
+assert.equal(M.siSdr([0,0],[1,-1]),null);
+const s=[1,2,-1,-2], e=[1.2,1.8,-0.5,-2.4];
+assert.ok(Math.abs(M.siSdr(s,e)-M.siSdr(s,e.map(x=>x*3)))<1e-10);
+console.log('visual math: CTC blanks/repeats and SI-SDR scale/degenerate cases PASS');

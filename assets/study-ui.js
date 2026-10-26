@@ -426,8 +426,8 @@
         : `先写下对“${day.focus}”的已有理解与 2 个问题。学完后回来检查。`;
       const tasks = [
         { title: '主动回忆', text: reviewText, url: reviewDay ? reviewDay.url : null, label: '回顾课程', kind: 'course' },
-        { title: '正文与核心代码', text: `${day.practice ? '逐行追踪核心代码的输入、输出和中间变量。' : '阅读对应小节，画出概念或处理流程。'}重点：${day.focus}。`, url: day.url, label: '阅读课程', kind: 'course' },
-        { title: '视频讲解', text: '看中文讲解，暂停复述一遍；把一个动画节点对应到正文或代码。视频短于 15 分钟时，用余下时间重画流程。', url: day.video, label: '看讲解', kind: 'video' },
+        { title: '理解本课 · 视频优先', text: `${day.practice ? '回看代码和结果小节，先预测再解释输入、输出与中间变量。' : '直接从本课独立视频开始，跟着图示和数字算例理解，不必先读完正文。'}重点：${day.focus}。暂停手算也计入这 25 分钟。`, url: day.video, label: '开始本课视频', kind: 'video' },
+        { title: '图示与代码复盘', text: '用自己的话解释一张运行图和一段核心代码；忘记时回看视频小节，正文只按需查阅，不要求重复全文阅读。', url: day.url, label: '对照代码与图', kind: 'course' },
         { title: '练习与可视化', text: day.exercise, url: 'tutorial/study/visuals.html', label: '做实验', kind: 'lab' },
         { title: '闭卷自测与复盘', text: day.question, answer: day.answer }
       ];

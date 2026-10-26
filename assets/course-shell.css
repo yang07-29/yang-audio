@@ -116,3 +116,5 @@ html[data-theme="coursebook"] .course-shell.course-embedded .am-intro { margin-t
   html[data-theme="coursebook"] .course-shell :is(.course-sidebar, .course-mobile-bar, .course-menu-shade, .course-completion) { display: none !important; }
   html[data-theme="coursebook"] .course-shell .am-doc { margin: 0; padding: 0; }
 }
+/* 每课唯一的视频入口；图文正文完整保留。 */
+.course-video-guide{border:1px solid #beded7;background:#edf8f3;border-radius:16px;padding:22px 26px;margin:0 0 28px}.course-video-guide h2{font-size:1.25rem!important;margin:8px 0!important}.course-video-guide p{color:#466371;line-height:1.8;margin:10px 0 18px}.course-video-guide .course-primary-button{display:inline-block;text-decoration:none}.course-video-guide .course-eyebrow{font-size:12px;color:#087c80}.course-embedded .course-video-guide{padding:18px}
