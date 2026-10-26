@@ -682,7 +682,7 @@ window.AUDIO_COURSE = {
       "id": "tutorial/study/videos.html",
       "url": "tutorial/study/videos.html",
       "kind": "utility",
-      "title": "逐课可视化视频 · 23节中文讲解"
+      "title": "图文与视频课程目录 · 23课配套讲解"
     },
     {
       "id": "tutorial/study/visuals.html",

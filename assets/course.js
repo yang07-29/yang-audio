@@ -155,7 +155,7 @@
   const utilities = create('nav', 'course-utilities');
   utilities.setAttribute('aria-label', '辅助资料');
   utilities.append(link('资源总览', 'index.html#learn-resources'));
-  utilities.append(link('中文视频', 'tutorial/study/videos.html'));
+  utilities.append(link('图文与视频', 'tutorial/study/videos.html?v=20261026b'));
   utilities.append(link('可视化实验', 'tutorial/study/visuals.html'));
   utilities.append(link('随课实验', 'tutorial/experiments.html'));
   utilities.append(link('资料与内容审查', 'tutorial/resources.html'));
@@ -293,9 +293,9 @@
     const videoGuide = create('section', 'course-video-guide');
     videoGuide.append(create('div', 'course-eyebrow', '这课可以先看视频'));
     videoGuide.append(create('h2', '', '跟着图、算例和代码，把这一课讲明白'));
-    videoGuide.append(create('p', '', '不必先读完整篇文字。视频按小节讲解，带中文旁白、逐步高亮、注释代码和实际结果图；正文保留作深入查阅。'));
+    videoGuide.append(create('p', '', '下面是完整图文教程；配套视频带中文旁白、逐步高亮、注释代码和实际结果图。可以先读再看，也可以看完视频回到这里继续推导与练习。'));
     const minutes = Math.floor(pairedVideo.duration / 60);
-    videoGuide.append(link(`播放本课视频 · 约 ${minutes} 分钟 →`, pairedVideo.url, 'course-primary-button'));
+    videoGuide.append(link(`播放本课视频 · 约 ${minutes} 分钟 →`, pairedVideo.url + '?v=20261026b', 'course-primary-button'));
     article.prepend(videoGuide);
   }
   if (page.kind === 'lesson' && article) {

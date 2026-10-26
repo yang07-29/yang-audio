@@ -18,6 +18,11 @@
   if (typeof module === 'object' && module.exports) { module.exports = { resourceURL }; return; }
   const script = document.currentScript;
   const root = new URL('../', script.src);
+  function freshLessonURL(raw) {
+    const url = new URL(raw, root);
+    if (/\/tutorial\/video-lessons\/[^/]+\.html$/.test(url.pathname) && !url.searchParams.has('v')) url.searchParams.set('v', '20261026b');
+    return url;
+  }
   function boot() {
     const body = document.querySelector('.am-doc-body');
     const dashboard = document.getElementById('study-dashboard');
@@ -35,7 +40,7 @@
       node.type = 'button'; node.addEventListener('click', action); return node;
     };
     const link = (label, path, cls = 'portal-resource') => {
-      const node = el('a', cls, label); node.href = new URL(path, root).href; return node;
+      const node = el('a', cls, label); node.href = freshLessonURL(path).href; return node;
     };
     const oldPanels = [...body.children].filter(node => node !== dashboard);
     const header = document.querySelector('.am-head');
@@ -56,7 +61,8 @@
       viewMap.set(id, view); views.append(view); return view;
     };
     const today = makeView('learn-today', '今日学习'); today.append(dashboard);
-    const catalog = makeView('learn-catalog', '课程目录', '按顺序建立基础。点一课即可在本页阅读，不必反复返回目录。');
+    const catalog = makeView('learn-catalog', '完整图文课程', '文字、公式、注释代码和运行图都在这里。点一课即可阅读完整正文，再按需切到对应视频。');
+    catalog.append(link('图文 / 视频对照目录 · 每课两种入口', 'tutorial/study/videos.html', 'portal-text-link'));
     const finder = el('input', 'portal-search'); finder.type = 'search';
     finder.placeholder = '搜索知识点，例如：分贝、AEC、ASR'; finder.setAttribute('aria-label', '搜索完整课程目录');
     catalog.append(finder);
@@ -109,8 +115,8 @@
       entries.forEach(([label, path]) => list.append(link(label, path)));
       section.append(list); resources.append(section);
     };
-    addCollection('逐课可视化视频', '每一课都有独立算例、中文讲解、代码高亮和真实运行图；不再共用基础概览。', [
-      ['全部 23 节视频 · 按课选择', 'tutorial/study/videos.html'],
+    addCollection('图文与视频配套课程', '完整文字教程与逐课视频并列保留，按你理解得快的方式学习。', [
+      ['全部 23 课 · 读图文 / 看视频', 'tutorial/study/videos.html'],
       ['从第 01 课开始：声音的三个旋钮', 'tutorial/video-lessons/01.html'],
       ['AEC：跟着算一次 NLMS', 'tutorial/video-lessons/08.html'],
       ...projectItems.map(p => [p.name, `tutorial/video-lessons/${p.id}.html`])
@@ -165,7 +171,7 @@
         const day = window.AUDIO_STUDY_DATA?.days.find(item => item.url === resource.path || item.video === resource.path);
         if (day) { reading = day.url; video = day.video; }
       }
-      const entries = [['正文', reading], ...(video ? [['视频', video]] : []), ['实验', 'tutorial/study/visuals.html']];
+      const entries = [['读图文', reading], ...(video ? [['看视频', video]] : []), ['实验', 'tutorial/study/visuals.html']];
       quick.replaceChildren();
       for (const [label, path] of entries) {
         const item = link(label, path, 'portal-reader-tab');
@@ -178,13 +184,14 @@
       pauseMedia();
       document.body.classList.add('portal-reading'); views.hidden = true; workspace.hidden = false;
       back.textContent = lastView === 'learn-today' ? '← 返回任务' : '← 返回列表';
-      standalone.href = resource.href;
+      const href = freshLessonURL(resource.href).href;
+      standalone.href = href;
       title.textContent = titleFor(resource.path);
       updateQuick(resource);
-      if (loadedHref !== resource.href) {
-        loadedHref = resource.href;
+      if (loadedHref !== href) {
+        loadedHref = href;
         status.textContent = '正在加载学习内容；有声讲解较大，首次打开请稍等。';
-        const embedded = new URL(resource.href); embedded.searchParams.set('embedded', '1');
+        const embedded = new URL(href); embedded.searchParams.set('embedded', '1');
         frame.src = embedded.href;
         clearTimeout(timeout);
         timeout = setTimeout(() => { status.textContent = '内容加载较慢；可以稍等，或用右上角“独立打开”查看。'; }, 20000);

@@ -9,7 +9,7 @@ function node(extra={}) {
     fire(name,event={}){for(const fn of this.events[name]||[])fn(event)},
     setAttribute(k,v){this.attrs[k]=v},scrollIntoView(){}},extra);
 }
-const video=node({currentTime:0,duration:500,playbackRate:1,plays:0,play(){this.plays++;return Promise.resolve()}});
+const video=node({currentTime:0,duration:500,readyState:1,playbackRate:1,plays:0,querySelectorAll(){return []},play(){this.plays++;return Promise.resolve()}});
 const status=node(), speed=node(), replay=node();
 const chapter0=node({dataset:{seek:'0'}}),chapter1=node({dataset:{seek:'100'}});
 const transcript=node({dataset:{seek:'100'}});
