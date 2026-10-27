@@ -239,10 +239,12 @@
       "scene": 9
     }
   ],
-  "fingerprint": "2ccfd05afe1a6e413daa42aab1f1b212ea7c591705843ee8611cfd60a5ba76f3",
+  "fingerprint": "a3c390c1dd014c6d8f6d3dfa380e6a9f3ee17504e8c6f0c9c15f721ea7cfc8f9",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "路径概率 [0.2, 0.2, 0.3, 0.3]\n目标概率 0.8 损失 0.22314",
   "limits": "两步 NumPy 例子只验证 CTC 路径概率；未训练或推理真实 ASR。完整动态规划、RNN-T 训练和真实流式系统需要后续实验。",
-  "bytes": 13122579,
+  "bytes": 15191300,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }

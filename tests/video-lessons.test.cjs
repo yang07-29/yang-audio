@@ -22,6 +22,9 @@ for (const video of videos) {
   assert.match(page, /逐字讲稿/);
   const media = path.join(root, 'tutorial/video-lessons/media', video.id);
   const record = JSON.parse(fs.readFileSync(path.join(media, 'lesson.json'), 'utf8'));
+  assert.equal(record.visualTheme, 'handbook-v2', 'new frames, not only a new player skin');
+  assert.equal(record.codeDisplay, 'focused-context');
+  assert.match(page, /lesson\.mp4\?v=20261027/);
   assert.ok(record.narrationChineseCharacters >= 1300);
   assert.ok(record.duration >= 240 && record.duration < 1500, video.id+' duration');
   assert.ok(record.scenes.length >= 10);

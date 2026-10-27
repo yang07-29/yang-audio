@@ -182,7 +182,7 @@ const frame = a.document.querySelector('iframe');
 assert.equal(frame.src, base + 'tutorial/chapters/01_sound.html?embedded=1');
 a.loadFrame(frame.src);
 assert.equal(a.document.querySelector('.portal-reader-title').textContent, '实际课程标题');
-assert.ok(a.document.querySelectorAll('.portal-reader-tab').some(node => node.href === base + 'tutorial/video-lessons/01.html?v=20261026b'), '第01课的视频必须指向01并加载当前播放器，不是基础概览');
+assert.ok(a.document.querySelectorAll('.portal-reader-tab').some(node => node.href === base + 'tutorial/video-lessons/01.html?v=20261027'), '第01课的视频必须指向01并加载当前播放器，不是基础概览');
 a.click(a.document.querySelector('.portal-button'));
 assert.equal(a.find('portal-reader').hidden, true);
 assert.equal(a.dashboard.parentNode, a.find('learn-today'));
@@ -208,7 +208,7 @@ const next = doc.createElement('a'); next.href = base + 'tutorial/chapters/02_di
 assert.equal(next.click().defaultPrevented, true); a.flush();
 assert.ok(decodeURIComponent(a.location.hash).includes('02_digital.html'));
 doc = a.loadFrame(frame.src);
-assert.ok(a.document.querySelectorAll('.portal-reader-tab').some(node => node.href === base + 'tutorial/video-lessons/02.html?v=20261026b'), '下一课切换到独立02视频并更新缓存版本');
+assert.ok(a.document.querySelectorAll('.portal-reader-tab').some(node => node.href === base + 'tutorial/video-lessons/02.html?v=20261027'), '下一课切换到独立02视频并更新缓存版本');
 const anchor = doc.createElement('a'); anchor.href = doc.location.href + '#panel-A'; doc.body.append(anchor);
 assert.equal(anchor.click().defaultPrevented, false, '同文档小节原生滚动');
 const outside = doc.createElement('a'); outside.href = 'https://example.org/manual'; doc.body.append(outside);
@@ -234,11 +234,19 @@ assert.equal(playing, false); assert.equal(a.find('portal-reader').hidden, false
 
 const deepLink = app('#learn-projects');
 assert.equal(deepLink.find('learn-projects').hidden, false, '直接栏目书签能打开');
+const rows = deepLink.document.querySelectorAll('.portal-course-row');
+assert.equal(rows.length, 19, '目录保留全部 19 课');
+for (const row of rows) {
+  const choices = row.querySelectorAll('.portal-choice');
+  assert.equal(choices.length, 2, '每课都有图文和视频两个独立入口');
+  assert.equal(choices[0].textContent, '读图文');
+  assert.equal(choices[1].textContent, '看视频');
+}
 const readLink = app('#read=' + encodeURIComponent('tutorial/chapters/08_aec.html'));
 assert.equal(readLink.find('portal-reader').hidden, false, '直接阅读书签能打开');
 const videoLink = app('#read=' + encodeURIComponent('tutorial/video-lessons/08.html'));
-assert.equal(videoLink.document.querySelector('iframe').src, base + 'tutorial/video-lessons/08.html?v=20261026b&embedded=1', '直接旧书签也使用当前视频播放器');
-assert.equal(videoLink.document.querySelector('.portal-standalone').href, base + 'tutorial/video-lessons/08.html?v=20261026b', '独立打开使用当前播放器');
+assert.equal(videoLink.document.querySelector('iframe').src, base + 'tutorial/video-lessons/08.html?v=20261027&embedded=1', '直接旧书签也使用当前视频播放器');
+assert.equal(videoLink.document.querySelector('.portal-standalone').href, base + 'tutorial/video-lessons/08.html?v=20261027', '独立打开使用当前播放器');
 assert.ok(videoLink.document.querySelectorAll('.portal-reader-tab').some(node => node.href === base + 'tutorial/chapters/08_aec.html'), '从AEC视频能切回AEC正文');
 const invalid = app('#read=' + encodeURIComponent('tutorial/%2e%2e%2f..%2foutside.html'));
 assert.equal(invalid.find('learn-today').hidden, false, '异常路径回到安全的今日视图');

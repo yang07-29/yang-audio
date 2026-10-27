@@ -305,10 +305,12 @@
       "scene": 9
     }
   ],
-  "fingerprint": "4a0e6477c3c69fbb15e97cb3a654ffeebd5c097ef2b9fdc10ced85784d8c70da",
+  "fingerprint": "54e91201fd54e0d7277a4ff74e653cf20f5b79c4935953f607158730dd5aab97",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "帧长/ms: 10.0\n活动帧数: 55\nRMS/增益: 0.0566 1.7678",
   "limits": "代码只运行合成正弦活动的迟滞VAD与RMS计算，没有运行真实语音分类、完整AGC、神经增强或唤醒模型。",
-  "bytes": 14810591,
+  "bytes": 17355202,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }

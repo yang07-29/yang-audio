@@ -285,10 +285,12 @@
       "scene": 11
     }
   ],
-  "fingerprint": "db27920c102300522ccaaf14ab74fa4f71fa22337c857cca52d3a4133f933aad",
+  "fingerprint": "126639aea7773efafb24095a75fe947e679ef5c34ead8dfc6f6619432386d92e",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "频率间隔: 31.25 Hz\nFFT形状: (129,)\n正确回环误差: 1.6653345369377348e-16\n丢相位误差: 0.6830111205428785",
   "limits": "实际代码验证单帧FFT、窗函数及相位回环，不是完整STFT或流式引擎；多帧重建的完整程序保留在本课图文教程，幅度谱未作物理校准。",
-  "bytes": 15574288,
+  "bytes": 18738137,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }

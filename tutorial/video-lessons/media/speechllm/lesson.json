@@ -251,10 +251,12 @@
       "scene": 9
     }
   ],
-  "fingerprint": "b8c5c543a0dec81c06efa4eebe7ce88a28a47e4c03b29da842c80063781e63fb",
+  "fingerprint": "75fbd6473806b46fceb773b3a1999377cb1bf57a49e3ecaab4727922af83eb02",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "选 0.5 残差 0.23\n选 0.25 残差 -0.02\n选 -0.04 残差 0.02\n示例码率 4000 bit/s",
   "limits": "三级一维码本为教学手选，没有训练神经编解码器或语音大模型，没有音质和延迟实测；码率示例为独立假设配置。",
-  "bytes": 13587881,
+  "bytes": 15954738,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }

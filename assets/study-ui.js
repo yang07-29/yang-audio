@@ -156,7 +156,8 @@
     panel.id = 'study-dashboard';
     panel.setAttribute('aria-labelledby', 'study-heading');
     const top = el('div', 'study-topline');
-    top.append(el('span', 'study-kicker', 'YANG AUDIO / 每日学习'));
+    const sessionLabel = el('span', 'study-kicker');
+    top.append(sessionLabel);
     const todayLabel = el('span', 'study-date-label');
     top.append(todayLabel);
     panel.append(top);
@@ -166,6 +167,9 @@
     panel.append(heading);
     const dayIntro = el('p', 'study-focus');
     panel.append(dayIntro);
+    const startLinks = el('nav', 'study-start');
+    startLinks.setAttribute('aria-label', '当天课程：选择图文或视频');
+    panel.append(startLinks);
     const calendarStatus = el('p', 'study-calendar-status');
     panel.append(calendarStatus);
     const progressBar = el('progress', 'study-progress');
@@ -405,7 +409,8 @@
       const nowIndex = core.indexAt(state.start, today.date);
       const end = core.dateAt(state.start, data.days.length - 1);
       todayLabel.textContent = `今天 ${today.date} · ${today.zone}`;
-      heading.textContent = `${date === today.date ? '今天的' : `第 ${selected + 1} 天 · `}${state.minutes} 分钟学习卡`;
+      sessionLabel.textContent = `${date === today.date ? '今日学习' : '补课 / 预习'} · 第 ${selected + 1} 天 · ${state.minutes} 分钟`;
+      heading.textContent = day.title;
       let position;
       if (nowIndex < 0) position = `距离开始还有 ${-nowIndex} 天，可先预习`;
       else if (nowIndex >= data.days.length) position = `原计划日期已结束 ${nowIndex - data.days.length + 1} 天，仍可补课`;
@@ -417,7 +422,11 @@
       duration.value = String(state.minutes);
       previous.disabled = selected === 0;
       next.disabled = selected === data.days.length - 1;
-      dayIntro.textContent = `${day.title} · ${day.focus}`;
+      dayIntro.textContent = `本次重点：${day.focus}`;
+      startLinks.replaceChildren(
+        resourceLink('读本课图文', day.url),
+        resourceLink('看本课视频', day.video, 'video')
+      );
       taskList.replaceChildren();
       const reviewIndex = Number.isInteger(day.review) ? day.review - 1 : -1;
       const reviewDay = reviewIndex >= 0 && reviewIndex < selected ? data.days[reviewIndex] : null;
@@ -426,7 +435,7 @@
         : `先写下对“${day.focus}”的已有理解与 2 个问题。学完后回来检查。`;
       const tasks = [
         { title: '主动回忆', text: reviewText, url: reviewDay ? reviewDay.url : null, label: '回顾课程', kind: 'course' },
-        { title: '理解本课 · 视频优先', text: `${day.practice ? '回看代码和结果小节，先预测再解释输入、输出与中间变量。' : '直接从本课独立视频开始，跟着图示和数字算例理解，不必先读完正文。'}重点：${day.focus}。暂停手算也计入这 25 分钟。`, url: day.video, label: '开始本课视频', kind: 'video' },
+        { title: '理解本课', text: `${day.practice ? '回看代码和结果小节，先预测再解释输入、输出与中间变量。' : '读图文或看视频，选择你更容易理解的方式；遇到难点再切换，不要求重复全文阅读。'}重点：${day.focus}。暂停手算也计入这 25 分钟。`, url: day.video, label: '开始本课视频', kind: 'video' },
         { title: '图示与代码复盘', text: '用自己的话解释一张运行图和一段核心代码；忘记时回看视频小节，正文只按需查阅，不要求重复全文阅读。', url: day.url, label: '对照代码与图', kind: 'course' },
         { title: '练习与可视化', text: day.exercise, url: 'tutorial/study/visuals.html', label: '做实验', kind: 'lab' },
         { title: '闭卷自测与复盘', text: day.question, answer: day.answer }

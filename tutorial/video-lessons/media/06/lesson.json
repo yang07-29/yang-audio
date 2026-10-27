@@ -291,10 +291,12 @@
       "scene": 11
     }
   ],
-  "fingerprint": "e9fa80fed41e840fc3d74f668732967735bd42deabf77387d0edf847c3768ac6",
+  "fingerprint": "2c083051072f36fa99139f8f7fd67fe923a53ab1cc9dcf1d162c8621169c8284",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "谱/Mel/MFCC: (257,) (20,) (13,)\n前四个MFCC: [-51.57  29.47 -13.29 -10.67]",
   "limits": "单帧合成音使用HTK风格Mel和峰值型三角权重，数值不保证与任何库的默认前端一致；本例没有识别文字、合成语音或实现生产级音高估计。",
-  "bytes": 15840792,
+  "bytes": 18520242,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }

@@ -239,10 +239,12 @@
       "scene": 9
     }
   ],
-  "fingerprint": "03375017e78856d1ec3ce6d41698832a3be25bd950f4e1eb8da267be4a41c0ad",
+  "fingerprint": "05688520b06c8581ec9051081d4db760a30048bf5e604d3bdcbb3ce6cc933311",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "[1, 0]\n[1, 0]\n[0, 1]\n[1, 1]\n[1, 1]\n[1, 1]\n形状 (6, 2)\n名义时长 96.0 ms",
   "limits": "实际代码是二维教学向量的时长展开，不是训练好的 TTS，不输出自然语音，不证明音色或自然度表现。",
-  "bytes": 13183183,
+  "bytes": 15496702,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }

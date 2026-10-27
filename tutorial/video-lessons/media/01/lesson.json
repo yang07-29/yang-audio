@@ -239,10 +239,12 @@
       "scene": 9
     }
   ],
-  "fingerprint": "9c02663921818a2551c1ecd076738901cc3b870a87ba1a1a88e5ff173f5a6f89",
+  "fingerprint": "ad51027a67ec9ffaad1c5764a2d2969db200e95f0f710771c09477c4fd5c82e9",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "数组形状: (80,)\n每周期点数: 8.0\n前八点: [ 0.     0.283  0.4    0.283  0.    -0.283 -0.4   -0.283]\n反相残差: 1.470071343486095e-15",
   "limits": "这是理想数字纯音教学，不是麦克风测量或ANC性能验证；真实录音还受到传播、传感器和软件前处理影响。",
-  "bytes": 12888272,
+  "bytes": 15517807,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }

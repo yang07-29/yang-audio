@@ -239,10 +239,12 @@
       "scene": 9
     }
   ],
-  "fingerprint": "280ea705d025cab31d9cafe42169189703cd6ac91bcb226d4a0508f41fea2e26",
+  "fingerprint": "793b4c217c7c9e4d5a2c45f48be338898aa70ef26ae31b7c7e955dc7fd21004e",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "10 ms 样点数 160\n周期 1.0 ms；FFT 间距 31.25 Hz\n幅度翻倍的电平变化 6.02 dB\n48 kHz 双声道 16 bit PCM 192000 字节/秒",
   "limits": "这是数字单位和合成信号复习，不涉及校准声压、真实播放响度或模型业务指标；超过满量程的数组不能不检查就保存播放。",
-  "bytes": 13761676,
+  "bytes": 15925311,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }

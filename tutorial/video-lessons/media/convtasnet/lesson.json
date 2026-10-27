@@ -365,10 +365,12 @@
       "scene": 9
     }
   ],
-  "fingerprint": "fefa65a0adf3363fbb39cca0da201b00cbceeb7f47f55c40594bf8342672488e",
+  "fingerprint": "39b91e2eacb0d25c649daff5c7b0f3e9b3ecbb9a1a2543efc4d4e0da6829b09b",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "残差: [ 0.2  0.2 -0.2 -0.1]\n求和误差: 0.0\n原配对/交换: -3.5 11.5",
   "limits": "新运行的是四点残差与人为PIT评分算例，不是Conv-TasNet推理。项目历史证据固定提交8e8bd3921ac39587d2407e86aa7204cba52ad77d；未重训、未试听新模型结果或验证流式能力。",
-  "bytes": 15006046,
+  "bytes": 18009757,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }

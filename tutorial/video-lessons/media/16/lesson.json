@@ -239,10 +239,12 @@
       "scene": 9
     }
   ],
-  "fingerprint": "81c2d1efdd1aa92c7db23196365de1d0a86d2726c490e4916c450b0369ba2814",
+  "fingerprint": "a22c641c7106ae8bb0d1427f8acc9224099b4531bf2c86b15a1e09d56fbc3a0c",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "帧 1 [0, 1, 2, 3]\n帧 2 [2, 3, 4, 5]\n帧 3 [4, 5, 6, 7]\n余量 [6, 7, 8]",
   "limits": "代码只验证数组缓存，不是可上线实时音频回调；没有测量设备延迟、并发、量化或真实模型推理。",
-  "bytes": 12952304,
+  "bytes": 15236994,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }

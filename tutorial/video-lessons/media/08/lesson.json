@@ -359,10 +359,12 @@
       "scene": 9
     }
   ],
-  "fingerprint": "caee0cdafa917559b39d0e342fd3970dd7854b5996ec8fef236dd3a66ed6ab24",
+  "fingerprint": "d47f32969326a9a755950b3d41d3dc19b2d5c21f274cd5012054903ee46e7102",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "前段RMS: 0.038362\n后段RMS: 0.0\n路径系数: [0.7 0.2]",
   "limits": "固定无噪声线性路径教学仿真；没有真实通话、双讲检测、非线性扬声器或设备闭环验收。",
-  "bytes": 14432532,
+  "bytes": 17132286,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }

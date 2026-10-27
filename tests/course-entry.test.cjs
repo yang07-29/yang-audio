@@ -15,7 +15,7 @@ for (const lesson of ctx.window.AUDIO_VIDEO_LESSONS) {
   const row = page.match(new RegExp(`<article class="library-item" data-lesson="${lesson.id}">([\\s\\S]*?)</article>`));
   assert.ok(row, lesson.id + ' must have a course row');
   assert.ok(row[1].includes(`href="../../${lesson.source}"`), lesson.id + ' full original text');
-  assert.ok(row[1].includes(`href="../../${lesson.url}?v=20261026b"`), lesson.id + ' matched video with current cache version');
+  assert.ok(row[1].includes(`href="../../${lesson.url}?v=20261027"`), lesson.id + ' matched video with current cache version');
   assert.match(row[1], />读图文<\/a>/);
   assert.match(row[1], />看视频<\/a>/);
 }

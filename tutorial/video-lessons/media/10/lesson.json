@@ -293,10 +293,12 @@
       "scene": 9
     }
   ],
-  "fingerprint": "f3b4efa5523df76422c4b9533fc308bc856485012358be890e3af16e2c248da1",
+  "fingerprint": "7c21408a9288b9b06d828a52b8e64aeef14190e9d629895e31d370ebb0b95ad9",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "第二路时延/点: 2\n法线角度/度: 32.408\n最大时差/点: 3.732",
   "limits": "只运行宽带随机信号的两麦GCC-PHAT教学实验；MVDR与MUSIC为机制讲解，未声称本视频完成真实阵列定位或水声验证。",
-  "bytes": 14210458,
+  "bytes": 17182192,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }

@@ -79,7 +79,11 @@ async function main() {
   const a = app('index.html');
   assert.ok(a.find('study-dashboard'));
   assert.equal(a.all().filter(node => node.type === 'checkbox').length, 5);
-  assert.equal(a.find('study-heading').textContent, '今天的90 分钟学习卡');
+  assert.equal(a.find('study-heading').textContent, data.days[0].title, '首屏标题直接展示当天课题');
+  const startLinks = a.all().find(node => node.className === 'study-start');
+  assert.equal(startLinks.children.length, 2, '正文和视频并列，不能用视频替代正文');
+  assert.ok(startLinks.children[0].href.endsWith(data.days[0].url));
+  assert.ok(startLinks.children[1].href.includes(data.days[0].video));
   assert.ok(a.all().some(node => node.textContent === '先读准备课'));
   const dashboard = a.find('study-dashboard');
   const focusIndex = dashboard.children.findIndex(node => node.className === 'study-focus');
@@ -133,9 +137,10 @@ async function main() {
   assert.ok(plan.all().some(node => node.className === 'study-quicklinks'), '独立计划页仍有返回入口');
   const browseDay = app('index.html');
   await browseDay.all().find(node => node.textContent === '后一天 →').click();
-  assert.ok(browseDay.find('study-heading').textContent.startsWith('第 2 天'));
+  assert.equal(browseDay.find('study-heading').textContent, data.days[1].title);
+  assert.ok(browseDay.all().find(node => node.className === 'study-kicker').textContent.includes('第 2 天'));
   await browseDay.all().find(node => node.textContent === '补最早未完成').click();
-  assert.equal(browseDay.find('study-heading').textContent, '今天的90 分钟学习卡');
+  assert.equal(browseDay.find('study-heading').textContent, data.days[0].title);
   const seventh = app('index.html?day=d07');
   assert.ok(seventh.all().some(node => node.textContent === '术语与闭卷自测'));
   const other = app('tutorial/chapters/08_aec.html');

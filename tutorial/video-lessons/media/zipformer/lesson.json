@@ -251,10 +251,12 @@
       "scene": 9
     }
   ],
-  "fingerprint": "ffa2769eaf0197bbffcfb4ccba80d32be554e8b3d931eefa75e3caebd5e63309",
+  "fingerprint": "2e4c398a98cea1e7a5f06adb4b8ee6be280d278cfad3ddafaf5022fce341aab0",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "1 二遍 39 错字 326\n2 二遍 13 错字 327\n3 二遍 4 错字 327\n4 二遍 8 错字 327\n主门 CER 19.43 %\n主门多错 1 字",
   "limits": "按固定仓库 a9e8d394c4f671956d1afa3be30037d510234cf4 报告重绘与算术解释；没有下载模型、重新训练、推理或测量麦克风延迟。",
-  "bytes": 13717486,
+  "bytes": 16283225,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }

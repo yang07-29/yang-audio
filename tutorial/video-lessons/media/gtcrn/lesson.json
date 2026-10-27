@@ -377,10 +377,12 @@
       "scene": 9
     }
   ],
-  "fingerprint": "23fc8b5156c2eb3c1b345171f38b3e6a332e3b4d0d3f5ad19ae1dba0d1407416",
+  "fingerprint": "fbd16c1f610ae1516f389a671769fd8a47e008f86ba21e9cd27871101ad32ada",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "输入: (1+2j)\n输出: (1+0.75j)\n幅度: 2.2361 1.25\n相位/度: 63.43 36.87",
   "limits": "仅新运行固定复数掩码NumPy算例。项目结构与历史报告来自固定提交688d5ca4407e7ea941736ede1bf0b5d767dbc94c，本次未重训、未重新测速或验证真实硬件。",
-  "bytes": 14772178,
+  "bytes": 17527292,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }

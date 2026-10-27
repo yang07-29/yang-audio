@@ -341,10 +341,12 @@
       "scene": 9
     }
   ],
-  "fingerprint": "b3b0ad341b026a906349572c69f30c6626a207d7a2ce963fac8f89d135676a73",
+  "fingerprint": "385d65387a1a13f4e064b7c027e08f5c19d8e697a30cd8435671fa3043331bb4",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "初始损失: 4.0\n一步后lr=0.1: 0.16\n一步后lr=0.3: 7.84",
   "limits": "本视频执行NumPy标量梯度实验，不宣称重新训练音频神经网络。PyTorch张量、掩码网络和完整训练代码保留在原课。",
-  "bytes": 14756528,
+  "bytes": 17464045,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }

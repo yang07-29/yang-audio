@@ -13,6 +13,11 @@
   stylesheet.rel = 'stylesheet';
   stylesheet.href = new URL('course-shell.css', script.src).href;
   document.head.append(stylesheet);
+  // 始终置于旧版布局之后：正文、归档与学习工作台共用一套设计规范。
+  const handbook = document.createElement('link');
+  handbook.rel = 'stylesheet';
+  handbook.href = new URL('handbook.css?v=20261027', script.src).href;
+  document.head.append(handbook);
   const absolute = path => new URL(path, root).href;
   const relative = decodeURIComponent(location.pathname).slice(decodeURIComponent(root.pathname).length);
   const redirect = data.aliases[relative];
@@ -61,16 +66,17 @@
   drawerClose.type = 'button';
   drawerClose.setAttribute('aria-label', '关闭学习导航');
   sidebar.append(drawerClose);
-  sidebar.append(create('div', 'course-eyebrow', 'AUDIO LEARNING STUDIO'));
+  sidebar.append(create('div', 'course-eyebrow', '音频算法学习手册'));
   sidebar.append(link('yang-audio', 'index.html', 'course-brand'));
-  sidebar.append(create('p', 'course-side-description', '每天一点，把声音学明白。'));
+  sidebar.append(create('p', 'course-side-description', '理解原理，动手验证。'));
   const primary = create('nav', 'course-primary-nav');
   primary.setAttribute('aria-label', '学习主入口');
   const primaryItems = [
     ['今日学习', 'index.html', 'today', '01'],
     ['课程目录', 'index.html#learn-catalog', 'catalog', '02'],
     ['项目实战', 'index.html#learn-projects', 'projects', '03'],
-    ['学习计划', 'tutorial/study/plan.html', 'plan', '04']
+    ['学习计划', 'tutorial/study/plan.html', 'plan', '04'],
+    ['资料与工具', 'index.html#learn-resources', 'resources', '05']
   ];
   const primaryLinks = primaryItems.map(([title, path, id, number]) => {
     const item = link('', path, 'course-primary-link');
@@ -155,7 +161,7 @@
   const utilities = create('nav', 'course-utilities');
   utilities.setAttribute('aria-label', '辅助资料');
   utilities.append(link('资源总览', 'index.html#learn-resources'));
-  utilities.append(link('图文与视频', 'tutorial/study/videos.html?v=20261026b'));
+  utilities.append(link('图文与视频', 'tutorial/study/videos.html?v=20261027'));
   utilities.append(link('可视化实验', 'tutorial/study/visuals.html'));
   utilities.append(link('随课实验', 'tutorial/experiments.html'));
   utilities.append(link('资料与内容审查', 'tutorial/resources.html'));
@@ -291,11 +297,10 @@
   const pairedVideo = (window.AUDIO_VIDEO_LESSONS || []).find(item => item.source === relative);
   if (pairedVideo && article) {
     const videoGuide = create('section', 'course-video-guide');
-    videoGuide.append(create('div', 'course-eyebrow', '这课可以先看视频'));
-    videoGuide.append(create('h2', '', '跟着图、算例和代码，把这一课讲明白'));
-    videoGuide.append(create('p', '', '下面是完整图文教程；配套视频带中文旁白、逐步高亮、注释代码和实际结果图。可以先读再看，也可以看完视频回到这里继续推导与练习。'));
+    videoGuide.append(create('h2', '', '图文教程'));
+    videoGuide.append(create('p', '', '完整推导、注释代码与运行图都在下方。想跟着算一遍？可以切换到本课视频。'));
     const minutes = Math.floor(pairedVideo.duration / 60);
-    videoGuide.append(link(`播放本课视频 · 约 ${minutes} 分钟 →`, pairedVideo.url + '?v=20261026b', 'course-primary-button'));
+    videoGuide.append(link(`播放本课视频 · 约 ${minutes} 分钟 →`, pairedVideo.url + '?v=20261027', 'course-primary-button'));
     article.prepend(videoGuide);
   }
   if (page.kind === 'lesson' && article) {

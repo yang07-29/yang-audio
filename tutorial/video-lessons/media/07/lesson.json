@@ -311,10 +311,12 @@
       "scene": 9
     }
   ],
-  "fingerprint": "483d4a21158517bc0c8fdb2d582b83b4b285cf2528941d27bdf4a05a7b057087",
+  "fingerprint": "3ff03441c9b1c1abbebcef44fb0c8cbb873cb26953558b757df30ca968bfa425",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "500与6000 Hz增益/dB: [ -0.112 -17.198]\n线性相位延迟/ms: 0.0625\n尖峰输出: [0. 0. 1. 1. 1.]",
   "limits": "合成正弦与三点平均教学实验，不代表语音降噪效果；完整滤波设计、IIR稳定性、EQ与压缩器继续见原课。",
-  "bytes": 14604570,
+  "bytes": 17465290,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }

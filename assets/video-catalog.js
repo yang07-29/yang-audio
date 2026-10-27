@@ -5,7 +5,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/chapters/00_start.html",
     "url": "tutorial/video-lessons/00.html",
     "duration": 559.37,
-    "bytes": 13136826
+    "bytes": 15508581
   },
   {
     "id": "01",
@@ -13,7 +13,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/chapters/01_sound.html",
     "url": "tutorial/video-lessons/01.html",
     "duration": 532.22,
-    "bytes": 12888272
+    "bytes": 15517807
   },
   {
     "id": "02",
@@ -21,7 +21,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/chapters/02_digital.html",
     "url": "tutorial/video-lessons/02.html",
     "duration": 549.47,
-    "bytes": 13474101
+    "bytes": 15344842
   },
   {
     "id": "03",
@@ -29,7 +29,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/chapters/03_decibels.html",
     "url": "tutorial/video-lessons/03.html",
     "duration": 540.35,
-    "bytes": 13244475
+    "bytes": 15811490
   },
   {
     "id": "04",
@@ -37,7 +37,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/chapters/04_numpy.html",
     "url": "tutorial/video-lessons/04.html",
     "duration": 537.99,
-    "bytes": 12644387
+    "bytes": 14729759
   },
   {
     "id": "05",
@@ -45,7 +45,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/chapters/05_spectrum.html",
     "url": "tutorial/video-lessons/05.html",
     "duration": 662.64,
-    "bytes": 15574288
+    "bytes": 18738137
   },
   {
     "id": "06",
@@ -53,7 +53,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/chapters/06_features.html",
     "url": "tutorial/video-lessons/06.html",
     "duration": 654.88,
-    "bytes": 15840792
+    "bytes": 18520242
   },
   {
     "id": "07",
@@ -61,7 +61,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/chapters/07_filters.html",
     "url": "tutorial/video-lessons/07.html",
     "duration": 654.69,
-    "bytes": 14604570
+    "bytes": 17465290
   },
   {
     "id": "08",
@@ -69,7 +69,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/chapters/08_aec.html",
     "url": "tutorial/video-lessons/08.html",
     "duration": 663.66,
-    "bytes": 14432532
+    "bytes": 17132286
   },
   {
     "id": "09",
@@ -77,7 +77,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/chapters/09_enhancement.html",
     "url": "tutorial/video-lessons/09.html",
     "duration": 655.1,
-    "bytes": 14810591
+    "bytes": 17355202
   },
   {
     "id": "10",
@@ -85,7 +85,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/chapters/10_arrays.html",
     "url": "tutorial/video-lessons/10.html",
     "duration": 640.52,
-    "bytes": 14210458
+    "bytes": 17182192
   },
   {
     "id": "11",
@@ -93,7 +93,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/chapters/11_acoustics.html",
     "url": "tutorial/video-lessons/11.html",
     "duration": 638.3,
-    "bytes": 14143985
+    "bytes": 17022394
   },
   {
     "id": "12",
@@ -101,7 +101,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/chapters/12_pytorch.html",
     "url": "tutorial/video-lessons/12.html",
     "duration": 668.5,
-    "bytes": 14756528
+    "bytes": 17464045
   },
   {
     "id": "13",
@@ -109,7 +109,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/chapters/13_asr.html",
     "url": "tutorial/video-lessons/13.html",
     "duration": 564.61,
-    "bytes": 13122579
+    "bytes": 15191300
   },
   {
     "id": "14",
@@ -117,7 +117,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/chapters/14_tts.html",
     "url": "tutorial/video-lessons/14.html",
     "duration": 566.55,
-    "bytes": 13183183
+    "bytes": 15496702
   },
   {
     "id": "15",
@@ -125,7 +125,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/chapters/15_speaker.html",
     "url": "tutorial/video-lessons/15.html",
     "duration": 546.7,
-    "bytes": 12925715
+    "bytes": 14812484
   },
   {
     "id": "16",
@@ -133,7 +133,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/chapters/16_engineering.html",
     "url": "tutorial/video-lessons/16.html",
     "duration": 568.53,
-    "bytes": 12952304
+    "bytes": 15236994
   },
   {
     "id": "17",
@@ -141,7 +141,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/chapters/17_project.html",
     "url": "tutorial/video-lessons/17.html",
     "duration": 592.79,
-    "bytes": 14235491
+    "bytes": 17277449
   },
   {
     "id": "18",
@@ -149,7 +149,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/chapters/18_glossary.html",
     "url": "tutorial/video-lessons/18.html",
     "duration": 565.11,
-    "bytes": 13761676
+    "bytes": 15925311
   },
   {
     "id": "convtasnet",
@@ -157,7 +157,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/projects/convtasnet/lesson.html",
     "url": "tutorial/video-lessons/convtasnet.html",
     "duration": 674.24,
-    "bytes": 15006046
+    "bytes": 18009757
   },
   {
     "id": "gtcrn",
@@ -165,7 +165,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/projects/gtcrn/lesson.html",
     "url": "tutorial/video-lessons/gtcrn.html",
     "duration": 672.28,
-    "bytes": 14772178
+    "bytes": 17527292
   },
   {
     "id": "speechllm",
@@ -173,7 +173,7 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "lessons/14.html",
     "url": "tutorial/video-lessons/speechllm.html",
     "duration": 579.02,
-    "bytes": 13587881
+    "bytes": 15954738
   },
   {
     "id": "zipformer",
@@ -181,6 +181,6 @@ window.AUDIO_VIDEO_LESSONS = [
     "source": "tutorial/projects/zipformer/lesson.html",
     "url": "tutorial/video-lessons/zipformer.html",
     "duration": 575.67,
-    "bytes": 13717486
+    "bytes": 16283225
   }
 ];

@@ -20,7 +20,7 @@
   const root = new URL('../', script.src);
   function freshLessonURL(raw) {
     const url = new URL(raw, root);
-    if (/\/tutorial\/video-lessons\/[^/]+\.html$/.test(url.pathname) && !url.searchParams.has('v')) url.searchParams.set('v', '20261026b');
+    if (/\/tutorial\/video-lessons\/[^/]+\.html$/.test(url.pathname) && !url.searchParams.has('v')) url.searchParams.set('v', '20261027');
     return url;
   }
   function boot() {
@@ -44,11 +44,8 @@
     };
     const oldPanels = [...body.children].filter(node => node !== dashboard);
     const header = document.querySelector('.am-head');
-    header.querySelector('h1').textContent = '今天，学懂一点音频。';
-    header.querySelector('.am-sub').textContent = '从共同基础到音频实习，每次专注完成一小步。';
-    const intro = el('div', 'portal-header-meta');
-    intro.append(el('span', 'portal-status-dot', '寒假前实习准备'), el('span', '', '19 章系统课 · 3 个项目 · 11 周计划'));
-    header.prepend(intro);
+    header.querySelector('h1').textContent = '音频算法学习手册';
+    header.querySelector('.am-sub').textContent = '从声音基础，到能讲清、能验证的实习项目。';
     const views = el('div', 'portal-views'); views.id = 'portal-views';
     const viewMap = new Map();
     const makeView = (id, title, subtitle) => {
@@ -61,8 +58,8 @@
       viewMap.set(id, view); views.append(view); return view;
     };
     const today = makeView('learn-today', '今日学习'); today.append(dashboard);
-    const catalog = makeView('learn-catalog', '完整图文课程', '文字、公式、注释代码和运行图都在这里。点一课即可阅读完整正文，再按需切到对应视频。');
-    catalog.append(link('图文 / 视频对照目录 · 每课两种入口', 'tutorial/study/videos.html', 'portal-text-link'));
+    const catalog = makeView('learn-catalog', '课程目录', '按顺序补基础，也可以直接查知识点。每一课都保留完整正文、公式、注释代码与运行图。');
+    catalog.append(link('查看 23 课图文 / 视频对照目录 →', 'tutorial/study/videos.html', 'portal-text-link'));
     const finder = el('input', 'portal-search'); finder.type = 'search';
     finder.placeholder = '搜索知识点，例如：分贝、AEC、ASR'; finder.setAttribute('aria-label', '搜索完整课程目录');
     catalog.append(finder);
@@ -74,11 +71,16 @@
       const summary = el('summary'); summary.append(el('span', '', group.title), el('span', 'portal-count', `${lessons.length} 课`));
       const list = el('div', 'portal-course-list');
       for (const lesson of lessons) {
-        const row = link('', lesson.url, 'portal-course-row');
+        const row = el('div', 'portal-course-row');
         row.append(el('span', 'portal-lesson-number', lesson.number));
         const text = el('span', 'portal-course-text');
-        text.append(el('strong', '', lesson.short), el('span', '', lesson.outcome));
-        row.append(text, el('span', 'portal-open-icon', '→')); list.append(row);
+        text.append(link(lesson.short, lesson.url, 'portal-lesson-title'), el('span', '', lesson.outcome));
+        const choices = el('nav', 'portal-lesson-choices');
+        choices.setAttribute('aria-label', `${lesson.short}的学习方式`);
+        choices.append(link('读图文', lesson.url, 'portal-choice'));
+        const paired = (window.AUDIO_VIDEO_LESSONS || []).find(item => item.source === lesson.url);
+        if (paired) choices.append(link('看视频', paired.url, 'portal-choice'));
+        row.append(text, choices); list.append(row);
         catalogRows.push({ row, section, text: `${lesson.number} ${lesson.short} ${lesson.keywords}`.toLowerCase() });
       }
       section.append(summary, list); catalog.append(section);
@@ -107,7 +109,7 @@
     }
     projects.append(projectGrid);
     projects.append(link('查看项目证据、阅读顺序与公开范围', 'tutorial/study/projects.html', 'portal-text-link'));
-    const resources = makeView('learn-resources', '资料与工具', '需要时再展开。视频、实验和旧版材料都在这里，不挤占今天的任务。');
+    const resources = makeView('learn-resources', '资料与工具', '实验、参考和旧版归档分开放。完整图文与视频也可以在这里按课查找。');
     const addCollection = (title, description, entries, opened = false) => {
       const section = el('details', 'portal-collection'); section.open = opened;
       section.append(el('summary', '', title), el('p', 'portal-collection-description', description));

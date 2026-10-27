@@ -245,10 +245,12 @@
       "scene": 9
     }
   ],
-  "fingerprint": "bb4560f7fd1a5ff5d704c6ca2f746052276dafd3a59ab38234eb7d664a2d9447",
+  "fingerprint": "5ad605919904e8966be364b9cd9e3f5616101955e1a0c5d13180b2e057d2f10e",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "阈值 0.6 FAR 0.25 FRR 0.25\n阈值 0.8 FAR 0.0 FRR 0.5",
   "limits": "八个分数是教学输入，曲线不是声纹模型实测；没有运行真实 diarization 或事件检测模型。",
-  "bytes": 12925715,
+  "bytes": 14812484,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }

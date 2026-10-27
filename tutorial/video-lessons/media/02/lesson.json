@@ -245,10 +245,12 @@
       "scene": 9
     }
   ],
-  "fingerprint": "11b8b2b3da14ee2817ffbaefc06e4fc3b5a32885c25e6f7a7f99a3e1a6bb0969",
+  "fingerprint": "4510cdd5b3a495d9f957316f85d81584fb13dd0a33f617dc75e258a4bf7d610d",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "时长: 0.01 秒\n粗量化最大误差: 0.10278640450004328\n16位最大误差: 1.335808397934235e-05\n16位数据字节数: 160",
   "limits": "代码验证合成信号的量化，不模拟ADC电路，也不测真实录音设备；粗量化仅为可视化教学，重采样的抗混叠需要原课扩展实验。",
-  "bytes": 13474101,
+  "bytes": 15344842,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }

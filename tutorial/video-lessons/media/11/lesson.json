@@ -317,10 +317,12 @@
       "scene": 9
     }
   ],
-  "fingerprint": "2d251518fcd27f0c9b41822ee8e137da801920ef0c70e8a2a4208459871ce8d7",
+  "fingerprint": "ba051df8fd0ff5dddf7671be2a8cd606ab74825b441cf21b367da0a4a3611fd9",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "斜率/dB每秒: -150.0\n外推RT60/秒: 0.4\n三路径DRR/dB: 5.0515",
   "limits": "理想全正指数与三脉冲算术教学，不是真实RIR测量；没有硬件ANC试验或声压安全结论。",
-  "bytes": 14143985,
+  "bytes": 17022394,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }

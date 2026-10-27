@@ -239,10 +239,12 @@
       "scene": 9
     }
   ],
-  "fingerprint": "9998850e57211a9018babd6e9190667360f5b66feca38881d1961747780f3045",
+  "fingerprint": "29da23d859734aaddd7661706046c13a3fab926e58fe729c347f56710e554088",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "输入 SNR 3.11 dB\n处理后 SNR 9.66 dB\n仅为合成单音；不是语音模型成绩",
   "limits": "代码使用合成单音与噪声，五点平均是离线教学基线；未跑真实语音数据或神经网络，不可将数字当个人增强项目成绩。",
-  "bytes": 14235491,
+  "bytes": 17277449,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }

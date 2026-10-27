@@ -239,10 +239,12 @@
       "scene": 9
     }
   ],
-  "fingerprint": "ceae91a4e6896830c885707c62e946881dff91f1e4be3c3c8f7e34448e716228",
+  "fingerprint": "06e17283b55294c09da5e1838fecd16bfcaa8ce1f3d617628566f08f1d9e87fa",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "输入/输出/单声道: (4, 2) (4, 2) (4,)\n每声道RMS: [0.15811388 0.15811388]\n切片形状: (4,) (4, 1)\n分帧结果: [[0 1 2 3]\n [2 3 4 5]\n [4 5 6 7]\n [6 7 8 9]]",
   "limits": "四点算例验证轴和广播，不代表真实双声道总可以直接平均；分帧例子独立于绘图的四点信号，真实工程还需边界与异常输入处理。",
-  "bytes": 12644387,
+  "bytes": 14729759,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }

@@ -239,10 +239,12 @@
       "scene": 9
     }
   ],
-  "fingerprint": "242b1c498702ad2bf9a5887d853a04bd12bc59ef4ce449bb771a4d778a6da6ea",
+  "fingerprint": "d9dd94b7c42e91fbb4c0d6b5b78aff55a914e11501096d92137efda1dd05664a",
   "voice": "Microsoft Huihui Desktop / 本地合成中文旁白",
+  "visualTheme": "handbook-v2",
+  "codeDisplay": "focused-context",
   "exampleOutput": "峰值/RMS: 0.5 0.35355339059327384\nRMS dBFS: -9.030899869919434\n实测SNR: 9.999999999999998\n混合峰值: 0.8922000243349858",
   "limits": "合成数据拥有独立目标与噪声；这里的SNR不等于未知真实录音的可直接观测值，dBFS也不等于未校准的声压级或主观响度。",
-  "bytes": 13244475,
+  "bytes": 15811490,
   "verifiedStreams": "H.264 / AAC; 1280×720; 10 fps; faststart"
 }
