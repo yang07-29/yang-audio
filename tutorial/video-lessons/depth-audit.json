@@ -1,0 +1,1065 @@
+[
+  {
+    "id": "00",
+    "originalScenes": 10,
+    "expandedScenes": 23,
+    "source": "tutorial/chapters/00_start.html",
+    "coverage": [
+      {
+        "heading": "你在这门教程里要做到什么",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "一讲应该怎样读",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "网页正文、配套实验和下载附件怎么用",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "第一次运行：先查环境，不盲目重装",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "第一个图：该看什么",
+        "explanationSegments": 2
+      },
+      {
+        "heading": "代码出错时按什么顺序查",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "本周只交三样东西",
+        "explanationSegments": 2
+      }
+    ],
+    "newModelRun": false,
+    "newTrainingRun": false,
+    "limits": "本课只运行合成纯音与数组检查，不涉及模型训练、实际麦克风校准或设备测量。",
+    "videoSeconds": 1475.28,
+    "narrationChineseCharacters": 4192
+  },
+  {
+    "id": "01",
+    "originalScenes": 10,
+    "expandedScenes": 31,
+    "source": "tutorial/chapters/01_sound.html",
+    "coverage": [
+      {
+        "heading": "1. 声音到底是什么？",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "2. 三个旋钮：高低、大小和时间位置",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "3. 音高、谐波、音色：它们不是一回事",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "4. 从时间走到空间：声速、波长、距离",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "5. 第一段代码：制造一小段声音，不需要声卡",
+        "explanationSegments": 8
+      },
+      {
+        "heading": "6. 麦克风链路与新手最常见的误判",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "7. 自测：先遮住答案",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "8. 实习怎么用，学到哪里算过关",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "9. 今天怎样学，明天怎样回忆",
+        "explanationSegments": 3
+      }
+    ],
+    "newModelRun": false,
+    "newTrainingRun": false,
+    "limits": "这是理想数字纯音教学，不是麦克风测量或ANC性能验证；真实录音还受到传播、传感器和软件前处理影响。",
+    "videoSeconds": 2099.39,
+    "narrationChineseCharacters": 5979
+  },
+  {
+    "id": "02",
+    "originalScenes": 10,
+    "expandedScenes": 33,
+    "source": "tutorial/chapters/02_digital.html",
+    "coverage": [
+      {
+        "heading": "1. 数字音频做了两次取舍",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "2. 为什么不能只说“多采几个点就行”",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "3. 16 位 PCM 到底存了什么",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "4. 手算一次存储量与时长",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "5. 不保存 WAV 文件，也能验证读写",
+        "explanationSegments": 9
+      },
+      {
+        "heading": "6. WAV、PCM、MP3、FLAC：容器和编码别混了",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "7. 常见错误与处理顺序",
+        "explanationSegments": 2
+      },
+      {
+        "heading": "8. 再运行一个反例：每三点取一点为什么不够",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "9. 五道练习与参考答案",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "10. 与实习工作的联系",
+        "explanationSegments": 1
+      }
+    ],
+    "newModelRun": false,
+    "newTrainingRun": false,
+    "limits": "代码验证合成信号的量化，不模拟ADC电路，也不测真实录音设备；粗量化仅为可视化教学，重采样的抗混叠需要原课扩展实验。",
+    "videoSeconds": 2188.72,
+    "narrationChineseCharacters": 5971
+  },
+  {
+    "id": "03",
+    "originalScenes": 10,
+    "expandedScenes": 30,
+    "source": "tutorial/chapters/03_decibels.html",
+    "coverage": [
+      {
+        "heading": "1. 同样最高点的两段声音，平均能量可能不同",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "2. 分贝不是独立的神秘单位，而是一个比值的对数",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "3. dBFS：相对于数字满刻度，不是相对于人耳",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "4. dB SPL：需要声压单位和测量校准",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "5. SNR：先说明信号和噪声分别是哪一条",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "6. 一段可运行代码，把四个量算出来",
+        "explanationSegments": 8
+      },
+      {
+        "heading": "7. LUFS、响度、动态范围与削波",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "8. 一个真实工作式的小案例：怎么解释“增强后更安静”",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "9. 练习、答案和就业验收",
+        "explanationSegments": 3
+      }
+    ],
+    "newModelRun": false,
+    "newTrainingRun": false,
+    "limits": "合成数据拥有独立目标与噪声；这里的SNR不等于未知真实录音的可直接观测值，dBFS也不等于未校准的声压级或主观响度。",
+    "videoSeconds": 2157.44,
+    "narrationChineseCharacters": 5982
+  },
+  {
+    "id": "04",
+    "originalScenes": 10,
+    "expandedScenes": 31,
+    "source": "tutorial/chapters/04_numpy.html",
+    "coverage": [
+      {
+        "heading": "1. 数组不是声音本身，它是一张带规则的数字表",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "2. 轴和归约：你想保留什么，就不要把它平均掉",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "3. 第一段核心代码：两声道，不要写两套循环",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "4. 从长波形切出短帧：为什么同一个点会出现多次",
+        "explanationSegments": 8
+      },
+      {
+        "heading": "5. 整数、浮点和数值安全",
+        "explanationSegments": 2
+      },
+      {
+        "heading": "6. 读取真实音频：接口、路径与报错",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "7. 跟着定位一次“不报错但结果不对”的问题",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "8. 自测与参考答案",
+        "explanationSegments": 2
+      },
+      {
+        "heading": "9. 实习验收：能定位形状错误，比背函数名重要",
+        "explanationSegments": 2
+      }
+    ],
+    "newModelRun": false,
+    "newTrainingRun": false,
+    "limits": "四点算例验证轴和广播，不代表真实双声道总可以直接平均；分帧例子独立于绘图的四点信号，真实工程还需边界与异常输入处理。",
+    "videoSeconds": 2005.18,
+    "narrationChineseCharacters": 5330
+  },
+  {
+    "id": "05",
+    "originalScenes": 12,
+    "expandedScenes": 33,
+    "source": "tutorial/chapters/05_spectrum.html",
+    "coverage": [
+      {
+        "heading": "1. 卷积：每个历史采样留下多大影响",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "2. DFT 在问：“这段数据含有多少这种旋转节奏？”",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "3. 为什么频谱会漏出一片，窗函数又牺牲了什么",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "4. STFT：把“整段频谱”变成“每个短时刻的频谱”",
+        "explanationSegments": 2
+      },
+      {
+        "heading": "5. 核心代码：保留相位，再把各帧加回去",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "6. 逐步故障实验：故意改错，比再读一遍有效",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "7. 不同图回答不同问题，别被颜色带走",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "8. 自测与参考答案",
+        "explanationSegments": 2
+      },
+      {
+        "heading": "9. 就业验收任务",
+        "explanationSegments": 1
+      }
+    ],
+    "newModelRun": false,
+    "newTrainingRun": false,
+    "limits": "实际代码验证单帧FFT、窗函数及相位回环，不是完整STFT或流式引擎；多帧重建的完整程序保留在本课图文教程，幅度谱未作物理校准。",
+    "videoSeconds": 2191.15,
+    "narrationChineseCharacters": 6260
+  },
+  {
+    "id": "06",
+    "originalScenes": 12,
+    "expandedScenes": 30,
+    "source": "tutorial/chapters/06_features.html",
+    "coverage": [
+      {
+        "heading": "1. 为什么不直接把所有数字都交给模型",
+        "explanationSegments": 2
+      },
+      {
+        "heading": "2. Mel 频率：换一把尺子，再做频带汇总",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "3. 为什么取对数，MFCC 又多做了什么",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "4. 核心代码：只用 NumPy 做一帧 log-Mel 和 MFCC",
+        "explanationSegments": 7
+      },
+      {
+        "heading": "5. F0 与共振峰：谁在振，哪里在共鸣",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "6. CMVN、预加重和差分：能用，但不要无条件加",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "7. 输入配置清单，比一个模型名称更有用",
+        "explanationSegments": 2
+      },
+      {
+        "heading": "8. 跟着做一次特征排错",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "9. 五道自测与参考答案",
+        "explanationSegments": 3
+      }
+    ],
+    "newModelRun": false,
+    "newTrainingRun": false,
+    "limits": "单帧合成音使用HTK风格Mel和峰值型三角权重，数值不保证与任何库的默认前端一致；本例没有识别文字、合成语音或实现生产级音高估计。",
+    "videoSeconds": 2186.2,
+    "narrationChineseCharacters": 6107
+  },
+  {
+    "id": "07",
+    "originalScenes": 10,
+    "expandedScenes": 38,
+    "source": "tutorial/chapters/07_filters.html",
+    "coverage": [
+      {
+        "heading": "本课先拿下什么",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "1. 从一杯晃动的水理解低通，但别把类比当公式",
+        "explanationSegments": 6
+      },
+      {
+        "heading": "2. 手算：三个历史采样怎样变成一个新采样",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "3. 频率响应、相位和群延迟分别回答什么",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "4. 实验：真正设计一个低通，再看它改了哪些成分",
+        "explanationSegments": 9
+      },
+      {
+        "heading": "5. IIR：用上一时刻的输出参与计算",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "6. EQ 与压缩器：一个按频率调，一个按电平调",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "7. 常见失败，按这个顺序排查",
+        "explanationSegments": 8
+      },
+      {
+        "heading": "8. 练习、参考答案与实习作业",
+        "explanationSegments": 6
+      }
+    ],
+    "newModelRun": false,
+    "newTrainingRun": false,
+    "limits": "合成正弦与三点平均教学实验，不代表语音降噪效果；完整滤波设计、IIR稳定性、EQ与压缩器继续见原课。",
+    "videoSeconds": 2481.81,
+    "narrationChineseCharacters": 6874
+  },
+  {
+    "id": "08",
+    "originalScenes": 10,
+    "expandedScenes": 37,
+    "source": "tutorial/chapters/08_aec.html",
+    "coverage": [
+      {
+        "heading": "学完本章，你应当能做什么",
+        "explanationSegments": 1
+      },
+      {
+        "heading": "1. 两个人打电话，为什么对方听到自己的声音",
+        "explanationSegments": 11
+      },
+      {
+        "heading": "2. 单抽头手算：梯度到底把参数推向哪里",
+        "explanationSegments": 7
+      },
+      {
+        "heading": "3. 从 LMS 到 NLMS：同一步长不该随音量失控",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "4. 在真实的数组长度上跑一次，但仍承认它是仿真",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "5. 三种场景必须分开看",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "6. 为什么真实产品远不止几十行 NLMS",
+        "explanationSegments": 2
+      },
+      {
+        "heading": "7. 排查表：别一失败就把 μ 调大",
+        "explanationSegments": 6
+      },
+      {
+        "heading": "8. 练习答案与实习交付",
+        "explanationSegments": 5
+      }
+    ],
+    "newModelRun": false,
+    "newTrainingRun": false,
+    "limits": "固定无噪声线性路径教学仿真；没有真实通话、双讲检测、非线性扬声器或设备闭环验收。",
+    "videoSeconds": 2472.73,
+    "narrationChineseCharacters": 6971
+  },
+  {
+    "id": "09",
+    "originalScenes": 10,
+    "expandedScenes": 36,
+    "source": "tutorial/chapters/09_enhancement.html",
+    "coverage": [
+      {
+        "heading": "学习目标与先修",
+        "explanationSegments": 2
+      },
+      {
+        "heading": "1. 餐厅里和智能音箱说话：五个模块各管什么",
+        "explanationSegments": 8
+      },
+      {
+        "heading": "2. 降噪的第一直觉：保留像语音的频点，但别误以为能凭空知道真值",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "3. 运行完整降噪基线，再对照图而不是只看一个数字",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "4. 神经降噪是在学习什么，不是把“模型很大”当解释",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "5. AGC：想让声音稳定，先防止把停顿放成风暴",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "6. VAD 为什么需要两条阈值和一点耐心",
+        "explanationSegments": 6
+      },
+      {
+        "heading": "7. KWS 与评测：别用 99% 准确率掩盖天天误唤醒",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "8. 失败排查与闭卷练习",
+        "explanationSegments": 11
+      }
+    ],
+    "newModelRun": false,
+    "newTrainingRun": false,
+    "limits": "代码只运行合成正弦活动的迟滞VAD与RMS计算，没有运行真实语音分类、完整AGC、神经增强或唤醒模型。",
+    "videoSeconds": 2487.18,
+    "narrationChineseCharacters": 6934
+  },
+  {
+    "id": "10",
+    "originalScenes": 10,
+    "expandedScenes": 37,
+    "source": "tutorial/chapters/10_arrays.html",
+    "coverage": [
+      {
+        "heading": "学习阶梯",
+        "explanationSegments": 2
+      },
+      {
+        "heading": "1. 生活直觉：人能听出左右，机器需要明确坐标",
+        "explanationSegments": 11
+      },
+      {
+        "heading": "2. 第一阶：相关就是拿一段波形左右移动去找最像的位置",
+        "explanationSegments": 6
+      },
+      {
+        "heading": "3. 第二阶：延迟求和，先让同一件事同时发生",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "4. 用图把“估时间”与“估方向”分开",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "5. 第三阶：MVDR，在保住目标响应的约束下压低噪声",
+        "explanationSegments": 8
+      },
+      {
+        "heading": "6. 第四阶：MUSIC，为什么“噪声空间”还能告诉我们声源在哪",
+        "explanationSegments": 6
+      },
+      {
+        "heading": "7. 阵列工程里最常见的错误",
+        "explanationSegments": 7
+      },
+      {
+        "heading": "8. 练习与实习作业",
+        "explanationSegments": 5
+      }
+    ],
+    "newModelRun": false,
+    "newTrainingRun": false,
+    "limits": "只运行宽带随机信号的两麦GCC-PHAT教学实验；MVDR与MUSIC为机制讲解，未声称本视频完成真实阵列定位或水声验证。",
+    "videoSeconds": 2520.0,
+    "narrationChineseCharacters": 7117
+  },
+  {
+    "id": "11",
+    "originalScenes": 10,
+    "expandedScenes": 32,
+    "source": "tutorial/chapters/11_acoustics.html",
+    "coverage": [
+      {
+        "heading": "这章解决什么问题",
+        "explanationSegments": 2
+      },
+      {
+        "heading": "1. 一声拍手为什么会拖出尾巴",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "2. 手算三个副本：混响会改变时间，也会改变频率",
+        "explanationSegments": 6
+      },
+      {
+        "heading": "3. RT60：用能量衰减速度描述尾巴，而不是盯最后一个非零采样",
+        "explanationSegments": 7
+      },
+      {
+        "heading": "4. 近场、远场与距离：不要把“远场语音”误当绝对距离标签",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "5. 从 PCM 数值到声压，需要校准链而不是一个乘法猜测",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "6. 水声背景怎么迁移，哪些东西不能直接迁移",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "7. ANC 为什么不是 AEC 换个缩写",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "8. 练习、答案和一份可展示作业",
+        "explanationSegments": 6
+      }
+    ],
+    "newModelRun": false,
+    "newTrainingRun": false,
+    "limits": "理想全正指数与三脉冲算术教学，不是真实RIR测量；没有硬件ANC试验或声压安全结论。",
+    "videoSeconds": 2328.11,
+    "narrationChineseCharacters": 6679
+  },
+  {
+    "id": "12",
+    "originalScenes": 10,
+    "expandedScenes": 38,
+    "source": "tutorial/chapters/12_pytorch.html",
+    "coverage": [
+      {
+        "heading": "1. 神经网络先不要想成“大脑”，把它想成可调整的计算器",
+        "explanationSegments": 8
+      },
+      {
+        "heading": "2. 把问题换成音频：每个时频格点应该保留多少",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "3. 先认识形状，再读网络",
+        "explanationSegments": 9
+      },
+      {
+        "heading": "4. 长短不齐的语音，为什么不能随便补零后求平均",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "5. 一次训练和一次验证，到底差在哪里",
+        "explanationSegments": 8
+      },
+      {
+        "heading": "6. 练习、答案与排错",
+        "explanationSegments": 8
+      },
+      {
+        "heading": "7. 到实习面试时，交什么才有说服力",
+        "explanationSegments": 2
+      }
+    ],
+    "newModelRun": false,
+    "newTrainingRun": true,
+    "limits": "导览执行NumPy标量梯度实验，深入部分另有本次PyTorch教学网络16轮训练。训练数据是合成谐波，不是真人语音；声码器只测试前向与梯度，不代表自然语音合成效果。",
+    "videoSeconds": 2552.91,
+    "narrationChineseCharacters": 6952
+  },
+  {
+    "id": "13",
+    "originalScenes": 10,
+    "expandedScenes": 31,
+    "source": "tutorial/chapters/13_asr.html",
+    "coverage": [
+      {
+        "heading": "1. “声音变文字”中最难解释的一步：谁对应谁",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "2. 先懂 blank，再懂重复字",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "3. 两个时间步，完整手算一个 CTC 损失",
+        "explanationSegments": 9
+      },
+      {
+        "heading": "4. 时间步一多，为什么需要动态规划",
+        "explanationSegments": 6
+      },
+      {
+        "heading": "5. 怎样接到 PyTorch，哪些形状最容易弄错",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "6. 识别“错几个字”，要用编辑距离而不是逐位置比较",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "7. CTC、注意力与 RNN-T，先理解解决问题的方式",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "8. 把基础转成可投实习的领域项目",
+        "explanationSegments": 5
+      }
+    ],
+    "newModelRun": false,
+    "newTrainingRun": false,
+    "limits": "两步 NumPy 例子只验证 CTC 路径概率；未训练或推理真实 ASR。完整动态规划、RNN-T 训练和真实流式系统需要后续实验。",
+    "videoSeconds": 2081.15,
+    "narrationChineseCharacters": 5814
+  },
+  {
+    "id": "14",
+    "originalScenes": 10,
+    "expandedScenes": 30,
+    "source": "tutorial/chapters/14_tts.html",
+    "coverage": [
+      {
+        "heading": "1. 先把任务拆成三个问题",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "2. 中文前端不是“查拼音字典”那么简单",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "3. 音高、响度与音色：相互有关，但不是同一个旋钮",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "4. 一个完整手算：三个发音单元怎样变成六帧",
+        "explanationSegments": 7
+      },
+      {
+        "heading": "5. 声码器为什么要把时间长度放大很多倍",
+        "explanationSegments": 6
+      },
+      {
+        "heading": "6. 自回归、扩散、流匹配，先用生成方式区分",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "7. 怎样判断一段合成真的更好",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "8. 练习答案、排错与就业交付",
+        "explanationSegments": 8
+      }
+    ],
+    "newModelRun": false,
+    "newTrainingRun": false,
+    "limits": "实际代码是二维教学向量的时长展开，不是训练好的 TTS，不输出自然语音，不证明音色或自然度表现。",
+    "videoSeconds": 2024.27,
+    "narrationChineseCharacters": 5692
+  },
+  {
+    "id": "15",
+    "originalScenes": 10,
+    "expandedScenes": 30,
+    "source": "tutorial/chapters/15_speaker.html",
+    "coverage": [
+      {
+        "heading": "1. 先把这些经常混用的任务分开",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "2. 声纹向量是什么：一张压缩的声音特征卡",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "3. 手算余弦分数，再写第一段声纹评分代码",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "4. 阈值不是越高越好：手算 FAR、FRR 和 EER",
+        "explanationSegments": 9
+      },
+      {
+        "heading": "5. 说话人日志：每个时间片应该贴谁的标签",
+        "explanationSegments": 6
+      },
+      {
+        "heading": "6. 声音事件检测：为什么不能强迫所有类别概率加起来等于 1",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "7. 常见失败，不一定需要换模型",
+        "explanationSegments": 6
+      },
+      {
+        "heading": "8. 练习答案与就业产物",
+        "explanationSegments": 4
+      }
+    ],
+    "newModelRun": false,
+    "newTrainingRun": false,
+    "limits": "八个分数是教学输入，曲线不是声纹模型实测；没有运行真实 diarization 或事件检测模型。",
+    "videoSeconds": 1961.74,
+    "narrationChineseCharacters": 5646
+  },
+  {
+    "id": "16",
+    "originalScenes": 10,
+    "expandedScenes": 34,
+    "source": "tutorial/chapters/16_engineering.html",
+    "coverage": [
+      {
+        "heading": "1. 从一个文件到一个预测，中间要有“账本”",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "2. 分块到达的声音，不能每一块都当作一条新录音",
+        "explanationSegments": 6
+      },
+      {
+        "heading": "3. RTF 小于 1，为什么用户仍觉得慢",
+        "explanationSegments": 11
+      },
+      {
+        "heading": "4. 量化不是把 float 换个名字，而是改变数值刻度",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "5. 导出 ONNX 后，要证明“还是同一个算法”",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "6. 语音助手的打断：清空队列为什么还不够",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "7. 练习答案与一次有用的故障调查",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "8. 你的实习交付，应该让别人一键复现",
+        "explanationSegments": 2
+      }
+    ],
+    "newModelRun": false,
+    "newTrainingRun": false,
+    "limits": "代码只验证数组缓存，不是可上线实时音频回调；没有测量设备延迟、并发、量化或真实模型推理。",
+    "videoSeconds": 2336.04,
+    "narrationChineseCharacters": 6602
+  },
+  {
+    "id": "17",
+    "originalScenes": 10,
+    "expandedScenes": 26,
+    "source": "tutorial/chapters/17_project.html",
+    "coverage": [
+      {
+        "heading": "先决定你要证明哪一种能力",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "项目方向一：从一条带噪波形开始做语音增强",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "项目方向二：从合成双麦到真实阵列问题",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "交付目录与实验记录",
+        "explanationSegments": 8
+      },
+      {
+        "heading": "前两周细化到可完成的动作",
+        "explanationSegments": 11
+      },
+      {
+        "heading": "面向2027年暑期的行动节点",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "简历与口述的两分钟版本",
+        "explanationSegments": 3
+      }
+    ],
+    "newModelRun": false,
+    "newTrainingRun": false,
+    "limits": "代码使用合成单音与噪声，五点平均是离线教学基线；未跑真实语音数据或神经网络，不可将数字当个人增强项目成绩。",
+    "videoSeconds": 1629.51,
+    "narrationChineseCharacters": 4707
+  },
+  {
+    "id": "18",
+    "originalScenes": 10,
+    "expandedScenes": 30,
+    "source": "tutorial/chapters/18_glossary.html",
+    "coverage": [
+      {
+        "heading": "不要一次背完，碰到再查",
+        "explanationSegments": 37
+      },
+      {
+        "heading": "数字与单位检查",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "情景题：先定位问题，不急着换模型",
+        "explanationSegments": 6
+      },
+      {
+        "heading": "给自己建立错题记录",
+        "explanationSegments": 2
+      },
+      {
+        "heading": "下一步",
+        "explanationSegments": 1
+      }
+    ],
+    "newModelRun": false,
+    "newTrainingRun": false,
+    "limits": "这是数字单位和合成信号复习，不涉及校准声压、真实播放响度或模型业务指标；超过满量程的数组不能不检查就保存播放。",
+    "videoSeconds": 1578.21,
+    "narrationChineseCharacters": 4348
+  },
+  {
+    "id": "convtasnet",
+    "originalScenes": 10,
+    "expandedScenes": 56,
+    "source": "tutorial/projects/convtasnet/lesson.html",
+    "coverage": [
+      {
+        "heading": "A 先知道自己要学会什么",
+        "explanationSegments": 8
+      },
+      {
+        "heading": "B 沿着文件找到一段音频的旅行路线",
+        "explanationSegments": 10
+      },
+      {
+        "heading": "C 看懂张量：每一个维度代表什么",
+        "explanationSegments": 20
+      },
+      {
+        "heading": "D 评分和训练：为什么必须有 PIT",
+        "explanationSegments": 11
+      },
+      {
+        "heading": "E 后处理：把“加起来正确”和“每路正确”分开",
+        "explanationSegments": 15
+      },
+      {
+        "heading": "F 你的仓库到底训练了什么",
+        "explanationSegments": 12
+      },
+      {
+        "heading": "G 读真实结果：能说什么，不能说什么",
+        "explanationSegments": 13
+      },
+      {
+        "heading": "H 七次学习安排与闭卷自测",
+        "explanationSegments": 20
+      }
+    ],
+    "newModelRun": true,
+    "newTrainingRun": false,
+    "limits": "本课含教材逐节精讲和本次真实短推理；GTCRN使用项目E4，分离使用官方预训练，识别使用冻结Zipformer。历史微调/三种子报告未全量重训；不声称声卡或芯片验收。",
+    "videoSeconds": 3431.19,
+    "narrationChineseCharacters": 8334
+  },
+  {
+    "id": "gtcrn",
+    "originalScenes": 10,
+    "expandedScenes": 59,
+    "source": "tutorial/projects/gtcrn/lesson.html",
+    "coverage": [
+      {
+        "heading": "A 先知道这个项目解决什么问题",
+        "explanationSegments": 9
+      },
+      {
+        "heading": "B 一个 WAV 在代码里怎样变成张量",
+        "explanationSegments": 11
+      },
+      {
+        "heading": "C GTCRN 内部：先看数据形状，再记模块名",
+        "explanationSegments": 13
+      },
+      {
+        "heading": "D 训练和推理不是一回事：读懂 E0 到 E5",
+        "explanationSegments": 12
+      },
+      {
+        "heading": "E 怎样读成绩：看正结果，也看退化",
+        "explanationSegments": 25
+      },
+      {
+        "heading": "F 流式不是把整段切块后各自跑一遍",
+        "explanationSegments": 14
+      },
+      {
+        "heading": "G 七次90分钟学习：每次都留下一个可检查的产物",
+        "explanationSegments": 20
+      },
+      {
+        "heading": "H 把项目讲清楚，而不是只背一个分数",
+        "explanationSegments": 5
+      }
+    ],
+    "newModelRun": true,
+    "newTrainingRun": false,
+    "limits": "本课含教材逐节精讲和本次真实短推理；GTCRN使用项目E4，分离使用官方预训练，识别使用冻结Zipformer。历史微调/三种子报告未全量重训；不声称声卡或芯片验收。",
+    "videoSeconds": 3785.08,
+    "narrationChineseCharacters": 9463
+  },
+  {
+    "id": "speechllm",
+    "originalScenes": 10,
+    "expandedScenes": 24,
+    "source": "lessons/14.html",
+    "coverage": [
+      {
+        "heading": "A 先区分三种编码",
+        "explanationSegments": 5
+      },
+      {
+        "heading": "B 神经编解码器与离散单元",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "C 级联与端到端系统",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "D 训练与适配要学什么",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "E 全双工不等于同时开两个线程",
+        "explanationSegments": 7
+      },
+      {
+        "heading": "F 入门项目与自测",
+        "explanationSegments": 4
+      },
+      {
+        "heading": "一条容易理解的链路",
+        "explanationSegments": 1
+      },
+      {
+        "heading": "更直接的音频建模",
+        "explanationSegments": 3
+      },
+      {
+        "heading": "能被打断，才像自然对话",
+        "explanationSegments": 3
+      }
+    ],
+    "newModelRun": false,
+    "newTrainingRun": false,
+    "limits": "三级一维码本为教学手选，没有训练神经编解码器或语音大模型，没有音质和延迟实测；码率示例为独立假设配置。",
+    "videoSeconds": 1225.91,
+    "narrationChineseCharacters": 3552
+  },
+  {
+    "id": "zipformer",
+    "originalScenes": 10,
+    "expandedScenes": 49,
+    "source": "tutorial/projects/zipformer/lesson.html",
+    "coverage": [
+      {
+        "heading": "A 先分清：这个项目到底做了哪几件事",
+        "explanationSegments": 8
+      },
+      {
+        "heading": "B 从一个 WAV 追到字幕：数据和形状",
+        "explanationSegments": 11
+      },
+      {
+        "heading": "C 流式状态为什么不能每块重建",
+        "explanationSegments": 11
+      },
+      {
+        "heading": "D 热词、标签和两级决策：为什么要分三轮",
+        "explanationSegments": 10
+      },
+      {
+        "heading": "E 真正训练的小模型：把形状和损失看明白",
+        "explanationSegments": 8
+      },
+      {
+        "heading": "F 用真实结果学习：别把微小改善包装成确定成功",
+        "explanationSegments": 11
+      },
+      {
+        "heading": "G 七次 90 分钟练习：每天交付一件可检查的东西",
+        "explanationSegments": 10
+      },
+      {
+        "heading": "H 自测、答案与面试表述",
+        "explanationSegments": 11
+      }
+    ],
+    "newModelRun": true,
+    "newTrainingRun": false,
+    "limits": "本课含教材逐节精讲和本次真实短推理；GTCRN使用项目E4，分离使用官方预训练，识别使用冻结Zipformer。历史微调/三种子报告未全量重训；不声称声卡或芯片验收。",
+    "videoSeconds": 2986.32,
+    "narrationChineseCharacters": 7917
+  }
+]

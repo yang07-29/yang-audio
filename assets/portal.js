@@ -20,7 +20,7 @@
   const root = new URL('../', script.src);
   function freshLessonURL(raw) {
     const url = new URL(raw, root);
-    if (/\/tutorial\/video-lessons\/[^/]+\.html$/.test(url.pathname) && !url.searchParams.has('v')) url.searchParams.set('v', '20261027');
+    if (/\/tutorial\/video-lessons\/[^/]+\.html$/.test(url.pathname)) url.searchParams.set('v', '20261027-depth');
     return url;
   }
   function boot() {

@@ -1,0 +1,154 @@
+{
+  "model": "官方预训练 Conv-TasNet；不是用户微调权重",
+  "checkpoint_sha256": "ddf97d8341f616c6d8d1a4b20dd51042760392c6543e9eaac276c9f96eba0f0e",
+  "sample_rate": 8000,
+  "input_shape": [
+    1,
+    1,
+    37840
+  ],
+  "shapes": {
+    "encoder": [
+      1,
+      512,
+      4731
+    ],
+    "mask_generator": [
+      1,
+      2,
+      512,
+      4731
+    ],
+    "decoder": [
+      2,
+      1,
+      37840
+    ]
+  },
+  "output_shape": [
+    2,
+    37840
+  ],
+  "trainable_selection": {
+    "total": 4984881,
+    "trainable": 140289,
+    "fraction": 0.028142898496473636,
+    "trainable_names": [
+      "mask_generator.output_prelu.weight",
+      "mask_generator.output_conv.weight",
+      "mask_generator.output_conv.bias",
+      "decoder.weight"
+    ],
+    "frozen": 4844592
+  },
+  "metrics": {
+    "gain": {
+      "assignment": [
+        0,
+        1
+      ],
+      "pairwise_si_sdr": [
+        [
+          10.578935459259593,
+          -19.608456243244138
+        ],
+        [
+          -22.217211731363133,
+          5.6959989609445305
+        ]
+      ],
+      "per_source": [
+        {
+          "reference_index": 0,
+          "estimate_index": 0,
+          "mixture_si_sdr": 4.312824927988533,
+          "output_si_sdr": 10.578935459259593,
+          "improvement": 6.26611053127106
+        },
+        {
+          "reference_index": 1,
+          "estimate_index": 1,
+          "mixture_si_sdr": -4.365226446781917,
+          "output_si_sdr": 5.6959989609445305,
+          "improvement": 10.061225407726447
+        }
+      ],
+      "mean_mixture_si_sdr": -0.026200759396691975,
+      "mean_output_si_sdr": 8.137467210102063,
+      "mean_improvement": 8.163667969498754
+    },
+    "uniform": {
+      "assignment": [
+        0,
+        1
+      ],
+      "pairwise_si_sdr": [
+        [
+          10.60383138305762,
+          -20.155557834279087
+        ],
+        [
+          -21.55955127946411,
+          5.7175355862747175
+        ]
+      ],
+      "per_source": [
+        {
+          "reference_index": 0,
+          "estimate_index": 0,
+          "mixture_si_sdr": 4.312824927988533,
+          "output_si_sdr": 10.60383138305762,
+          "improvement": 6.291006455069088
+        },
+        {
+          "reference_index": 1,
+          "estimate_index": 1,
+          "mixture_si_sdr": -4.365226446781917,
+          "output_si_sdr": 5.7175355862747175,
+          "improvement": 10.082762033056635
+        }
+      ],
+      "mean_mixture_si_sdr": -0.026200759396691975,
+      "mean_output_si_sdr": 8.160683484666169,
+      "mean_improvement": 8.186884244062862
+    },
+    "energy": {
+      "assignment": [
+        0,
+        1
+      ],
+      "pairwise_si_sdr": [
+        [
+          10.609108362830655,
+          -19.889575441202222
+        ],
+        [
+          -21.25924606524833,
+          5.709374774579641
+        ]
+      ],
+      "per_source": [
+        {
+          "reference_index": 0,
+          "estimate_index": 0,
+          "mixture_si_sdr": 4.312824927988533,
+          "output_si_sdr": 10.609108362830655,
+          "improvement": 6.296283434842122
+        },
+        {
+          "reference_index": 1,
+          "estimate_index": 1,
+          "mixture_si_sdr": -4.365226446781917,
+          "output_si_sdr": 5.709374774579641,
+          "improvement": 10.074601221361558
+        }
+      ],
+      "mean_mixture_si_sdr": -0.026200759396691975,
+      "mean_output_si_sdr": 8.159241568705148,
+      "mean_improvement": 8.18544232810184
+    }
+  },
+  "cold_forward_seconds": 0.578889099881053,
+  "timing": "一次冷前向；不含加载和文件I/O，不能当稳定基准",
+  "scope": "本次实际短演示；不是全量测试、重训或声卡闭环验收"
+}

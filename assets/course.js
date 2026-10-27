@@ -161,7 +161,7 @@
   const utilities = create('nav', 'course-utilities');
   utilities.setAttribute('aria-label', '辅助资料');
   utilities.append(link('资源总览', 'index.html#learn-resources'));
-  utilities.append(link('图文与视频', 'tutorial/study/videos.html?v=20261027'));
+  utilities.append(link('图文与视频', 'tutorial/study/videos.html?v=20261027-depth'));
   utilities.append(link('可视化实验', 'tutorial/study/visuals.html'));
   utilities.append(link('随课实验', 'tutorial/experiments.html'));
   utilities.append(link('资料与内容审查', 'tutorial/resources.html'));
@@ -300,7 +300,7 @@
     videoGuide.append(create('h2', '', '图文教程'));
     videoGuide.append(create('p', '', '完整推导、注释代码与运行图都在下方。想跟着算一遍？可以切换到本课视频。'));
     const minutes = Math.floor(pairedVideo.duration / 60);
-    videoGuide.append(link(`播放本课视频 · 约 ${minutes} 分钟 →`, pairedVideo.url + '?v=20261027', 'course-primary-button'));
+    videoGuide.append(link(`播放本课视频 · 约 ${minutes} 分钟 →`, pairedVideo.url + '?v=20261027-depth', 'course-primary-button'));
     article.prepend(videoGuide);
   }
   if (page.kind === 'lesson' && article) {

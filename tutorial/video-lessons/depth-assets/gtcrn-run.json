@@ -1,0 +1,14 @@
+{
+  "model": "项目 E4 seed17 ONNX",
+  "model_sha256": "356bb3c94765b354138a40c9c09e0de7d39684c76e2b43a706c509e8ecb5ab03",
+  "input_samples": 160000,
+  "output_samples": 160000,
+  "sample_rate": 16000,
+  "input_si_sdr_db": -0.019585115872648495,
+  "output_si_sdr_db": 7.880258440562953,
+  "irregular_max_abs_difference": 0.0,
+  "compute_rtf": 0.05212800004519522,
+  "first_output_received_samples": 512,
+  "timing": "单次文件驱动测量；不含初始化与I/O；不是统计基准",
+  "scope": "本次实际短演示；不是全量测试、重训或声卡闭环验收"
+}

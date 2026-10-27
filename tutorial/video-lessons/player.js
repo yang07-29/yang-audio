@@ -7,7 +7,9 @@
   const status = document.getElementById('play-status');
   const format = document.getElementById('format');
   const speed = document.getElementById('speed');
-  const key = 'yang-audio-video-v2:' + location.pathname;
+  // A revised video has different chapter times. Keep old resume points intact,
+  // but never apply an old timestamp to a different edit. Course checks are separate.
+  const key = 'yang-audio-video-v2:' + location.pathname + (video.dataset.revision ? ':' + video.dataset.revision : '');
   let pendingTime = 0;
   try { pendingTime = Number(localStorage.getItem(key)) || 0; } catch (_) {}
   // Metadata may not be ready when a learner seeks or changes format.

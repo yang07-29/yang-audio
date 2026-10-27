@@ -1,0 +1,483 @@
+{
+  "model": "冻结14M Zipformer；encoder/joiner INT8、decoder FP32",
+  "input_sha256": "a72c0b59fdba80850552af7991de07f9f4940846d2d70f0890eeb153c40f164b",
+  "reference": "“这并不是告别。这是一个篇章的结束，也是新篇章的开始。”",
+  "input_path": "data/fleurs10/10026684690566417990.wav",
+  "result": {
+    "text": "这并不是告别这是一个篇章的结束也是新篇章的开始",
+    "tokens": [
+      "这",
+      "并",
+      "不",
+      "是",
+      "告",
+      "别",
+      "这",
+      "是",
+      "一",
+      "个",
+      "篇",
+      "章",
+      "的",
+      "结",
+      "束",
+      "也",
+      "是",
+      "新",
+      "篇",
+      "章",
+      "的",
+      "开",
+      "始"
+    ],
+    "log_probs": [
+      -1.928584098815918,
+      -0.4184284210205078,
+      -0.8921747207641602,
+      -0.24673843383789062,
+      -0.31926918029785156,
+      -0.11019611358642578,
+      -0.13219738006591797,
+      -0.38144874572753906,
+      -0.5167570114135742,
+      -0.7160444259643555,
+      -1.0184822082519531,
+      -0.7575979232788086,
+      -0.31418609619140625,
+      -0.9656734466552734,
+      -0.5904464721679688,
+      -0.27541637420654297,
+      -0.22115087509155273,
+      -1.3984527587890625,
+      -0.9618949890136719,
+      -0.39556169509887695,
+      -0.7447471618652344,
+      -0.6904067993164062,
+      -0.6561059951782227
+    ],
+    "timestamps": [
+      2.0399999618530273,
+      2.359999895095825,
+      2.4800000190734863,
+      2.7200000286102295,
+      2.919999837875366,
+      3.119999885559082,
+      4.199999809265137,
+      4.319999694824219,
+      4.519999980926514,
+      4.639999866485596,
+      4.839999675750732,
+      4.960000038146973,
+      5.199999809265137,
+      5.440000057220459,
+      5.679999828338623,
+      6.119999885559082,
+      6.239999771118164,
+      6.399999618530273,
+      6.559999942779541,
+      6.759999752044678,
+      6.960000038146973,
+      7.159999847412109,
+      7.319999694824219
+    ],
+    "partial_events": [
+      {
+        "text": "这",
+        "audio_seconds": 2.4,
+        "compute_seconds": 0.05742059973999858
+      },
+      {
+        "text": "这并不",
+        "audio_seconds": 2.72,
+        "compute_seconds": 0.064671800006181
+      },
+      {
+        "text": "这并不是",
+        "audio_seconds": 3.04,
+        "compute_seconds": 0.07171509973704815
+      },
+      {
+        "text": "这并不是告别",
+        "audio_seconds": 3.36,
+        "compute_seconds": 0.07915419992059469
+      },
+      {
+        "text": "这并不是告别这是",
+        "audio_seconds": 4.64,
+        "compute_seconds": 0.10825210018083453
+      },
+      {
+        "text": "这并不是告别这是一个",
+        "audio_seconds": 4.96,
+        "compute_seconds": 0.11551659973338246
+      },
+      {
+        "text": "这并不是告别这是一个篇章",
+        "audio_seconds": 5.28,
+        "compute_seconds": 0.12241140007972717
+      },
+      {
+        "text": "这并不是告别这是一个篇章的",
+        "audio_seconds": 5.6,
+        "compute_seconds": 0.13037309981882572
+      },
+      {
+        "text": "这并不是告别这是一个篇章的结束",
+        "audio_seconds": 5.92,
+        "compute_seconds": 0.1373581001535058
+      },
+      {
+        "text": "这并不是告别这是一个篇章的结束也是",
+        "audio_seconds": 6.56,
+        "compute_seconds": 0.15417589992284775
+      },
+      {
+        "text": "这并不是告别这是一个篇章的结束也是新篇",
+        "audio_seconds": 6.88,
+        "compute_seconds": 0.16131330002099276
+      },
+      {
+        "text": "这并不是告别这是一个篇章的结束也是新篇章的",
+        "audio_seconds": 7.2,
+        "compute_seconds": 0.16858649998903275
+      },
+      {
+        "text": "这并不是告别这是一个篇章的结束也是新篇章的开始",
+        "audio_seconds": 7.52,
+        "compute_seconds": 0.17609009984880686
+      }
+    ],
+    "audio_seconds": 10.38,
+    "decode_seconds": 0.2603428000584245,
+    "first_partial_audio_seconds": 2.4,
+    "first_partial_in_padding": false
+  },
+  "chunk_ms": 160,
+  "tail_seconds": 0.66,
+  "endpoint_detection": false,
+  "runtime": "sherpa-onnx 1.12.40; isolated Python3.13 runtime; not original NumPy1.26 lock",
+  "encoder_metadata": {
+    "model_author": "k2-fsa",
+    "onnx.infer": "onnxruntime.quant",
+    "encoder_dims": "160,160,160,160,160",
+    "version": "1",
+    "model_type": "zipformer",
+    "decode_chunk_len": "32",
+    "num_encoder_layers": "2,3,2,2,3",
+    "T": "39",
+    "attention_dims": "96,96,96,96,96",
+    "cnn_module_kernels": "31,31,31,31,31",
+    "left_context_len": "64,32,16,8,32"
+  },
+  "encoder_input_shapes": [
+    {
+      "name": "x",
+      "shape": [
+        "N",
+        39,
+        80
+      ]
+    },
+    {
+      "name": "cached_len_0",
+      "shape": [
+        2,
+        "N"
+      ]
+    },
+    {
+      "name": "cached_len_1",
+      "shape": [
+        3,
+        "N"
+      ]
+    },
+    {
+      "name": "cached_len_2",
+      "shape": [
+        2,
+        "N"
+      ]
+    },
+    {
+      "name": "cached_len_3",
+      "shape": [
+        2,
+        "N"
+      ]
+    },
+    {
+      "name": "cached_len_4",
+      "shape": [
+        3,
+        "N"
+      ]
+    },
+    {
+      "name": "cached_avg_0",
+      "shape": [
+        2,
+        "N",
+        160
+      ]
+    },
+    {
+      "name": "cached_avg_1",
+      "shape": [
+        3,
+        "N",
+        160
+      ]
+    },
+    {
+      "name": "cached_avg_2",
+      "shape": [
+        2,
+        "N",
+        160
+      ]
+    },
+    {
+      "name": "cached_avg_3",
+      "shape": [
+        2,
+        "N",
+        160
+      ]
+    },
+    {
+      "name": "cached_avg_4",
+      "shape": [
+        3,
+        "N",
+        160
+      ]
+    },
+    {
+      "name": "cached_key_0",
+      "shape": [
+        2,
+        64,
+        "N",
+        96
+      ]
+    },
+    {
+      "name": "cached_key_1",
+      "shape": [
+        3,
+        32,
+        "N",
+        96
+      ]
+    },
+    {
+      "name": "cached_key_2",
+      "shape": [
+        2,
+        16,
+        "N",
+        96
+      ]
+    },
+    {
+      "name": "cached_key_3",
+      "shape": [
+        2,
+        8,
+        "N",
+        96
+      ]
+    },
+    {
+      "name": "cached_key_4",
+      "shape": [
+        3,
+        32,
+        "N",
+        96
+      ]
+    },
+    {
+      "name": "cached_val_0",
+      "shape": [
+        2,
+        64,
+        "N",
+        48
+      ]
+    },
+    {
+      "name": "cached_val_1",
+      "shape": [
+        3,
+        32,
+        "N",
+        48
+      ]
+    },
+    {
+      "name": "cached_val_2",
+      "shape": [
+        2,
+        16,
+        "N",
+        48
+      ]
+    },
+    {
+      "name": "cached_val_3",
+      "shape": [
+        2,
+        8,
+        "N",
+        48
+      ]
+    },
+    {
+      "name": "cached_val_4",
+      "shape": [
+        3,
+        32,
+        "N",
+        48
+      ]
+    },
+    {
+      "name": "cached_val2_0",
+      "shape": [
+        2,
+        64,
+        "N",
+        48
+      ]
+    },
+    {
+      "name": "cached_val2_1",
+      "shape": [
+        3,
+        32,
+        "N",
+        48
+      ]
+    },
+    {
+      "name": "cached_val2_2",
+      "shape": [
+        2,
+        16,
+        "N",
+        48
+      ]
+    },
+    {
+      "name": "cached_val2_3",
+      "shape": [
+        2,
+        8,
+        "N",
+        48
+      ]
+    },
+    {
+      "name": "cached_val2_4",
+      "shape": [
+        3,
+        32,
+        "N",
+        48
+      ]
+    },
+    {
+      "name": "cached_conv1_0",
+      "shape": [
+        2,
+        "N",
+        160,
+        30
+      ]
+    },
+    {
+      "name": "cached_conv1_1",
+      "shape": [
+        3,
+        "N",
+        160,
+        30
+      ]
+    },
+    {
+      "name": "cached_conv1_2",
+      "shape": [
+        2,
+        "N",
+        160,
+        30
+      ]
+    },
+    {
+      "name": "cached_conv1_3",
+      "shape": [
+        2,
+        "N",
+        160,
+        30
+      ]
+    },
+    {
+      "name": "cached_conv1_4",
+      "shape": [
+        3,
+        "N",
+        160,
+        30
+      ]
+    },
+    {
+      "name": "cached_conv2_0",
+      "shape": [
+        2,
+        "N",
+        160,
+        30
+      ]
+    },
+    {
+      "name": "cached_conv2_1",
+      "shape": [
+        3,
+        "N",
+        160,
+        30
+      ]
+    },
+    {
+      "name": "cached_conv2_2",
+      "shape": [
+        2,
+        "N",
+        160,
+        30
+      ]
+    },
+    {
+      "name": "cached_conv2_3",
+      "shape": [
+        2,
+        "N",
+        160,
+        30
+      ]
+    },
+    {
+      "name": "cached_conv2_4",
+      "shape": [
+        3,
+        "N",
+        160,
+        30
+      ]
+    }
+  ],
+  "scope": "本次实际短演示；不是全量测试、重训或声卡闭环验收"
+}
