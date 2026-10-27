@@ -1,0 +1,42 @@
+新增项目演示图与视频的素材署名（2026-10-27）
+
+本次没有发布下载的模型权重，也没有重新发布原始录音。以下署名适用于依据公开样例生成的波形、指标图与相应视频片段。原作者不为本课程或模型效果背书。
+
+一、GTCRN 波形与指标演示
+
+语音原作：A Dream Within a Dream。
+录音：Neil Carmichael（Wikimedia Commons 用户 Back ache），2020-11-20。
+原文作者：Edgar Allan Poe，1849。
+来源：https://commons.wikimedia.org/wiki/File:A_Dream_Within_a_Dream.ogg
+
+键盘录音：Cherry Mx reds sound for cherry gmbh wikipedia page。
+录音：Xaqaii，2021-05-01。
+来源：https://commons.wikimedia.org/wiki/File:Cherry_Mx_reds_sound_for_cherry_gmbh_wikipedia_page.wav
+
+两份录音及项目中的混音/增强衍生音频：CC BY-SA 4.0。
+许可：https://creativecommons.org/licenses/by-sa/4.0/
+项目处理包含声道合并、16 kHz 重采样、裁切、幅度调整、人工混音及 GTCRN 增强。本课新增波形图、指标图及相应 GTCRN 教学视频衍生表达同样按 CC BY-SA 4.0 提供。代码、模型和其他第三方材料继续遵守各自原许可，不因此获得重新授权。
+项目详细来源：https://github.com/yang07-29/gtcrn-headset-enhancement/blob/main/portable/samples/AUDIO_LICENSE.md
+
+二、Conv-TasNet 波形演示
+
+输入是 torchaudio 官方集成测试的一组混音与参考，样本 ID：3729-6852-0037_8463-287645-0000。
+原始 LibriSpeech 语料作者：Vassil Panayotov、Guoguo Chen、Daniel Povey、Sanjeev Khudanpur。
+来源：https://www.openslr.org/12
+许可：CC BY 4.0，https://creativecommons.org/licenses/by/4.0/
+本课运行官方预训练模型，进行项目 gain 后处理、参考配对及波形绘图；图不是原始录音，也不是用户最终微调模型的成绩。未推断测试混音的具体合成配方。
+官方代码来源：https://github.com/pytorch/audio/tree/v2.6.0
+项目详细来源：https://github.com/yang07-29/convtasnet-speech-separation/blob/codex/reproduction/PROVENANCE.md
+
+三、Zipformer 识别演示
+
+输入与参考文字来自 Google FLEURS 的 cmn_hans_cn/test，固定版本 4683b04af03d2d9549064c7d72060a9a94bb6046，文件 10026684690566417990.wav。
+来源：https://huggingface.co/datasets/google/fleurs
+署名：Google FLEURS；许可 CC BY 4.0，https://creativecommons.org/licenses/by/4.0/
+本课对固定公开样例运行冻结模型，并绘制 partial 结果的字符数时间线。图和识别文字是处理结果，不是人工参考的替代品，也不是全测试集结论。
+模型与运行时来源：https://github.com/k2-fsa/sherpa-onnx
+项目来源：https://github.com/yang07-29/streaming-asr-zipformer
+
+四、其他新增内容
+
+第 12 课训练曲线来自课程自行生成的合成谐波与噪声数据。中文讲解、教学图、脚本和本地合成旁白由本课程整理制作。上游代码和权重的许可不相互替代。
